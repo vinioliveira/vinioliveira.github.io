@@ -9,5 +9,4 @@ gem 'colored',       '1.2'
 gem 'rake',          '10.5.0'
 gem 'bourbon'
 gem 'neat'
-gem 'inline_svg',     '0.6.2'
 gem 'scss_lint', require: false

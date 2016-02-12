@@ -1,0 +1,151 @@
+// *************************************
+//
+// home/section-how
+//
+// *************************************
+
+.section-how {
+  @include pad(rem(60) 0);
+  @include span-columns(12);
+  background: $light-primary;
+  min-height: rem(768);
+
+  @include media($screen-small) {
+    display: none;
+  }
+
+  &__heading {
+    margin: 0 auto;
+    max-width: rem(870);
+    text-align: center;
+  }
+
+  &__title {
+    color: $light-red;
+    display: inline-block;
+    font-size: rem(48);
+
+    @include media($screen-tiny) {
+      font-size: rem(26);
+    }
+  }
+
+  &__subtitle {
+    color: $greyish-brown;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: rem(30) 0 0;
+
+    ins {
+      color: $light-red;
+      font-weight: 700;
+    }
+  }
+
+  &__play {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+
+    .icon {
+      @include position(absolute, 30% null null 42%);
+      color: white;
+      font-size: rem(95);
+    }
+  }
+
+  &__image {
+    @include size(rem(250));
+    background: $light-red;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+
+    &::before {
+      @include position(absolute, 0 0 0 0);
+      @include size(90%);
+      @include transition(all .3s);
+      background: transparent;
+      border-radius: 50%;
+      border: 1px solid $light;
+      content: '';
+      margin: 5%;
+      z-index: 1;
+    }
+
+    .how-hover {
+      //@include filter(grayscale(100%));
+      @include size(rem(250));
+      @include transition(all 0.3s);
+      border-radius: 50%;
+    }
+
+    &:hover {
+      img {
+        opacity: .5;
+      }
+
+      .section-how__play{
+        opacity: 1;
+      }
+
+    }
+  }
+
+  &__image:hover {
+    &::before {
+      background: transparent;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      content: '';
+      height: 80%;
+      left: 0;
+      margin: 10%;
+      position: absolute;
+      top: 0;
+      width: 80%;
+      z-index: 1;
+    }
+  }
+
+  &__box {
+    margin: rem(85) auto 0;
+    max-width: rem(1100);
+    text-align: center;
+
+    @include media($screen-small) {
+      @include fill-parent;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      @include span-columns(4 of 12);
+      display: inline-block;
+      list-style: none;
+
+      a {
+        color: $darkish-red;
+        font-family: $heading-font-family;
+        font-size: rem(26);
+        text-align: center;
+      }
+
+      span {
+        display: inline-block;
+        margin-top: rem(25);
+      }
+    }
+
+    .btn {
+      margin-top: rem(50);
+    }
+  }
+}

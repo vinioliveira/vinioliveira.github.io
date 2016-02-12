@@ -1,0 +1,94 @@
+// *************************************
+//
+// home/section-services
+//
+// *************************************
+
+.section-services {
+  @include pad(rem(60) 0);
+  @include span-columns(12);
+  background: $light-primary;
+  min-height: rem(768);
+
+  &__heading {
+    margin: 0 auto;
+    max-width: rem(870);
+    text-align: center;
+  }
+
+  &__title {
+    color: $light-red;
+    display: inline-block;
+    font-size: rem(48);
+
+    @include media($screen-tiny) {
+      font-size: rem(30);
+    }
+  }
+
+  &__subtitle {
+    color: $greyish-brown;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: rem(30) 0 0;
+
+    @include media($screen-tiny) {
+      font-size: rem(14);
+    }
+
+    ins {
+      color: $light-red;
+      font-weight: 700;
+    }
+  }
+
+  &__box {
+    @include span-columns(4 of 12);
+    margin-top: rem(85);
+    text-align: center;
+
+    @include media($screen-small) {
+      @include fill-parent;
+    }
+
+    img {
+      max-width: rem(160);
+    }
+  }
+
+  &__service {
+    color: $darkish-red;
+    font-family: $heading-font-family;
+    font-size: rem(24);
+    margin-top: rem(26);
+    text-align: center;
+
+    @include media($screen-small) {
+      font-size: rem(18);
+    }
+  }
+
+  &__description {
+    color: $greyish-brown;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: 0 auto;
+    max-width: rem(330);
+    text-align: center;
+
+    @include media($screen-small) {
+      font-size: rem(14);
+    }
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  .btn {
+    display: table;
+    margin: 30px auto 0;
+  }
+}

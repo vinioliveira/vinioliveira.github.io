@@ -1,0 +1,398 @@
+---
+layout: site-2016
+title: Novo Site 2016
+description: HE:labs
+body_id: "home"
+pt: /
+---
+
+{% include nav-side-bar-2016.html %}
+
+<section id="home" class="main-banner">
+
+  <div class="main-banner__bg">
+
+    <div class="wrapper">
+
+      <div class="main-banner__content">
+
+        <h1 class="main-banner__title">
+          Crafting amazing  <br> digital products!
+        </h1>
+
+        <p class="main-banner__subtitle">
+          We’re an agile team of <span id="typed" style="white-space:pre;"></span>. </br>
+          Together we transform your idea into <br/> a excepcional digital product.
+        </p>
+
+        <div id="typed-strings">
+          <p><strong>coders</strong></p>
+          <p><strong>designers</strong></p>
+          <p><strong>makers</strong></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <a class="main-banner__arrow-down"><span class="animation"></span></a>
+
+</section>
+
+<section id="services" class="section-services">
+
+  <div class="wrapper">
+
+    <div class="section-services__heading">
+
+      <h2 class="section-services__title title-line title-line--center">
+        Our Services
+      </h2>
+      <p class="section-services__subtitle">
+        We can help you to elaborate your <ins>MVP</ins> and choose the right resources for it. <br>
+        We are a <strong>full stack</strong> team guided by <strong>user experience values</strong>.
+      </p>
+
+    </div>
+
+    <div class="section-services__box">
+      <figure>
+        <img src="/images/icon-services-stack.svg" alt="">
+      </figure>
+      <h3 class="section-services__service">Full Stack Development</h3>
+      <p class="section-services__description">
+        We have a <strong>flexible technology</strong> team with diferent skills and abilities that you can match to your product case.
+      </p>
+    </div>
+
+    <div class="section-services__box del-1">
+      <figure>
+        <img src="/images/icon-services-ux.svg" alt="">
+      </figure>
+      <h3 class="section-services__service">UI/UX Design</h3>
+      <p class="section-services__description">
+        We will provide the best solution to your product interface, applying <strong>user experience tests</strong> and always improving the design.
+      </p>
+    </div>
+
+    <div class="section-services__box del-2">
+      <figure>
+        <img src="/images/icon-services-product.svg" alt="">
+      </figure>
+      <h3 class="section-services__service">Product Strategy</h3>
+      <p class="section-services__description">
+        With a <strong>experienced team</strong> available only
+        for your product strategy <strong>without any adictional cost</strong>, we will help you to
+        achieve your goals.
+      </p>
+    </div>
+
+  </div>
+
+  <a href="/en/about-us" class="btn btn--red">MORE ABOUT US</a>
+</section>
+
+<section id="portfolio" class="section-projects">
+
+  <div class="wrapper">
+    <div class="section-projects__heading">
+      <h2 class="section-projects__title title-line title-line--center">
+        What we've done
+      </h2>
+      <p class="section-projects__subtitle">
+        Inspiring projects. Stunning ideas
+      </p>
+    </div>
+  </div>
+
+  <div class="mosaic">
+
+    <div class="mosaic__column">
+
+      <div class="mosaic__column--one">
+        <div href="/en/our-work" class="mosaic__box">
+          <figure>
+            <img src="/images/cases/espn_thumb.jpg" alt="Project x">
+            <figcaption class="mosaic__box-caption">
+              <span class="project">web</span>
+              <span class="project-name">espn portal</span>
+              <a class="full-case" href="#">full case</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="mosaic__column--two">
+        <div href="/en/our-work" class="mosaic__box">
+          <figure>
+            <img src="/images/cases/espn_thumb.jpg" alt="Project x">
+            <figcaption class="mosaic__box-caption mosaic__box-caption--small">
+              <span class="project">web</span>
+              <span class="project-name">espn portal</span>
+              <a class="full-case" href="#">full case</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div href="/en/our-work" class="mosaic__box">
+          <figure>
+            <img src="/images/cases/early_thumb.jpg" alt="Project x">
+            <figcaption class="mosaic__box-caption mosaic__box-caption--small">
+              <span class="project">web</span>
+              <span class="project-name">EarlyShares</span>
+              <a class="full-case" href="#">full case</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div href="/en/our-work" class="mosaic__box">
+          <figure>
+            <img src="/images/cases/locaweb_thumb.jpg" alt="Project x">
+            <figcaption class="mosaic__box-caption mosaic__box-caption--small">
+              <span class="project">mobile</span>
+              <span class="project-name">Locaweb</span>
+              <a class="full-case" href="#">full case</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div href="/en/our-work" class="mosaic__box">
+          <figure>
+            <img src="/images/cases/canvas_thumb.jpg" alt="Project x">
+            <figcaption class="mosaic__box-caption mosaic__box-caption--small">
+              <span class="project">mobile</span>
+              <span class="project-name">Canvas</span>
+              <a class="full-case" href="#">full case</a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section-brands">
+  <div class="wrapper">
+      <h2 class="section-brands__title">Brands that love us</h2>
+      <ul class="section-brands__list">
+        {% for brand in site.data.brands %}
+          <li class="section-brands__list--item">
+            <img src="{{ brand.image }}" alt="{{ brand.name }}">
+          </li>
+        {% endfor %}
+        <li class="section-brands__list--item">
+          <img src="/images/brands-locaweb.svg" alt="Locaweb">
+        </li>
+        <li class="section-brands__list--item">
+          <img src="/images/brands-eduk.svg" alt="eduK">
+        </li>
+        <li class="section-brands__list--item">
+          <img src="/images/brands-uol.svg" alt="UOL">
+        </li>
+        <li class="section-brands__list--item">
+          <img src="/images/brands-monashees.png" alt="Monashees">
+        </li>
+        <li class="section-brands__list--item">
+          <img src="/images/brands-citrix.svg" alt="Citrix">
+        </li>
+      </ul>
+  </div>
+</section>
+
+<!-- <section id="how-we-do-it" class="section-how">
+
+  <div class="wrapper">
+
+    <div class="section-how__heading">
+
+      <h2 class="section-how__title title-line title-line--center">
+        How we do it
+      </h2>
+      <p class="section-how__subtitle">
+        We use Agile <ins>Methodology</ins> to develop digital products in the best and most flexible way, so you can <strong>quickly test and validade</strong> what you are getting, as we do it. The communication between team and client is <strong>continuous</strong> and <strong>straingforward</strong>, because our team is qualified to help, explain, and advise with excellence.
+      </p>
+
+    </div>
+
+    <div class="section-how__box">
+      <ul>
+        <li>
+          <a href="">
+            <div class="section-how__image rollover">
+              <div class="section-how__play">
+                <i class="icon icon-play"></i>
+              </div>
+              <img src="/images/how-we-do-1.png" data-video="/images/projects-video-background.gif" class="how-hover">
+            </div>
+            <span>Culture</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="section-how__image rollover">
+              <div class="section-how__play">
+                <i class="icon icon-play"></i>
+              </div>
+              <img src="/images/how-we-do-2.png" data-video="/images/projects-video-background.gif" class="how-hover">
+            </div>
+            <span>Environment</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <div class="section-how__image rollover">
+              <div class="section-how__play">
+                <i class="icon icon-play"></i>
+              </div>
+              <img src="/images/how-we-do-3.png" data-video="/images/projects-video-background.gif" class="how-hover">
+            </div>
+            <span>Mission</span>
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="btn btn--red">More about us</a>
+    </div>
+
+  </div>
+
+</section> -->
+
+<section class="section-waiting">
+  <div class="wrapper">
+    <div class="section-waiting__heading">
+      <h2 class="section-waiting__title">
+        What are you waiting for?
+      </h2>
+      <p class="section-waiting__subtitle">
+        Let's make something awesome together!
+      </p>
+      <a href="#" class="btn btn--white">HIRE US</a>
+    </div>
+  </div>
+</section>
+
+<!-- <section id="our-team" class="section-team">
+
+  <div class="section-team__bg">
+    <div class="wrapper">
+      <div class="section-team__heading">
+        <h2 class="section-team__title title-line title-line--center">
+          Our Team
+        </h2>
+        <p class="section-team__subtitle">
+          We are everywhere!
+        </p>
+      </div>
+
+
+      <div class="section-team__columns column-middle">
+        <div class="section-team__box">
+          <figure>
+            <img src="/images/mosaic1.png" alt="">
+          </figure>
+        </div>
+        <div class="section-team__box">
+          <div >
+          <h3 class="section-team__box__title">HE:blog</h3>
+            <ul class="bxblog">
+              <li>
+                <p class="section-team__box__description">
+                  RubyConf e TDC Porto Alegre 2015: <br />
+                Confira como foi palestrar nesses dois grandes eventos que rolar… <a href="">VER ARTIGO</a>
+                </p>
+              </li>
+              <li>
+                <p class="section-team__box__description">
+                  partiu rio agora é a gente: <br />
+                Confira como foi palestrar nesses dois grandes eventos que rolar… <a href="">VER ARTIGO</a>
+                </p>
+              </li>
+              <li>
+                <p class="section-team__box__description">
+                  Vamos que vamos nessa parada : <br />
+                Confira como foi palestrar nesses dois grandes eventos que rolar… <a href="">VER ARTIGO</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-team__columns column-small">
+        <div class="section-team__box">
+          <figure>
+            <img src="/images/mosaic2.png" alt="">
+          </figure>
+        </div>
+
+
+        <div class="section-team__box">
+          <figure>
+            <img src="/images/mosaic3.png" alt="">
+          </figure>
+        </div>
+      </div>
+
+      <div class="section-team__columns column-big">
+        <div class="section-team__box">
+          <h3 class="section-team__box__title">@HElabs</h3>
+          <ul class="bxtwitter">
+            <li>
+              <p class="section-team__box__description">
+                RubyConf e TDC Porto Alegre 2015: <br />
+                Confira como foi palestrar nesses dois grandes eventos que rolar… <a href="">VER ARTIGO</a>
+              </p>
+            </li>
+            <li>
+              <p class="section-team__box__description">
+                RubyConf e TDC Porto Alegre 2015: <br />
+                Confira como foi palestrar nesses dois grandes eventos que rolar… <a href="">VER ARTIGO</a>
+              </p>
+            </li>
+            <li>
+              <p class="section-team__box__description">
+                RubyConf e TDC Porto Alegre 2015: <br />
+                Confira como foi palestrar nesses dois grandes eventos que rolar… <a href="">VER ARTIGO</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section-team__box">
+          <figure>
+            <img src="/images/mosaic4.png" alt="">
+          </figure>
+        </div>
+      </div>
+
+      <div class="section-team__columns column-extra">
+        <div class="section-team__box">
+          <figure>
+            <img src="/images/mosaic5.png" alt="">
+          </figure>
+        </div>
+
+        <div class="section-team__box">
+          <figure>
+            <img src="/images/mosaic7.png" alt="">
+          </figure>
+        </div>
+
+        <div class="section-team__box">
+          <figure>
+            <img src="/images/mosaic6.png" alt="">
+          </figure>
+        </div>
+
+        <div class="section-team__box meet-team">
+          <a href="#" class="btn-team">Meet our team</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section> -->

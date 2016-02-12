@@ -1,0 +1,61 @@
+// *************************************
+//
+// home/section-brands
+//
+// *************************************
+
+.section-brands {
+  @include pad(rem(60) 0);
+  @include span-columns(12);
+  background: $greyish-brown;
+
+  @include media($screen-tiny) {
+    @include pad(rem(20) 0);
+  }
+
+  &__title {
+    color: $light-primary;
+    font-family: $heading-font-family;
+    font-size: rem(30);
+    margin-bottom: rem(50);
+    text-align: center;
+    width: 100%;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  &__list {
+    @include fill-parent;
+    margin: rem(60) 0 0;
+    padding: 0;
+
+    &--item {
+      @include span-columns(2, inline-block);
+      height: rem(100);
+      line-height: rem(85);
+      text-align: center;
+
+      @include media($screen-small) {
+        @include span-columns(4 of 12);
+        margin: 0;
+        &:nth-last-of-type(-n+3) {
+            display: none;
+        }
+      }
+
+    }
+
+    img {
+      max-height: rem(55);
+      max-width: 100%;
+      opacity: .5;
+
+      @include media($screen-small) {
+        max-width: 70%;
+      }
+    }
+
+  }
+}

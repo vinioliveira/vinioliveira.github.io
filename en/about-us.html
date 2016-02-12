@@ -1,0 +1,151 @@
+---
+layout: site-2016
+title: Novo Site 2016
+description: HE:labs
+body_id: "about-us"
+pt: /sobre-nos
+---
+
+<section class="about-us">
+  <div class="about-us__bg">
+    <div class="wrapper">
+      <div class="about-us__heading">
+        <h2 class="about-us__title">
+          <span class="about-us__title--red">OUR MISSION</span>
+        </h2>
+
+        <p>
+          Transform the way in which software development is seen by producing perfectly good working systems that make people happy.
+        </p>
+
+      </div>
+      <div class="about-us__heading">
+        <h2 class="about-us__title">
+          <span class="about-us__title--red">OUR VISION</span>
+        </h2>
+
+        <p>
+          A world where software helps people have simpler lives.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="about-us__background parallax"></div>
+</section>
+
+<section class="mission-grid">
+  <div class="wrapper">
+    <div class="mission mission-grid__block mission-grid__block--wide">
+      <h2 class="mission__title title-line title-line--center">
+        We love what we do!
+      </h2>
+      <p class="mission__subtitle">
+        Our mission is to <strong>transform</strong> the way in which software development is seen by <strong>producing perfectly</strong> good
+        working systems that make <span class="mission__subtitle--highlight">people happy</span>.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/freedom.svg" alt="">
+      </figure>
+      <h3 class="mission-grid__small-title">Freedom</h3>
+      <p class="mission-grid__description">
+        We believe that everyone at HE:labs is free to express themselves, disagree, suggest or change at any particular moment. We encourage discussions between every member of the team to seek the best solution for your project.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/transparency.svg" alt="">
+      </figure>
+      <h3 class="mission-grid__small-title">Transparency</h3>
+      <p class="mission-grid__description">
+        Our relations are guided by transparency while always respecting everyone’s privacy. We do not worry about hiding our numbers and are transparent about the company’s real situation every moment.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/autonomy.svg" alt="">
+      </figure>
+      <h3 class="mission-grid__small-title">Autonomy</h3>
+      <p class="mission-grid__description">
+        Our members are free to choose how to deal with the projects. We don't have dressing codes and everyone can work remotely. Our teams are self-organized and the communication between them and the client is direct, without middlemen.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/continual-improvement.svg" alt="">
+      </figure>
+      <h3 class="mission-grid__small-title">Continual Improvement</h3>
+      <p class="mission-grid__description">
+        We are aware that work needs to be done in an iterative  and incremental fashion to achieve the best results. We use our retrospective meetings to identify areas of improvement, so we are able to act fast and develop outstanding products.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/colaboration.svg" alt="">
+      </figure>
+      <h3 class="mission-grid__small-title">Colaboration</h3>
+      <p class="mission-grid__description">
+        Collaboration is essential for effective teamwork. Our collaborative spirit goes beyond HE:labs' boundaries, since we are always involved in the development community by sponsoring events, giving talks and creating open source tools.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/happiness.svg" alt="">
+      </figure>
+      <h3 class="mission-grid__small-title">Happiness</h3>
+      <p class="mission-grid__description">
+        We love what we do and our main goal is to make our clients and their users happy by delivering the most functional and well designed product. We always ask our clients if, beyond satisfied, they are happy with our work. To us, happiness is the most relevant aspect of a job well done.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="highlight-grid">
+<!--   <div class="highlight-grid__block">
+    <h2 class="highlight-grid__title">
+      Are you ready to shine?
+    </h2>
+    <p class="highlight-grid__subtitle">
+      We’re looking for awesome people
+    </p>
+    <button class="he-form__button he-form__button--large he-form__button--light">
+      Open positions
+    </button>
+  </div> -->
+  <div class="highlight-grid__block highlight-grid__block--light">
+    <h2 class="highlight-grid__title highlight-grid__title--dark">
+      What are you waiting for?
+    </h2>
+    <p class="highlight-grid__subtitle">
+      Let’s make something awesome together!
+    </p>
+    <a href="/en/hire-us" class="btn btn--white ">HIRE US</a>
+  </div>
+</section>
+
+<script type="text/javascript">
+  (function(){
+    'use strict';
+    $(function(){
+      var stepsMenu = $("#steps-menu");
+      stepsMenu.on('click', 'a', function(event) {
+          // Replaces main content
+          event.preventDefault();
+          var $this = $(this);
+          var step = $this.attr("href");
+          $this.parent()
+            .addClass("is-active")
+            .siblings().removeClass("is-active");
+          $(".step-content").not(step).css("display", "none");
+          $(step)
+            .fadeOut()
+            .fadeIn();
+
+          // Rotates the wheel
+          stepsMenu
+            .removeClass()
+            .addClass("step-" + step.charAt(6));
+      });
+    });
+  })();
+</script>

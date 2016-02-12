@@ -1,0 +1,285 @@
+// *************************************
+//
+// case-details/layout
+//
+// *************************************
+
+#case-details {
+  background: $light-background;
+
+  .main-header {
+    background: rgba(55, 50, 50, 0.9);
+  }
+
+  .wrapper {
+    @include outer-container();
+    padding-top: rem(75);
+    padding-bottom: rem(75);
+
+    @include media($screen-small) {
+      padding: 0 $base-spacing;
+    }
+  }
+}
+
+.case-detail {
+  @include span-columns(12);
+  min-height: rem(500);
+  overflow: hidden;
+  position: relative;
+
+
+  &__title-line-separator {
+    width: 100%;
+
+    &::after {
+      @extend %after-title-line;
+      height: 12px;
+      left: calc(50% - 35px);
+      width: 70px;
+    }
+  }
+
+  &__bg {
+    background: no-repeat $light-background center center;
+    background-size: cover;
+    left: 0;
+    min-height: 500px;
+    top: 0;
+    width: 100%;
+    position: absolute;
+  }
+
+  .wrapper {
+    margin-top: 130px;
+  }
+
+  &__heading {
+    margin: 0 auto;
+    text-align: center;
+
+    @include media($screen-medium) {
+      @include span-columns(12);
+    }
+
+    img{
+      max-width: 257px;
+    }
+
+    p {
+      color: $light-primary;
+      font-size: 22px;
+      margin-top: 30px;
+    }
+
+    &--not-top-spacing {
+      margin-top: 0;
+    }
+
+    .btn-hire-us-about {
+      margin-top: 50px;
+    }
+  }
+
+  &__box {
+    @include span-columns(6 of 12);
+    min-height: rem(350);
+    position: relative;
+    @include media($screen-small) {
+      @include span-columns(12);
+      min-height: rem(200);
+    }
+
+    &--right {
+      float: right;
+      @include media($screen-small) {
+      }
+    }
+
+    &--image {
+      max-width: rem(591);
+      @include media($screen-small) {
+        //display: none;
+        text-align: center;
+      }
+
+      img {
+        @include media($screen-small) {
+          max-width: 70%;
+          padding: $base-spacing;
+        }
+      }
+    }
+
+  }
+
+  &__description {
+    color: $pale-grey;
+    font-family: $base-font-family;
+    font-size: rem(20);
+    text-align: left;
+    width: 100%;
+
+    @include media($screen-only-desktop) {
+      @include center;
+    }
+
+    @include media($screen-small) {
+      @include pad($base-spacing);
+      font-size: rem(12);
+      line-height: rem(14);
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+.case-detail-about {
+  float: left;
+  display: block;
+  width: 100%;
+  @include pad(rem(20) 0);
+
+  p {
+    color: $greyish-brown;
+    font-size: rem(20);
+    line-height: rem(35);
+
+    @include media($screen-small) {
+      @include pad(0 $base-spacing);
+      font-size: rem(15);
+      line-height: rem(22);
+    }
+  }
+
+  strong,
+  i {
+    color: $light-red;
+  }
+}
+
+.case-detail-testimonial {
+  background: $black;
+  color:$pale-grey;
+  float: left;
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 100%;
+
+  .wrapper {
+    padding: rem(90) rem(110) rem(30) !important;
+
+    @include media($screen-medium) {
+     padding: rem(90) $base-spacing !important;
+    }
+
+  }
+
+  p {
+    font-size: rem(20);
+    line-height: rem(50);
+    font-weight: 300;
+
+    @include media($screen-small) {
+      font-size: rem(15);
+      line-height: rem(22);
+    }
+
+    &:after {
+      color: $light-primary;
+      content: open-quote;
+      font-size: rem(122);
+      opacity: .45;
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 70px;
+    }
+  }
+
+  span {
+    clear: both;
+    color: $pale-grey;
+    float: right;
+    font-weight: 500;
+    opacity: .45;
+    text-align: left;
+  }
+}
+
+.case-detail-projects {
+  clear: both;
+  display: block;
+  height: auto;
+  margin-top: 70px;
+  width: 100%;
+
+  .wrapper {
+    border-top: 1px solid rgba($black, .2);
+  }
+
+  &__title {
+    color: $light-red;
+    float: left;
+    font-family: $heading-font-family;
+    font-size: rem(36);
+    margin-top: 110px;
+    width:30%;
+
+    @include media($screen-medium) {
+      @include fill-parent;
+      text-align: center;
+    }
+
+    @include media($screen-small) {
+      @include fill-parent;
+      font-size: rem(18);
+      margin-top: 20px;
+      text-align: center;
+    }
+
+  }
+
+  &__others {
+    float: right;
+
+    @include media($screen-medium) {
+      @include fill-parent;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 20px;
+
+      @include media($screen-medium) {
+        float: left;
+        margin: 0;
+        text-align: center;
+        width: 33%;
+      }
+
+      img {
+        @include media($screen-medium) {
+          width: 80%;
+        }
+      }
+
+      a {
+        color: $black;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top: 15px;
+
+        @include media($screen-medium) {
+          font-size: 11px;
+          margin-top: 10px;
+        }
+
+      }
+    }
+  }
+}

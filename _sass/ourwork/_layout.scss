@@ -1,0 +1,159 @@
+// *************************************
+//
+// ourwork/layout
+//
+// *************************************
+.ourwork {
+  @include span-columns(12);
+  min-height: rem(900);
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    color: $light-red;
+    display: inline-block;
+    font-family: $heading-font-family;
+    font-size: rem(48);
+    margin-top: rem(120);
+    text-align: center;
+    width: 100%;
+
+    @include media($screen-small) {
+      display: none;
+    }
+  }
+
+  &__background {
+    background: url('/images/background-portfolio.jpg') no-repeat $black center center;
+    background-size: cover;
+    height: 110%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+}
+
+// Portfolio Navigation
+.ourwork-nav {
+  @include pad(rem(40) 0);
+  margin: 0 auto rem(30);
+  text-align: center;
+
+  @include media($screen-small) {
+    margin-top: rem(100);
+  }
+
+  &__item {
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(26);
+    font-weight: 700;
+
+    @include media($screen-small) {
+      font-size: rem(20);
+      text-transform: uppercase;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+
+    a,
+    a:active,
+    a:focus {
+      color: $light-primary;
+      cursor: pointer;
+      padding: 0 rem(40);
+
+      @include media($screen-small) {
+        padding: 0 rem(10);
+      }
+
+    }
+
+    &:hover {
+      a {
+        color: $light-red;
+      }
+    }
+
+    &::after {
+      color: $light-primary;
+      content: '•';
+      display: block;
+      float: left;
+
+      @include media($screen-small) {
+        content: '/';
+      }
+    }
+
+  }
+
+  &__item:first-child {
+    &::after {
+      content: '';
+    }
+  }
+
+}
+
+// Portfolio List
+.ourwork-list {
+  @include span-columns(12);
+  max-height: rem(750);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  @include media($screen-medium) {
+    max-height: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+
+// Portfolio Count
+.ourwork-counter {
+  @include pad(rem(80) 0);
+  @include span-columns(12);
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  @include media($screen-small) {
+    display: none;
+  }
+
+  &__box {
+    @include span-columns(3 of 12);
+    font-family: $base-font-family;
+    text-align: center;
+  }
+
+  &__number {
+    color: $light-red;
+    display: block;
+    font-size: rem(90);
+    font-weight: 200;
+    width: 100%;
+  }
+
+  &__name {
+    color: $white-smoke;
+    display: block;
+    font-size: rem(20);
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+}
+

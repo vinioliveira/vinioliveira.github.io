@@ -1,0 +1,148 @@
+---
+layout: site-2016-pt
+title: Novo Site 2016
+description: HE:labs
+body_id: "about-us"
+en: /en/about-us
+---
+
+<section class="about-us">
+  <div class="about-us__bg">
+    <div class="wrapper">
+      <div class="about-us__heading">
+        <h2 class="about-us__title">
+          <span class="about-us__title--red">Missão</span>
+        </h2>
+
+        <p>
+          Transformar a visão do mundo sobre desenvolvimento de software, trazendo mais felicidade às pessoas com sistemas que funcionem perfeitamente bem.
+        </p>
+
+      </div>
+      <div class="about-us__heading">
+        <h2 class="about-us__title">
+          <span class="about-us__title--red">Visão</span>
+        </h2>
+
+        <p>
+          Um mundo em que o software ajude as pessoas a terem uma vida mais simples.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="about-us__background parallax"></div>
+</section>
+
+
+<section class="mission-grid">
+  <div class="wrapper">
+    <div class="mission mission-grid__block mission-grid__block--wide">
+      <h2 class="mission__title title-line title-line--center">
+        Nossos Valores
+      </h2>
+      <p class="mission__subtitle"></p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/freedom.svg" alt="" onerror="this.onerror=null; this.src='/images/values_freedom.png'">
+      </figure>
+      <h3 class="mission-grid__small-title">Liberdade</h3>
+      <p class="mission-grid__description">
+        Todas as pessoas são seres livres e assim devem permanecer em suas relações profissionais. Acreditamos que todos que trabalham conosco devem se sentir livres para se expressar, discordar, sugerir e mudar a qualquer momento. E sempre lembramos que liberdade vem acompanhada de responsabilidade.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/transparency.svg" alt="" onerror="this.onerror=null; this.src='/images/values_transparency.png'">
+      </figure>
+      <h3 class="mission-grid__small-title">Transparência</h3>
+      <p class="mission-grid__description">
+        Nossas relações são pautadas em transparência, respeitando a privacidade de cada um. Não temos preocupação de esconder nossos números e transparecemos a real situação da empresa a todo momento.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/autonomy.svg" alt="" onerror="this.onerror=null; this.src='/images/values_autonomy.png'">
+      </figure>
+      <h3 class="mission-grid__small-title">Autonomia</h3>
+      <p class="mission-grid__description">
+        Quem trabalha conosco tem autonomia para decidir como fazer suas atividades, seja em questões técnicas ou sociais. Tem gente que vem trabalhar de bermuda, e tem gente que nem vem, permanece trabalhando de casa (remoto).
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/continual-improvement.svg" alt="" onerror="this.onerror=null; this.src='/images/values_improvement.png'">
+      </figure>
+      <h3 class="mission-grid__small-title">Melhoria contínua</h3>
+      <p class="mission-grid__description">
+        Entendemos que nosso trabalho precisa ser feito de forma iterativa e incremental, pois assim chegaremos em um ótimo resultado. Realizamos reuniões de retrospectiva sobre absolutamente tudo que fazemos, discutindo os pontos positivos e a melhorar dentro da empresa.
+      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/colaboration.svg" alt="" onerror="this.onerror=null; this.src='/images/values_colaboration.png'">
+      </figure>
+      <h3 class="mission-grid__small-title">Colaboração</h3>
+      <p class="mission-grid__description">
+        Colaboração é quesito essencial para qualquer time. Nós sabemos disto e é fácil para nós mantermos relações de cooperação com todos. Nosso espírito de colaboração vai além das fronteiras da empresa e investimos esforços para ajudarmos em projetos externos, sejam eles eventos, sistemas ou ideias para mudar o mundo.      </p>
+    </div>
+    <div class="mission-grid__block">
+      <figure class="mission-grid__image">
+        <img src="/images/happiness.svg" alt="" onerror="this.onerror=null; this.src='/images/values_happiness.png'">
+      </figure>
+      <h3 class="mission-grid__small-title">Felicidade</h3>
+      <p class="mission-grid__description">
+        Somos apaixonados pelo que fazemos e este sentimento é motivador para construir diferença nas nossas vidas, de nossos clientes e parceiros. Nós sempre perguntamos para nossos clientes se eles ficaram não apenas satisfeitos, mas também felizes. Isto é o mais relevante e ficamos extremamente realizados quando finalizamos um trabalho que proporcionou felicidade a todos os envolvidos.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="highlight-grid">
+<!--   <div class="highlight-grid__block">
+    <h2 class="highlight-grid__title">
+      Are you ready to shine?
+    </h2>
+    <p class="highlight-grid__subtitle">
+      We’re looking for awesome people
+    </p>
+    <button class="he-form__button he-form__button--large he-form__button--light">
+      Open positions
+    </button>
+  </div> -->
+  <div class="highlight-grid__block highlight-grid__block--light">
+    <h2 class="highlight-grid__title highlight-grid__title--dark">
+      O que você está esperando?
+    </h2>
+    <p class="highlight-grid__subtitle">
+      Vamos produzir algo espetacular juntos!
+    </p>
+    <a href="/contrate" class="btn btn--white ">Contrate</a>
+  </div>
+</section>
+
+<script type="text/javascript">
+  (function(){
+    'use strict';
+    $(function(){
+      var stepsMenu = $("#steps-menu");
+      stepsMenu.on('click', 'a', function(event) {
+          // Replaces main content
+          event.preventDefault();
+          var $this = $(this);
+          var step = $this.attr("href");
+          $this.parent()
+            .addClass("is-active")
+            .siblings().removeClass("is-active");
+          $(".step-content").not(step).css("display", "none");
+          $(step)
+            .fadeOut()
+            .fadeIn();
+
+          // Rotates the wheel
+          stepsMenu
+            .removeClass()
+            .addClass("step-" + step.charAt(6));
+      });
+    });
+  })();
+</script>

@@ -1,16 +1,12 @@
 ---
+# Portal Styles
 ---
 
-@charset "utf-8";
-
-
-// Site 2016
-
 // ----- Vendors ----- //
-@import 'bourbon/bourbon';
-@import 'neat/neat-helpers';
+@import 'bourbon';
+@import 'neat-helpers';
 @import 'base/grid-settings';
-@import 'neat/neat';
+@import 'neat';
 
 // ----- Base ----- //
 @import 'base/base';

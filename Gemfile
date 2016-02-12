@@ -7,4 +7,5 @@ gem 'foreman',       '0.78.0'
 gem 'i18n',          '0.7.0'
 gem 'colored',       '1.2'
 gem 'rake',          '10.5.0'
-
+gem 'bourbon'
+gem 'neat'

@@ -2,13 +2,13 @@
 layout: novo-case
 category: case
 body_id: case-details
-en: en/case/early-shares
+en: en/cases/early-shares
 permalink: '/portfolio/early-shares/'
 
 name: Early Shares
 
 background: /images/cases/earlyshares/topo-early.jpg
-logo: /images/cases/earlyshares/logo-early@2x.png
+logo: /images/cases/earlyshares/logo-early.svg
 type: web
 
 title_text: Desenvolvimento do serviço de financiamento coletivo.
@@ -16,7 +16,7 @@ subtitle_text: Design & Desenvolvimento
 
 about_img1: /images/cases/earlyshares/mockup-desktop-early-01@2x.png
 about_text1:
-- Early Shares é um serviço de financiamento coletivo pela internet que conecta empresários que procuram vender participações do seu negócio com pessoas que querem se transformar em investidor.
+- <strong>Early Shares</strong> é um serviço de financiamento coletivo pela internet que conecta empresários que procuram vender participações do seu negócio com pessoas que querem se transformar em investidor.
 -
 - O projeto está no ar e sendo usado por diversos usuários.
 

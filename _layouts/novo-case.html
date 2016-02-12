@@ -9,7 +9,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
     <div class="wrapper">
       <div class="case-detail__heading">
         <h2 class="case-detail__title">
-          <img class="case-detail__brand" title="EarlyShares" alt="EarlyShares" src="{{ page.logo }}"/>
+          <img class="case-detail__brand" title="EarlyShares" alt="{{ page.name }}" src="{{ page.logo }}"/>
         </h2>
 
         <p>
@@ -86,6 +86,22 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
     {% endif %}
 
   </div>
+
+  {% if page.extra_text || page.extra_img %}
+  <div class="case-detail-helabs">
+
+    <div class="case-detail-helabs__text">
+      {{ page.extra_text }}
+    </div>
+
+    <figure>
+      <img src="{{ page.extra_img }}" alt="{{ page.name }}">
+    </figure>
+
+  </div>
+  {% endif %}
+
+
 </section>
 {% endif %}
 

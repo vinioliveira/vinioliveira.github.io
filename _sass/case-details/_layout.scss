@@ -5,7 +5,7 @@
 // *************************************
 
 #case-details {
-  background: $light-background;
+  background: $pale-grey;
 
   .main-header {
     background: rgba(55, 50, 50, 0.9);
@@ -43,6 +43,7 @@
   &__bg {
     background: no-repeat $light-background center center;
     background-size: cover;
+    //@include background-cases;
     left: 0;
     min-height: 500px;
     top: 0;
@@ -63,7 +64,7 @@
     }
 
     img{
-      max-width: 257px;
+      max-width: 300px;
     }
 
     p {
@@ -280,6 +281,37 @@
         }
 
       }
+    }
+  }
+}
+
+
+.case-detail-helabs {
+  @include outer-container();
+  max-width: rem(1000);
+  margin: 0 auto rem(40);
+  text-align: center;
+
+  img {
+    margin-top: rem(40);
+
+    @include media($screen-small) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: rem(20);
+    line-height: 36px;
+    padding: $base-spacing;
+
+    @include media($screen-small) {
+      font-size: rem(15);
+      line-height: rem(22);
+    }
+
+    strong {
+      color: #000;
     }
   }
 }

@@ -2,7 +2,7 @@
 layout: novo-case
 category: case
 body_id: case-details
-en: en/cases/early-shares
+en: /en/case/early-shares
 permalink: '/portfolio/early-shares/'
 
 name: Early Shares
@@ -30,4 +30,21 @@ about_img2: /images/cases/earlyshares/mockup-desktop-early-02@2x.png
 about_text2 :
 - Trabalhamos nesse projeto pelo período de um ano, teve seu desenvolvimento ininterrupto por esse período, e hoje está concluído. O projeto foi repassado para equipe interna do cliente. É um bom exemplo de alguém que lançou sua ideia com a gente, cresceu até determinado ponto e depois optou por manter o projeto nas mãos dos seus próprios profissionais. Sucesso!
 
+other_projetcs:
+- slug: canvas
+  name: Canvas
+  image: /images/cases/canvas_thumb.jpg
+  url: /portfolio/pmcanvas
+- slug: early
+  name: Atende Simples
+  image: /images/cases/atendesimples_thumb.jpg
+  url: /portfolio/atendesimples
+- slug: locaweb
+  name: Locaweb
+  image: /images/cases/locaweb_thumb.jpg
+  url: /portfolio/locaweb
+- slug: espn
+  name: ESPN
+  image: /images/cases/espn_thumb.jpg
+  url: /portfolio/espn
 ---

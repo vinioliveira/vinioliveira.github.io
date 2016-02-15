@@ -20,8 +20,9 @@
   }
 
   &__column {
+    float: left;
+    max-height: 715px;
     width: 100%;
-    max-height: 720px;
 
     &--one {
       float: left;

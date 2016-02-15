@@ -2,7 +2,7 @@
 layout: novo-case
 category: case
 body_id: case-details
-en: en/cases/atendesimples
+en: /en/case/atendesimples
 permalink: '/portfolio/atendesimples/'
 
 name: Atende Simples
@@ -41,5 +41,22 @@ extra_text:
 - Luz Consultoria
 extra_img: /images/cases/atendesimples/atendesimples-and-helabs.png
 
+other_projetcs:
+- slug: canvas
+  name: Canvas
+  image: /images/cases/canvas_thumb.jpg
+  url: /portfolio/pmcanvas
+- slug: early
+  name: Early Shares
+  image: /images/cases/early_thumb.jpg
+  url: /portfolio/early-shares
+- slug: locaweb
+  name: Locaweb
+  image: /images/cases/locaweb_thumb.jpg
+  url: /portfolio/locaweb
+- slug: espn
+  name: ESPN
+  image: /images/cases/espn_thumb.jpg
+  url: /portfolio/espn
 ---
 

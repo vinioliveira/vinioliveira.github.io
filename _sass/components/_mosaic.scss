@@ -126,7 +126,7 @@
 
   }
 
-  &__box:hover > figure > img {
+  &__box:hover > figure > a > img {
     @include filter(grayscale(0));
   }
 

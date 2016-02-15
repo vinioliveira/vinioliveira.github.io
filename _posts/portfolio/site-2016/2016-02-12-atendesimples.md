@@ -1,9 +1,9 @@
 ---
-layout: novo-case
+layout: case-en
 category: case
 body_id: case-details
-pt: /portfolio/atendesimples/
-permalink: 'en/case/atendesimples/'
+pt: /portfolio/atendesimples
+permalink: '/en/case/atendesimples/'
 
 name: Atende Simples
 
@@ -11,35 +11,52 @@ background: /images/cases/atendesimples/topo-atendesimples.jpg
 logo: /images/cases/atendesimples/logo-atendesimples.png
 type: web
 
-title_text: Desenvolvimento do aplicativo móvel
-subtitle_text: Design & Desenvolvimento
+title_text: System development
+subtitle_text: Design & Development
 
 about_img1: /images/cases/atendesimples/mockup-desktop_atendesimples@2x.png
 about_text1:
-- <strong>Atende Simples</strong> está sendo usado por empresas de diferentes portes e de todas as áreas de atuação. Possui recursos sofisticados como gravação de chamadas, controle de horário de funcionamento do atendimento, bloqueio de chamadas, relatórios... tudo com muita simplicidade!
+- The most important thing for <strong>Atende Simples</strong> is the user experience. Then the price. The value has to be fair and feasible for the targeted customer.
 - <br>
-- O projeto possui uma operação muito complexa, que envolve diversas tecnologias, empresas e sistemas. A plataforma de voz ficou sob a responsabilidade da VoxAge, em São Paulo.
+- <strong>Atende Simples</strong> has a very complex operation, involving lots of technologies, companies and systems. The voice platform was the responsibility of VoxAge, in São Paulo.
 
 customer_testimony:
-- Atende Simples foi lançado oficialmente e todas as metas vem sendo cumpridas. Novas oportunidades foram identificadas para ajudar os clientes melhorar ainda mais seus negócios e, junto de ajustes e outras melhorias são semanalmente lançadas.
+- Atende Simples was officially launched and all goals are being met. New opportunities have been identified to help our customers improve their business, and adjustments are released weekly.
 
 customer_name: Andre
-customer_role: Diretor de Produto, Atende Simples
+customer_role: Product Director, Atende Simples
 
 about_img2: /images/cases/atendesimples/mockup-desktop_atendesimples2@2x.png
 about_text2 :
-- O sistema desde seu inicio foi feito com iterações de 1 semana. Isso é a HE:labs funcionando.
+- The system, from the beginning, has been created with 1 week iterations. This is the HE:labs way.
 - <br>
-- São pessoas apaixonadas, revolucionando a maneira de fazer software. É a entrega contínua, trazendo vantagem competitiva e inovação de ponta.
+- Passionate people, revolutionizing the way of doing software. It is continuous delivery, bringing competitive advantage and innovation.
 - <br>
-- Logo na primeira semana já foi possível efetuar o cadastro de atendentes. Toda quinta-feira existia algo novo para ser testado e validado. O projeto está online!
+- Already in the first week it was possible to complete the registration of attendants. Every Thursday there was something new to be tested and validated.
 
 extra_text:
-- "O Atende Simples é a ferramenta que sempre procuramos para nosso atendimento. Com ele, conseguimos passar uma imagem mais profissional para o mercado, sem perder flexibilidade na nossa gestão e por um custo excelente!"
+- "Atende Simples is the tool we always have been looking for. With it, we can pass a more professional image to the market without losing flexibility in our management incoming customers and for a excellent price!"
 - <br> <br>
 - <strong>Leandro Borges</strong> <br>
 - Luz Consultoria
 extra_img: /images/cases/atendesimples/atendesimples-and-helabs.png
 
+other_projetcs:
+- slug: canvas
+  name: Canvas
+  image: /images/cases/canvas_thumb.jpg
+  url: /en/case/pmcanvas
+- slug: early
+  name: Early Shares
+  image: /images/cases/early_thumb.jpg
+  url: /en/case/early-shares
+- slug: locaweb
+  name: Locaweb
+  image: /images/cases/locaweb_thumb.jpg
+  url: /en/case/locaweb
+- slug: espn
+  name: ESPN
+  image: /images/cases/espn_thumb.jpg
+  url: /en/case/espn
 ---
 

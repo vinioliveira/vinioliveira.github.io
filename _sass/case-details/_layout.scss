@@ -226,7 +226,7 @@
     float: left;
     font-family: $heading-font-family;
     font-size: rem(36);
-    margin-top: 110px;
+    margin-top: 85px;
     width:30%;
 
     @include media($screen-medium) {
@@ -262,11 +262,19 @@
         width: 33%;
       }
 
-      img {
-        @include media($screen-medium) {
-          width: 80%;
-        }
+      &:hover a > figure > img {
+        @include filter(grayscale(0));
       }
+
+      img {
+        @include filter(grayscale(100%));
+        @include size(145px 145px);
+        border-radius: 50%;
+        opacity: .9;
+        transition: .2s;
+      }
+
+
 
       a {
         color: $black;
@@ -279,7 +287,6 @@
           font-size: 11px;
           margin-top: 10px;
         }
-
       }
     }
   }

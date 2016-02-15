@@ -116,32 +116,19 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 
     <div class="case-detail-projects__others">
       <ul>
-        <li>
-          <a href="">
-            <figure>
-              <img src="/images/cases/temporeal.png" alt="">
-            </figure>
-          </a>
-          <a href="">ESPN Tempo Real</a>
-        </li>
 
-        <li>
-          <a href="">
-            <figure>
-              <img src="/images/cases/fantazy.png" alt="">
-            </figure>
-          </a>
-          <a href="">Fantazy</a>
-        </li>
+          {% for item in page.other_projetcs %}
+            <li>
+              <a href="{{item.url}}">
+                <figure>
+                  <img src="{{item.image}}" alt="{{item.name}}">
+                </figure>
+              </a>
+              <a href="{{item.url}}">{{item.name}}</a>
+            </li>
+          {% endfor %}
 
-        <li>
-          <a href="">
-            <figure>
-              <img src="/images/cases/early.png" alt="">
-            </figure>
-          </a>
-          <a href="">Earlyshares</a>
-        </li>
+
       </ul>
     </div>
   </div>

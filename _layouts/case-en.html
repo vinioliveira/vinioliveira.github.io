@@ -1,0 +1,174 @@
+---
+layout: site-2016
+title:  page.title_text
+description: HE:labs is a software development company in Brazil focused on web applications.
+---
+
+<section class="case-detail">
+  <div class="case-detail__bg" style="background-image: url({{ page.background }})">
+    <div class="wrapper">
+      <div class="case-detail__heading">
+        <h2 class="case-detail__title">
+          <img class="case-detail__brand" title="{{ page.name }}" alt="{{ page.name }}" src="{{ page.logo }}"/>
+        </h2>
+
+        <p>
+          {{ page.title_text }}
+
+        </p>
+
+        <p class="case-detail__type">
+        {% if page.subtitle_text %}
+         {{ page.subtitle_text }}
+        {% endif %}
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="case-detail-about">
+  <div class="wrapper">
+
+    <div class="case-detail__box case-detail__box--image">
+      <figure>
+        <img src="{{ page.about_img1 }}" alt="{{ page.title_text }}">
+      </figure>
+    </div>
+
+    <div class="case-detail__box">
+      <div class="case-detail__description">
+        {% for line in page.about_text1 %}
+            <p>{{ line }}</p>
+          {% endfor %}
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="case-detail-testimonial">
+  <div class="case-detail-testimonial__block">
+    <div class="wrapper">
+      <p class="case-detail-testimonial__description">
+        {% for line in page.customer_testimony %}
+          {{ line }}
+        {% endfor %}
+      </p>
+      <span class="case-detail-testimonial__author">{{ page.customer_name }} <br /><small>{{ page.customer_role }}</small></span>
+    </div>
+  </div>
+</section>
+
+{% if page.about_text2 || page.about_img2 %}
+<section class="case-detail-about">
+  <div class="wrapper">
+
+    {% if page.about_img2 %}
+    <div class="case-detail__box case-detail__box--image case-detail__box--right">
+      <figure>
+        <img src="{{ page.about_img2 }}" alt="{{ page.name }}">
+      </figure>
+    </div>
+    {% endif %}
+
+    {% if page.about_text2 %}
+    <div class="case-detail__box">
+
+      <div class="case-detail__description">
+        {% for line in page.about_text2 %}
+            <p>{{ line }}</p>
+          {% endfor %}
+      </div>
+
+    </div>
+    {% endif %}
+
+  </div>
+
+  {% if page.extra_text || page.extra_img %}
+  <div class="case-detail-helabs">
+
+    <div class="case-detail-helabs__text">
+      {{ page.extra_text }}
+    </div>
+
+    <figure>
+      <img src="{{ page.extra_img }}" alt="{{ page.name }}">
+    </figure>
+
+  </div>
+  {% endif %}
+
+
+</section>
+{% endif %}
+
+<section class="case-detail-projects">
+  <div class="wrapper">
+
+    <div class="case-detail-projects__title">
+      <h3>
+          Other Projects
+      </h3>
+    </div>
+
+    <div class="case-detail-projects__others">
+      <ul>
+
+          {% for item in page.other_projetcs %}
+            <li>
+              <a href="{{item.url}}">
+                <figure>
+                  <img src="{{item.image}}" alt="{{item.name}}">
+                </figure>
+              </a>
+              <a href="{{item.url}}">{{item.name}}</a>
+            </li>
+          {% endfor %}
+
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="highlight-grid">
+  <div class="highlight-grid__block highlight-grid__block--light">
+    <h2 class="highlight-grid__title highlight-grid__title--dark">
+      What are you waiting for?
+    </h2>
+    <p class="highlight-grid__subtitle">
+      Let's make something awesome together!
+    </p>
+    <a href="/en/hire-us" class="btn btn--white ">HIRE US</a>
+  </div>
+</section>
+
+<script type="text/javascript">
+  (function(){
+    'use strict';
+    $(function(){
+      var stepsMenu = $("#steps-menu");
+      stepsMenu.on('click', 'a', function(event) {
+          // Replaces main content
+          event.preventDefault();
+          var $this = $(this);
+          var step = $this.attr("href");
+          $this.parent()
+            .addClass("is-active")
+            .siblings().removeClass("is-active");
+          $(".step-content").not(step).css("display", "none");
+          $(step)
+            .fadeOut()
+            .fadeIn();
+
+          // Rotates the wheel
+          stepsMenu
+            .removeClass()
+            .addClass("step-" + step.charAt(6));
+      });
+    });
+  })();
+</script>

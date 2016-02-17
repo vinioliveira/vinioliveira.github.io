@@ -280,6 +280,32 @@ en: /en/
   </div>
 </section>
 
+<section id="team" class="section-team">
+
+  <div class="wrapper">
+    <div class="section-team__heading">
+      <h2 class="section-team__title title-line title-line--center">
+        Nosso Time
+      </h2>
+      <p class="section-team__subtitle">
+        Os melhores desenvolvedores e designers reunidos em times altamente produtivos!
+      </p>
+    </div>
+  </div>
+
+  <div class="section-team__grid">
+  {% for person in site.categories.time reversed %}
+    <a class="section-team__item" href="#" target="_blank" title="{{ person.full_name }}">
+      <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}" />
+      <div class="section-team__name">
+        <span >{{ person.full_name }}<br /> <small>{{ person.job_title }}</small></span>
+      </div>
+    </a>
+  {% endfor %}
+  </div>
+
+</section>
+
 <!-- <section id="our-team" class="section-team">
 
   <div class="section-team__bg">

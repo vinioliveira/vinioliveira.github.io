@@ -112,6 +112,33 @@ pt: /sobre-nos
       Open positions
     </button>
   </div> -->
+
+<section id="team" class="section-team">
+
+  <div class="wrapper">
+    <div class="section-team__heading">
+      <h2 class="section-team__title title-line title-line--center">
+        OUR TEAM
+      </h2>
+      <p class="section-team__subtitle">
+        THE BEST DEVELOPERS, DESIGNERS AND HACKERS GATHERED IN HIGHLY PRODUCTIVE TEAMS.
+      </p>
+    </div>
+  </div>
+
+  <div class="section-team__grid">
+  {% for person in site.categories.time reversed %}
+    <a class="section-team__item" href="#" target="_blank" title="{{ person.full_name }}">
+      <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}" />
+      <div class="section-team__name">
+        <span >{{ person.full_name }}<br /> <small>{{ person.job_title }}</small></span>
+      </div>
+    </a>
+  {% endfor %}
+  </div>
+
+</section>
+
   <div class="highlight-grid__block highlight-grid__block--light">
     <h2 class="highlight-grid__title highlight-grid__title--dark">
       What are you waiting for?

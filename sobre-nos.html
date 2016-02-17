@@ -122,37 +122,6 @@ en: /en/about-us
   {% endfor %}
   </div>
 
-<!--   <div class="section-team__team">
-    <ul>
-      {% for person in site.categories.time reversed %}
-        <li>
-          {% if person.permalink %}<a href="{{ person.permalink }}"  class="profile">{% endif %}
-          <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}">
-            <h3>{{ person.full_name }}</h3>
-            <p>{{ person.job_title }}</p>
-          {% if person.permalink %}</a>{% endif %}
-
-          <ul class="social-icons">
-            {% for sa in person.social_accounts %}
-              {% if sa.username %}
-                <li>
-                  <a class="{{ sa.provider }}" href="http://{{ sa.provider }}.com/{{ sa.username }}" rel="external" title="{{ sa.provider | capitalize }} do {{ person.full_name }}">{{ sa.provider | capitalize }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-      <li class="voce">
-        <a href="/pt/jobs/">
-          <img src="/images/time/time-voce.jpg" alt="Você">
-        </a>
-        <h3>Você</h3>
-        <p>Faça parte do time!</p>
-      </li>
-    </ul>
-  </div> -->
-
 </section>
 
 <section class="highlight-grid">

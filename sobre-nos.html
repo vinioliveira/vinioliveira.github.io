@@ -97,18 +97,65 @@ en: /en/about-us
     </div>
   </div>
 </section>
-<section class="highlight-grid">
-<!--   <div class="highlight-grid__block">
-    <h2 class="highlight-grid__title">
-      Are you ready to shine?
-    </h2>
-    <p class="highlight-grid__subtitle">
-      We’re looking for awesome people
-    </p>
-    <button class="he-form__button he-form__button--large he-form__button--light">
-      Open positions
-    </button>
+
+<section id="team" class="section-team">
+
+  <div class="wrapper">
+    <div class="section-team__heading">
+      <h2 class="section-team__title title-line title-line--center">
+        Nosso Time
+      </h2>
+      <p class="section-team__subtitle">
+        Os melhores desenvolvedores e designers reunidos em times altamente produtivos!
+      </p>
+    </div>
+  </div>
+
+  <div class="section-team__grid">
+  {% for person in site.categories.time reversed %}
+    <a class="section-team__item" href="#" target="_blank" title="{{ person.full_name }}">
+      <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}" />
+      <div class="section-team__name">
+        <span >{{ person.full_name }}<br /> <small>{{ person.job_title }}</small></span>
+      </div>
+    </a>
+  {% endfor %}
+  </div>
+
+<!--   <div class="section-team__team">
+    <ul>
+      {% for person in site.categories.time reversed %}
+        <li>
+          {% if person.permalink %}<a href="{{ person.permalink }}"  class="profile">{% endif %}
+          <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}">
+            <h3>{{ person.full_name }}</h3>
+            <p>{{ person.job_title }}</p>
+          {% if person.permalink %}</a>{% endif %}
+
+          <ul class="social-icons">
+            {% for sa in person.social_accounts %}
+              {% if sa.username %}
+                <li>
+                  <a class="{{ sa.provider }}" href="http://{{ sa.provider }}.com/{{ sa.username }}" rel="external" title="{{ sa.provider | capitalize }} do {{ person.full_name }}">{{ sa.provider | capitalize }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+      <li class="voce">
+        <a href="/pt/jobs/">
+          <img src="/images/time/time-voce.jpg" alt="Você">
+        </a>
+        <h3>Você</h3>
+        <p>Faça parte do time!</p>
+      </li>
+    </ul>
   </div> -->
+
+</section>
+
+<section class="highlight-grid">
   <div class="highlight-grid__block highlight-grid__block--light">
     <h2 class="highlight-grid__title highlight-grid__title--dark">
       O que você está esperando?

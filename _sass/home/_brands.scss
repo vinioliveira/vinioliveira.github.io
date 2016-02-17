@@ -26,8 +26,12 @@
     margin: 0;
   }
 
+  #brand-logos {
+    fill: $light-primary;
+  }
+
   &__list {
-    @include fill-parent;
+    // @include fill-parent;
     margin: rem(60) 0 0;
     padding: 0;
 
@@ -47,7 +51,8 @@
 
     }
 
-    img {
+    img,
+    svg {
       max-height: rem(55);
       max-width: 100%;
       opacity: .5;

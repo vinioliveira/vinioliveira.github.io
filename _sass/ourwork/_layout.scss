@@ -3,28 +3,65 @@
 // ourwork/layout
 //
 // *************************************
+#our-work {
+  background: $pale-grey;
+
+  .main-header {
+    background: rgba(55, 50, 50, 0.9);
+  }
+
+}
+
 .ourwork {
   @include span-columns(12);
-  min-height: rem(900);
+  background: url('/images/background-portfolio.jpg') no-repeat $black center -300px;
+  background-size: cover;
+  min-height: rem(200);
   overflow: hidden;
   position: relative;
 
-  &__title {
-    color: $light-red;
-    display: inline-block;
-    font-family: $heading-font-family;
-    font-size: rem(48);
-    margin-top: rem(120);
-    text-align: center;
-    width: 100%;
+  .wrapper {
+    @include outer-container();
+    padding-top: rem(140);
+    padding-bottom: rem(75);
 
     @include media($screen-small) {
-      display: none;
+      padding: 0 $base-spacing;
+    }
+  }
+
+  &__heading {
+    margin: 0 auto;
+    max-width: rem(870);
+    text-align: center;
+  }
+
+  &__title {
+    color: $pale-grey;
+    display: block;
+    font-size: rem(48);
+
+    @include media($screen-tiny) {
+      font-size: rem(26);
+    }
+  }
+
+  &__subtitle {
+    color: $pale-grey;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: rem(30) 0 0;
+
+    ins {
+      color: $light-red;
+      font-weight: 700;
     }
   }
 
   &__background {
-    background: url('/images/background-portfolio.jpg') no-repeat $black center center;
+    background: url('/images/background-portfolio.jpg') no-repeat $black top center;
     background-size: cover;
     height: 110%;
     left: 0;
@@ -36,124 +73,134 @@
 
 }
 
-// Portfolio Navigation
-.ourwork-nav {
-  @include pad(rem(40) 0);
-  margin: 0 auto rem(30);
-  text-align: center;
 
-  @include media($screen-small) {
-    margin-top: rem(100);
-  }
 
-  &__item {
-    display: inline-block;
-    font-family: $base-font-family;
-    font-size: rem(26);
-    font-weight: 700;
 
-    @include media($screen-small) {
-      font-size: rem(20);
-      text-transform: uppercase;
-    }
-
-    &:last-child {
-      margin: 0;
-    }
-
-    a,
-    a:active,
-    a:focus {
-      color: $light-primary;
-      cursor: pointer;
-      padding: 0 rem(40);
-
-      @include media($screen-small) {
-        padding: 0 rem(10);
-      }
-
-    }
-
-    &:hover {
-      a {
-        color: $light-red;
-      }
-    }
-
-    &::after {
-      color: $light-primary;
-      content: '•';
-      display: block;
-      float: left;
-
-      @include media($screen-small) {
-        content: '/';
-      }
-    }
-
-  }
-
-  &__item:first-child {
-    &::after {
-      content: '';
-    }
-  }
-
-}
-
-// Portfolio List
-.ourwork-list {
-  @include span-columns(12);
-  max-height: rem(750);
+.projects {
+  display: block;
+  max-width: 100%;
+  text-align: left;
+  width: 100%;
   overflow: hidden;
-  position: relative;
-  z-index: 1;
 
-  @include media($screen-medium) {
-    max-height: 100%;
+  figure,
+  img {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 300px;
+    vertical-align: bottom;
+    position: relative;
   }
 
-  img {
+  &__list {
+    display: inline-block;
+    margin: 0 auto;
     width: 100%;
   }
 
-}
+  &__box-caption {
+    @include position(absolute, 0 null auto null);
+    @include size(100% 100%);
+    @include transform(translateY(0%));
+    @include transition(transform .4s, opacity .1s .3s);
+    background: rgba(black, .95);
+    color: $light-primary;
+    opacity: 0;
+    padding: rem(20);
 
-// Portfolio Count
-.ourwork-counter {
-  @include pad(rem(80) 0);
-  @include span-columns(12);
-  display: block;
-  position: relative;
-  width: 100%;
-  z-index: 1;
+    &-links {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+    }
+  }
 
-  @include media($screen-small) {
-    display: none;
+  &__link-image {
+    margin: 0 50px 0 70px;
+  }
+
+  &__more {
+    margin: 0 auto;
   }
 
   &__box {
-    @include span-columns(3 of 12);
-    font-family: $base-font-family;
-    text-align: center;
+    background: $light;
+    display: inline-block;
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    max-height: 480px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+
+    &:nth-child(3n+3) {
+      margin-right:0;
+    }
+
+    &:nth-child(3n+1) {
+      margin-left: 100px;
+    }
+
+    img {
+      position: relative;
+      transition: .2s;
+    }
+
+    figure {
+      &:hover figcaption {
+        @include transform(translateY(0));
+        @include transition(transform .4s, opacity .1s);
+        opacity: 1;
+      }
+    }
+
+    @include media($screen-tiny) {
+      width: 100%;
+    }
+
   }
 
-  &__number {
+  &__infos {
+    padding: 10px;
+  }
+
+  &__project {
     color: $light-red;
-    display: block;
-    font-size: rem(90);
-    font-weight: 200;
+    display: inline-block;
+    font-size: rem(14);
     width: 100%;
   }
 
   &__name {
-    color: $white-smoke;
-    display: block;
-    font-size: rem(20);
-    font-weight: 400;
+    color: $black;
+    display: inline-block;
+    font-family: $heading-font-family;
+    font-size: rem(18);
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: left;
     width: 100%;
   }
 
-}
+  &__subtitle {
+    color: $greyish-brown;
+    font-size: 14px;
+    width: 100%;
+  }
 
+  &__link {
+    color: $greyish-brown;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: underline;
+
+    &:hover {
+      color: $light-red;
+    }
+  }
+}

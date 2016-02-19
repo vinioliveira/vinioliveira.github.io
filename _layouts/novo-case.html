@@ -8,7 +8,7 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
     <div class="wrapper">
       <div class="case-detail__heading">
         <h2 class="case-detail__title">
-          <img class="case-detail__brand" title="EarlyShares" alt="{{ page.name }}" src="{{ page.logo }}"/>
+          <img class="case-detail__brand" title="{{ page.name }}" alt="{{ page.name }}" src="{{ page.logo }}" {% if page.logo2x %} srcset="{{ page.logo2x }} 2x" {% endif %}/>
         </h2>
 
         <p>

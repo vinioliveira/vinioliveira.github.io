@@ -8,7 +8,8 @@ permalink: '/en/case/petroomie/'
 name: Pet Roomie
 
 background: /images/cases/petroomie/topo_petroomie.jpg
-logo: /images/cases/petroomie/pet_roomie-logo.png
+logo: /images/cases/petroomie/logo_petroomie.png
+logo2x: /images/cases/petroomie/logo_petroomie@2x.png
 type: web
 
 title_text: System development

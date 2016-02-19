@@ -46,10 +46,10 @@ other_projetcs:
   name: Canvas
   image: /images/cases/canvas_thumb.jpg
   url: /portfolio/pmcanvas
-- slug: early
-  name: Early Shares
-  image: /images/cases/early_thumb.jpg
-  url: /portfolio/early-shares
+- slug: petroomie
+  name: Pet Roomie
+  image: /images/cases/petroomie_thumb.jpg
+  url: /portfolio/petroomie
 - slug: locaweb
   name: Locaweb
   image: /images/cases/locaweb_thumb.jpg

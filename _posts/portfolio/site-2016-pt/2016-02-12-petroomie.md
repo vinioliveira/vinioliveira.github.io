@@ -10,10 +10,15 @@ name: Pet Roomie
 background: /images/cases/petroomie/topo_petroomie.jpg
 logo: /images/cases/petroomie/logo_petroomie.png
 logo2x: /images/cases/petroomie/logo_petroomie@2x.png
+thumb: /images/cases/petroomie/petroomie_thumb.jpg
+
+home: true
 type: web
 
 title_text: Desenvolvimento do sistema web
 subtitle_text: Design & Desenvolvimento
+
+resume: PetRoomie é uma comunidade que oferece serviços pro seu pet. Os serviços variam desde hotéis, babás
 
 about_img1: /images/cases/petroomie/mockup-desktop_pet-roomie.png
 about_text1:

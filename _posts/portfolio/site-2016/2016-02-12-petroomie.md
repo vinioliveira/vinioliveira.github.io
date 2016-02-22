@@ -1,6 +1,6 @@
 ---
 layout: case-en
-category: case
+category: caseen
 body_id: case-details
 pt: /portfolio/petroomie/
 permalink: '/en/case/petroomie/'
@@ -10,10 +10,15 @@ name: Pet Roomie
 background: /images/cases/petroomie/topo_petroomie.jpg
 logo: /images/cases/petroomie/logo_petroomie.png
 logo2x: /images/cases/petroomie/logo_petroomie@2x.png
+thumb: /images/cases/petroomie/petroomie_thumb.jpg
+
+home: true
 type: web
 
 title_text: System development
 subtitle_text: Design & Desenvolvimento
+
+resume: PetRoomie is a community for pet lovers that offers pet services
 
 about_img1: /images/cases/petroomie/mockup-desktop_pet-roomie.png
 about_text1:

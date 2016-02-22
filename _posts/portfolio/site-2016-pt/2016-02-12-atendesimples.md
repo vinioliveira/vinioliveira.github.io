@@ -9,10 +9,15 @@ name: Atende Simples
 
 background: /images/cases/atendesimples/topo-atendesimples.jpg
 logo: /images/cases/atendesimples/logo-atendesimples.png
+thumb: /images/cases/atendesimples_thumb.jpg
+
+home: true
 type: web
 
 title_text: Desenvolvimento do aplicativo móvel
 subtitle_text: Design & Desenvolvimento
+
+resume: Atende Simples está sendo usado por empresas de diferentes portes e de todas as áreas de atuação
 
 about_img1: /images/cases/atendesimples/mockup-desktop_atendesimples@2x.png
 about_text1:

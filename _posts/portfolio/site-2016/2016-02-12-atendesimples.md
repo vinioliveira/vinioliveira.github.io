@@ -1,6 +1,6 @@
 ---
 layout: case-en
-category: case
+category: caseen
 body_id: case-details
 pt: /portfolio/atendesimples
 permalink: '/en/case/atendesimples/'
@@ -9,10 +9,13 @@ name: Atende Simples
 
 background: /images/cases/atendesimples/topo-atendesimples.jpg
 logo: /images/cases/atendesimples/logo-atendesimples.png
+thumb: /images/cases/atendesimples_thumb.jpg
+
 type: web
 
 title_text: System development
 subtitle_text: Design & Development
+resume: Atende Simples has a very complex operation, involving lots of technologies, companies and systems
 
 about_img1: /images/cases/atendesimples/mockup-desktop_atendesimples@2x.png
 about_text1:

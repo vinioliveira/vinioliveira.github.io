@@ -109,6 +109,31 @@
     });
   }
 
+  function sliderTestimonial(){
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      pager: false,
+      nextSelector: '.slider-testimonial__next',
+      prevSelector: '.slider-testimonial__prev',
+      nextText: (language=='EN' ? 'Next' : 'Próximo'),
+      prevText: (language=='EN' ? 'Previous' : 'Anterior'),
+      adaptiveHeight: true,
+      responsive: true
+    });
+
+    $(".fancybox").fancybox({
+      'width'           : 650,
+      'height'          : 488,
+      'scrolling'       : 'no',
+      'autoScale'       : false,
+      'transitionIn'    : 'none',
+      'transitionOut'   : 'none',
+      'type'            : 'iframe',
+      'overlayColor'    : "#000000",
+      'overlayOpacity'  : 0.6
+    });
+  }
+
   // Functions
   //---------------------------------------------------------------
   function init() {
@@ -118,6 +143,7 @@
     typed();
     hoverVideoAnimation();
     currentPage();
+    sliderTestimonial();
   }
 
   init();

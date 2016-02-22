@@ -15,8 +15,8 @@ thumb: /images/cases/petroomie/petroomie_thumb.jpg
 home: true
 type: web
 
-time: 4 semanas
-members: 3 pessoas
+time: 4 weeks
+members: 3 members
 
 title_text: System development
 subtitle_text: Design & Desenvolvimento

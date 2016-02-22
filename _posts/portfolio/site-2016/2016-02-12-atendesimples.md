@@ -13,8 +13,8 @@ thumb: /images/cases/atendesimples_thumb.jpg
 
 type: web
 
-time: 2 semanas
-members: 4 pessoas
+time: 2 weeks
+members: 4 members
 
 title_text: System development
 subtitle_text: Design & Development

@@ -226,6 +226,17 @@
     margin-top: rem(20);
   }
 
+  &__subtitle {
+    clear: both;
+    color: $pale-grey;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: rem(30) 0 rem(30);
+    width: 100%;
+  }
+
 }
 
 .slider-testimonial {

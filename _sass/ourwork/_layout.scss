@@ -107,16 +107,19 @@
     color: $light-primary;
     opacity: 0;
     padding: rem(20);
+    text-align: center;
 
     &-links {
       top: 50%;
+      margin-left: rem(-20);
       transform: translateY(-50%);
       position: absolute;
+      width: 100%;
     }
   }
 
   &__link-image {
-    margin: 0 50px 0 70px;
+    margin: 0 auto;
   }
 
   &__more {
@@ -191,6 +194,7 @@
   &__subtitle {
     color: $greyish-brown;
     font-size: 14px;
+    height: 50px;
     width: 100%;
   }
 
@@ -202,6 +206,29 @@
 
     &:hover {
       color: $light-red;
+    }
+  }
+
+  &__more-details {
+    border-top: 1px solid rgba($black, .15);
+    margin-top: 10px;
+
+    p {
+      color: $black;
+      display: inline-block;
+      font-size: 14px;
+      font-family: $base-font-family;
+      padding: 5px 10px;
+    }
+
+    span {
+      margin-right: 30px;
+    }
+
+    svg {
+      position: relative;
+      top: rem(6);
+      margin-right: rem(5);
     }
   }
 }

@@ -13,6 +13,9 @@ thumb: /images/cases/atendesimples_thumb.jpg
 
 type: web
 
+time: 2 semanas
+members: 4 pessoas
+
 title_text: System development
 subtitle_text: Design & Development
 resume: Atende Simples has a very complex operation, involving lots of technologies, companies and systems

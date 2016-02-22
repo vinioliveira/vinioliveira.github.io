@@ -36,8 +36,7 @@ pt: /trabalhos
                 </a>
                 <figcaption class="projects__box-caption projects__box-caption--small">
                   <div class="projects__box-caption-links">
-                    <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
-                    <a class="projects__more" href="{{case.permalink}}">{% include /svg/ic-zoom.svg %}</a>
+                    <a class="projects__link-image" href="{{case.permalink}}">{% include /svg/open-case.svg %}</a>
                   </div>
                 </figcaption>
               </figure>
@@ -46,6 +45,12 @@ pt: /trabalhos
                 <span class="projects__name">{{case.name}}</span>
                 <p class="projects__subtitle">{{case.resume}}</p>
                 <a class="projects__link" href="{{case.permalink}}">Full Case</a>
+              </div>
+              <div class="projects__more-details">
+                <p>
+                  <span>{% include /svg/icon-team-members.svg %} {{case.time}}</span>
+                  <span>{% include /svg/icon-time-development.svg %} {{case.members}}</span>
+                </p>
               </div>
             </div>
           {% endif %}

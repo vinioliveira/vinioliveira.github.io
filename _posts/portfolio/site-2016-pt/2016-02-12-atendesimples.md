@@ -14,6 +14,9 @@ thumb: /images/cases/atendesimples_thumb.jpg
 home: true
 type: web
 
+time: 2 semanas
+members: 4 pessoas
+
 title_text: Desenvolvimento do aplicativo móvel
 subtitle_text: Design & Desenvolvimento
 

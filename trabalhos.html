@@ -15,139 +15,40 @@ body_id: "our-work"
       </h2>
       <p class="ourwork__subtitle">
         Um pouco do nosso trabalho
-
       </p>
 
     </div>
   </div>
-  <!-- wrapper -->
-  <div class="ourwork__background parallax"></div>
 
 </section>
-<!-- ourwork -->
 
 <section class="projects">
   <div class="wrapper">
     <div class="projects__list">
-      <div class="projects__box">
-        <figure>
-          <a href="/portfolio/atendesimples">
-            <img src="/images/cases/espn_thumb.jpg" srcset="/images/cases/espn_thumb@2x.jpg 2x" alt="ESPN Portal" title="ESPN Portal">
-          </a>
-          <figcaption class="projects__box-caption projects__box-caption--small">
-            <div class="projects__box-caption-links">
-              <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
-              <a class="projects__more" href="/portfolio/espn">{% include /svg/ic-zoom.svg %}</a>
-            </div>
-          </figcaption>
-        </figure>
-        <div class="projects__infos">
-          <span class="projects__project">web</span>
-          <span class="projects__name">PORTAL ESPN</span>
-          <p class="projects__subtitle">ESPN Brasil é um dos maiores canais de esportes de televisão por assinatura do Brasil.</p>
-          <a class="projects__link" href="/portfolio/espn">Veja mais</a>
-        </div>
-      </div>
 
-      <div class="projects__box">
-        <figure>
-          <a href="/portfolio/pmcanvas">
-            <img src="/images/cases/canvas_thumb.jpg" alt="Mobile - Canvas" title="Mobile - Canvas">
-          </a>
-          <figcaption class="projects__box-caption projects__box-caption--small">
-            <div class="projects__box-caption-links">
-              <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
-              <a class="projects__more" href="/portfolio/pmcanvas">{% include /svg/ic-zoom.svg %}</a>
+        {% for case in site.categories.case reversed %}
+          {% if case.thumb2x %}
+            <div class="projects__box">
+              <figure>
+                <a href="{{case.permalink}}">
+                  <img src="{{case.thumb}}" {% if case.thumb2x %} srcset="{{case.thumb2x}} 2x" {% endif %} alt="{{case.name}}" title="{{case.name}}">
+                </a>
+                <figcaption class="projects__box-caption projects__box-caption--small">
+                  <div class="projects__box-caption-links">
+                    <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
+                    <a class="projects__more" href="{{case.permalink}}">{% include /svg/ic-zoom.svg %}</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="projects__infos">
+                <span class="projects__project">{{case.type}}</span>
+                <span class="projects__name">{{case.name}}</span>
+                <p class="projects__subtitle">{{case.resume}} asdf asdffd asdf sdf asdasd asdas asdasdasdas asdsda asdasd a.</p>
+                <a class="projects__link" href="{{case.permalink}}">Veja mais</a>
+              </div>
             </div>
-          </figcaption>
-        </figure>
-        <div class="projects__infos">
-          <span class="projects__project">Mobile</span>
-          <span class="projects__name">Projeto Canvas</span>
-          <p class="projects__subtitle">PM Canvas é um aplicativo tem como proposta facilitar a nova tendência de criação colaborativa</p>
-          <a class="projects__link" href="/portfolio/pmcanvas">Veja mais</a>
-        </div>
-      </div>
-
-      <div class="projects__box">
-        <figure>
-          <a href="/portfolio/pmcanvas">
-            <img src="/images/cases/canvas_thumb.jpg" alt="Mobile - Canvas" title="Mobile - Canvas">
-          </a>
-          <figcaption class="projects__box-caption projects__box-caption--small">
-            <div class="projects__box-caption-links">
-              <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
-              <a class="projects__more" href="/portfolio/pmcanvas">{% include /svg/ic-zoom.svg %}</a>
-            </div>
-          </figcaption>
-        </figure>
-        <div class="projects__infos">
-          <span class="projects__project">Mobile</span>
-          <span class="projects__name">Projeto Canvas</span>
-          <p class="projects__subtitle">PM Canvas é um aplicativo tem como proposta facilitar a nova tendência de criação colaborativa</p>
-          <a class="projects__link" href="/portfolio/pmcanvas">Veja mais</a>
-        </div>
-      </div>
-
-      <div class="projects__box">
-        <figure>
-          <a href="/portfolio/pmcanvas">
-            <img src="/images/cases/canvas_thumb.jpg" alt="Mobile - Canvas" title="Mobile - Canvas">
-          </a>
-          <figcaption class="projects__box-caption projects__box-caption--small">
-            <div class="projects__box-caption-links">
-              <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
-              <a class="projects__more" href="/portfolio/pmcanvas">{% include /svg/ic-zoom.svg %}</a>
-            </div>
-          </figcaption>
-        </figure>
-        <div class="projects__infos">
-          <span class="projects__project">Mobile</span>
-          <span class="projects__name">Projeto Canvas</span>
-          <p class="projects__subtitle">PM Canvas é um aplicativo tem como proposta facilitar a nova tendência de criação colaborativa</p>
-          <a class="projects__link" href="/portfolio/pmcanvas">Veja mais</a>
-        </div>
-      </div>
-
-      <div class="projects__box">
-        <figure>
-          <a href="/portfolio/pmcanvas">
-            <img src="/images/cases/canvas_thumb.jpg" alt="Mobile - Canvas" title="Mobile - Canvas">
-          </a>
-          <figcaption class="projects__box-caption projects__box-caption--small">
-            <div class="projects__box-caption-links">
-              <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
-              <a class="projects__more" href="/portfolio/pmcanvas">{% include /svg/ic-zoom.svg %}</a>
-            </div>
-          </figcaption>
-        </figure>
-        <div class="projects__infos">
-          <span class="projects__project">Mobile</span>
-          <span class="projects__name">Projeto Canvas</span>
-          <p class="projects__subtitle">PM Canvas é um aplicativo tem como proposta facilitar a nova tendência de criação colaborativa</p>
-          <a class="projects__link" href="/portfolio/pmcanvas">Veja mais</a>
-        </div>
-      </div>
-
-      <div class="projects__box">
-        <figure>
-          <a href="/portfolio/pmcanvas">
-            <img src="/images/cases/canvas_thumb.jpg" alt="Mobile - Canvas" title="Mobile - Canvas">
-          </a>
-          <figcaption class="projects__box-caption projects__box-caption--small">
-            <div class="projects__box-caption-links">
-              <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
-              <a class="projects__more" href="/portfolio/pmcanvas">{% include /svg/ic-zoom.svg %}</a>
-            </div>
-          </figcaption>
-        </figure>
-        <div class="projects__infos">
-          <span class="projects__project">Mobile</span>
-          <span class="projects__name">Projeto Canvas</span>
-          <p class="projects__subtitle">PM Canvas é um aplicativo tem como proposta facilitar a nova tendência de criação colaborativa</p>
-          <a class="projects__link" href="/portfolio/pmcanvas">Veja mais</a>
-        </div>
-      </div>
+          {% endif %}
+        {% endfor %}
 
     </div>
 

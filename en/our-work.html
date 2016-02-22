@@ -28,7 +28,7 @@ pt: /trabalhos
     <div class="projects__list">
 
         {% for case in site.categories.caseen reversed %}
-          {% if case.thumb2x %}
+          {% if case.thumb %}
             <div class="projects__box">
               <figure>
                 <a href="{{case.permalink}}">
@@ -45,7 +45,7 @@ pt: /trabalhos
                 <span class="projects__project">{{case.type}}</span>
                 <span class="projects__name">{{case.name}}</span>
                 <p class="projects__subtitle">{{case.resume}} asdf asdffd asdf sdf asdasd asdas asdasdasdas asdsda asdasd a.</p>
-                <a class="projects__link" href="{{case.permalink}}">Veja mais</a>
+                <a class="projects__link" href="{{case.permalink}}">Full Case</a>
               </div>
             </div>
           {% endif %}
@@ -53,7 +53,7 @@ pt: /trabalhos
 
     </div>
 
-    <a href="javascript:return false;" class="btn btn--red">CARREGAR MAIS</a>
+    <a href="javascript:return false;" class="btn btn--red">LOAD MORE</a>
   </div>
 
 

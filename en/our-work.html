@@ -3,152 +3,58 @@ layout: site-2016
 title: Our Work
 description: HE:labs
 body_id: "our-work"
-pt: /portfolio
+pt: /trabalhos
 ---
 
 <section class="ourwork">
 
   <div class="wrapper">
+    <div class="ourwork__heading">
 
-    <h1 class="ourwork__title">Our Work</h1>
+      <h2 class="ourwork__title title-line title-line--center">
+        Our Work
+      </h2>
+      <p class="ourwork__subtitle">
+        some of our work
+      </p>
 
-    <nav class="ourwork-nav" id="grid-filter">
-      <li class="ourwork-nav__item"><a data-filter=".all">All</a></li>
-      <li class="ourwork-nav__item"><a data-filter=".mobile">Mobile</a></li>
-      <li class="ourwork-nav__item"><a data-filter=".web">Web</a></li>
-      <li class="ourwork-nav__item"><a data-filter=".house">In the House</a></li>
-    </nav>
-
+    </div>
   </div>
-  <!-- wrapper -->
-
-  <div class="ourwork-list">
-
-    <div class="grid" id="container">
-
-      <div class="grid-sizer"></div>
-
-      <div class="grid-item grid-item--width2 all">
-        <figure>
-          <img src="/images/ourwork/job1.jpg" alt="Project x">
-          <figcaption class="grid-caption">
-            <span class="project">web</span>
-            <span class="project-name">espn portal</span>
-            <a class="full-case" href="/our-work-details">full case</a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-item all">
-        <figure>
-          <img src="/images/ourwork/job2.jpg" alt="Project x">
-          <figcaption class="grid-caption">
-            <span class="project">web</span>
-            <span class="project-name">espn portal</span>
-            <a class="full-case" href="/our-work-details">full case</a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-item all">
-        <figure>
-          <img src="/images/ourwork/job2.jpg" alt="Project x">
-          <figcaption class="grid-caption">
-            <span class="project">web</span>
-            <span class="project-name">espn portal</span>
-            <a class="full-case" href="/our-work-details">full case</a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-item all">
-        <figure>
-          <img src="/images/ourwork/job2.jpg" alt="Project x">
-          <figcaption class="grid-caption">
-            <span class="project">web</span>
-            <span class="project-name">espn portal</span>
-            <a class="full-case" href="/our-work-details">full case</a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-item all">
-        <figure>
-          <img src="/images/ourwork/job2.jpg" alt="Project x">
-          <figcaption class="grid-caption">
-            <span class="project">web</span>
-            <span class="project-name">espn portal</span>
-            <a class="full-case" href="/our-work-details">full case</a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-item all">
-        <figure>
-          <img src="/images/ourwork/job2.jpg" alt="Project x">
-          <figcaption class="grid-caption">
-            <span class="project">web</span>
-            <span class="project-name">espn portal</span>
-            <a class="full-case" href="/our-work-details">full case</a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-item all">
-        <figure>
-          <img src="/images/ourwork/job2.jpg" alt="Project x">
-          <figcaption class="grid-caption">
-            <span class="project">web</span>
-            <span class="project-name">espn portal</span>
-            <a class="full-case" href="/our-work-details">full case</a>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="grid-item all mobile">
-      <img class="image" src="/images/ourwork/job3.jpg" alt="Project x">
-      </div>
-
-      <div class="grid-item all mobile">
-      <img class="image" src="/images/ourwork/job3.jpg" alt="Project x">
-      </div>
-
-    </div>
-    <!-- grid close -->
-
-  </div>
-
-
-
-  <div class="ourwork-counter">
-
-    <div class="wrapper">
-
-      <div class="ourwork-counter__box">
-        <span class="ourwork-counter__number count">300</span>
-        <span class="ourwork-counter__name">happy clients</span>
-      </div>
-      <div class="ourwork-counter__box">
-        <span class="ourwork-counter__number count">1200</span>
-        <span class="ourwork-counter__name">active projects</span>
-      </div>
-      <div class="ourwork-counter__box">
-        <span class="ourwork-counter__number count">4389</span>
-        <span class="ourwork-counter__name">cups of coffee</span>
-      </div>
-      <div class="ourwork-counter__box">
-        <span class="ourwork-counter__number count">33189</span>
-        <span class="ourwork-counter__name">hours of development</span>
-      </div>
-
-    </div>
-    <!-- wrapper -->
-
-    </div>
-
-    <div class="ourwork__background parallax"></div>
 
 </section>
-<!-- ourwork -->
+
+<section class="projects">
+  <div class="wrapper">
+    <div class="projects__list">
+
+        {% for case in site.categories.caseen reversed %}
+          {% if case.thumb2x %}
+            <div class="projects__box">
+              <figure>
+                <a href="{{case.permalink}}">
+                  <img src="{{case.thumb}}" {% if case.thumb2x %} srcset="{{case.thumb2x}} 2x" {% endif %} alt="{{case.name}}" title="{{case.name}}">
+                </a>
+                <figcaption class="projects__box-caption projects__box-caption--small">
+                  <div class="projects__box-caption-links">
+                    <a class="projects__link-image" href="javascript: return false;">{% include /svg/ic-link.svg %}</a>
+                    <a class="projects__more" href="{{case.permalink}}">{% include /svg/ic-zoom.svg %}</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <div class="projects__infos">
+                <span class="projects__project">{{case.type}}</span>
+                <span class="projects__name">{{case.name}}</span>
+                <p class="projects__subtitle">{{case.resume}} asdf asdffd asdf sdf asdasd asdas asdasdasdas asdsda asdasd a.</p>
+                <a class="projects__link" href="{{case.permalink}}">Veja mais</a>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+    </div>
+
+    <a href="javascript:return false;" class="btn btn--red">CARREGAR MAIS</a>
+  </div>
 
 
+</section>

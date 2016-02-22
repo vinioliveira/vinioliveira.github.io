@@ -58,3 +58,91 @@ pt: /trabalhos
 
 
 </section>
+
+<section class="testimonials">
+  <div class="testimonials__content">
+
+    <h2 class="testimonials__title title-line title-line--center">Testimonials</h2>
+
+    <div class="slider-testimonial">
+
+      <ul class="bxslider">
+      {% for testimonial in site.data.testimonials-en %}
+
+        <li>
+          <p class="slider-testimonial__quote">
+            {{ testimonial.quote }}
+          </p>
+
+          <div class="slider-testimonial__picture">
+            <img src="/images/avatars/{{ testimonial.picture }}.png" alt="{{ testimonial.author }}">
+          </div>
+
+          <div class="slider-testimonial__author">{{ testimonial.author }}</div>
+          <div class="slider-testimonial__project">{{ testimonial.project }}</div>
+        </li>
+        <!-- end quote -->
+
+      {% endfor %}
+      </ul>
+
+      <!-- slider controls -->
+      <span class="slider-testimonial__prev"></span>
+      <span class="slider-testimonial__next"></span>
+
+    </div>
+    <!-- slider -->
+
+  </div>
+
+  <div class="testimonials-video">
+
+    <a class="testimonials-video__box fancybox" title="Depoimento de Arthur Granado" href="/videos/arthur-granado.html">
+      <figure><img src="/images/testimonial1.jpg" alt="Arthur Granado - 21212"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Arthur Granado</span>
+        <span class="testimonials-video__project">21212</span>
+      </div>
+    </a>
+
+    <a class="testimonials-video__box fancybox" title="Depoimento de Amure Pinho" href="/videos/amure-pinho.html" >
+      <figure><img src="/images/testimonial2.jpg" alt="Amure Pinho - Amigo Não Se Compra"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Amure Pinho</span>
+        <span class="testimonials-video__project">Amigo Não Se Compra</span>
+      </div>
+    </a>
+
+    <a class="testimonials-video__box fancybox" title="Depoimento de Cezar Souza" href="/videos/cezar-souza.html">
+      <figure><img src="/images/testimonial3.jpg" alt="Cezar Souza - VentureOne"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Cezar Souza</span>
+        <span class="testimonials-video__project">VentureOne</span>
+      </div>
+    </a>
+
+    <a class="testimonials-video__box fancybox" title="Depoimento de Juan Bernabó" href="/videos/juan-bernabo.html">
+      <figure><img src="/images/testimonial4.jpg" alt="Juan Bernabó - TeamWare"></figure>
+      <div class="testimonials-video__description">
+        <span class="testimonials-video__author">Juan Bernabó</span>
+        <span class="testimonials-video__project">TeamWare</span>
+      </div>
+    </a>
+
+  </div>
+
+</section>
+
+<section class="section-waiting">
+  <div class="wrapper">
+    <div class="section-waiting__heading">
+      <h2 class="section-waiting__title">
+        What are you waiting for?
+      </h2>
+      <p class="section-waiting__subtitle">
+        Let's make something awesome together!
+      </p>
+      <a href="/en/hire-us" class="btn btn--white">HIRE US</a>
+    </div>
+  </div>
+</section>

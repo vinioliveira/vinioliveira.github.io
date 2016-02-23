@@ -106,6 +106,19 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
 </section>
 {% endif %}
 
+{% if page.screenshots %}
+  <section id="carousel-slider">
+    <div class="slideshow">
+      {% for screenshot in page.screenshots %}
+        <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
+      {% endfor %}
+    </div>
+
+    <a href="#" id="carousel-slider-prev" class="carousel-slider-nav"></a>
+    <a href="#" id="carousel-slider-next" class="carousel-slider-nav"></a>
+  </section>
+{% endif %}
+
 <section class="case-detail-projects">
   <div class="wrapper">
 

@@ -1,0 +1,148 @@
+#services {
+  background: $pale-grey;
+
+  .main-header {
+    background: rgba(55, 50, 50, 0.9);
+  }
+}
+
+.our-services {
+  @include span-columns(12);
+  background: url('/images/bg-top-services.jpg') no-repeat $black center center;
+  background-size: cover;
+  min-height: rem(200);
+  overflow: hidden;
+  position: relative;
+
+  @include media($screen-small){
+    padding: rem(150) 0 rem(50);
+  }
+
+  .wrapper {
+    @include outer-container();
+    padding-top: rem(140);
+    padding-bottom: rem(75);
+    text-align: center;
+
+    @include media($screen-small) {
+      padding: 0 $base-spacing;
+    }
+  }
+
+  &__title {
+    color: $pale-grey;
+    display: block;
+    font-size: rem(48);
+
+    @include media($screen-tiny) {
+      font-size: rem(26);
+    }
+  }
+
+  &__subtitle {
+    color: $pale-grey;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: rem(30) 0 0;
+
+  }
+}
+
+.services {
+  @include pad(rem(80) 0);
+  @include span-columns(12);
+  text-align: left;
+
+  &__description {
+    @include span-columns(5 of 12);
+
+    p {
+      @include pad(rem(25) 0 0);
+      line-height: rem(38);
+    }
+  }
+
+  &__title {
+    color: $black;
+    font-family: $base-font-family;
+    font-size: rem(36);
+    font-weight: 300;
+    line-height: rem(55);
+    text-transform: uppercase;
+
+    strong {
+      color: $light-red;
+    }
+  }
+
+  &__list {
+    @include span-columns(6 of 12);
+    float: right;
+  }
+
+  &__box {
+    @include span-columns(3 of 6);
+    @include omega(2n);
+    margin-bottom: rem(30);
+    min-height: rem(220);
+
+    p {
+      color: $greyish-brown;
+      font-size: rem(14);
+      line-height: rem(24);
+    }
+
+  }
+
+  &__subtitle {
+    color: $darkish-red;
+    font-size: rem(18);
+    font-family: $serifa-font-family;
+    font-weight: 600;
+    margin: rem(10) 0;
+  }
+
+}
+
+
+// Portfolio Count
+.ourwork-counter {
+  @include pad(rem(80) 0);
+  @include span-columns(12);
+  background: url('/images/bg-counter@2x.jpg') no-repeat $black center center;
+  background-size: cover;
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  @include media($screen-small) {
+    display: none;
+  }
+
+  &__box {
+    @include span-columns(3 of 12);
+    font-family: $base-font-family;
+    text-align: center;
+  }
+
+  &__number {
+    color: $pale-grey;
+    display: block;
+    font-size: rem(90);
+    font-weight: 200;
+    width: 100%;
+  }
+
+  &__name {
+    color: $white-smoke;
+    display: block;
+    font-size: rem(24);
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+}

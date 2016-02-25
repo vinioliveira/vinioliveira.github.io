@@ -219,11 +219,12 @@
     @include span-columns(6);
     float: left;
     margin: 0 auto;
-    padding: 0 4rem 1rem;
+    padding: 0 0 1rem 1rem;
     text-align: left;
 
     @include media($screen-medium) {
       @include span-columns(12);
+      text-align: center;
     }
 
     p {
@@ -251,6 +252,10 @@
       clear: both;
       margin-top: 80px;
       width: 100%;
+    }
+
+    @include media($screen-tiny) {
+      height: 80vw;
     }
   }
 

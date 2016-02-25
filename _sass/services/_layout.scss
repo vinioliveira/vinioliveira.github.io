@@ -200,7 +200,6 @@
   }
 
   .wrapper {
-    padding: rem(60) 0;
 
     .title-line {
       color: $black;
@@ -219,7 +218,7 @@
     @include span-columns(6);
     float: left;
     margin: 0 auto;
-    padding: 0 0 1rem 1rem;
+    padding: 0 0 1rem;
     text-align: left;
 
     @include media($screen-medium) {

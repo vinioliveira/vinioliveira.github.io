@@ -203,8 +203,14 @@
     padding: rem(60) 0;
 
     .title-line {
+      color: $black;
+      font-family: $heading-font-family;
+      font-size: rem(48);
+      font-weight: 900;
+      display: block;
       margin-bottom: 100px;
       text-align: center;
+      text-transform: capitalize;
       width: 100%;
     }
   }

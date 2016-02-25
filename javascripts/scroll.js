@@ -54,6 +54,12 @@ jQuery(document).ready(function($){
           1000
         );
   }
+
+  $('.main-banner__arrow-down').click(function(event){
+    event.preventDefault();
+    smoothScroll($('#services'));
+  })
+
 });
 
 // Change header bg on scroll

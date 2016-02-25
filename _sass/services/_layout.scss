@@ -51,12 +51,17 @@
 }
 
 .services {
-  @include pad(rem(80) 0);
+  @include pad(rem(60) 0);
   @include span-columns(12);
   text-align: left;
 
   &__description {
     @include span-columns(5 of 12);
+
+    @include media($screen-medium) {
+      @include span-columns(12);
+      text-align: center;
+    }
 
     p {
       @include pad(rem(25) 0 0);
@@ -72,6 +77,10 @@
     line-height: rem(55);
     text-transform: uppercase;
 
+    @include media($screen-medium) {
+      text-align: center;
+    }
+
     strong {
       color: $light-red;
     }
@@ -80,6 +89,12 @@
   &__list {
     @include span-columns(6 of 12);
     float: right;
+
+    @include media($screen-medium) {
+      @include span-columns(12);
+      margin-top: rem(20);
+
+    }
   }
 
   &__box {
@@ -87,6 +102,14 @@
     @include omega(2n);
     margin-bottom: rem(30);
     min-height: rem(220);
+
+    @include media($screen-tiny) {
+      @include span-columns(10);
+      max-width: 100%;
+      min-height: auto;
+      text-align: center;
+    }
+
 
     p {
       color: $greyish-brown;

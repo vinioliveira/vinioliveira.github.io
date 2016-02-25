@@ -48,4 +48,15 @@
     }
   }
 
+  &--black {
+    background: $black;
+    border: 2px solid $black;
+    color: $pale-grey;
+
+    &:hover {
+      background: $greyish-brown;
+      border-color: $greyish-brown;
+      color: $pale-grey;
+    }
+  }
 }

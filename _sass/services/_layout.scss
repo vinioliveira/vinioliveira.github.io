@@ -245,6 +245,7 @@
 
   .container {
     float: right;
+    margin-right: 10px;
 
     @include media($screen-medium) {
       clear: both;

@@ -132,7 +132,7 @@
 
 // Portfolio Count
 .ourwork-counter {
-  @include pad(rem(80) 0);
+  @include pad(rem(60) 0);
   @include span-columns(12);
   background: url('/images/bg-counter@2x.jpg') no-repeat $black center center;
   background-size: cover;
@@ -146,7 +146,8 @@
   }
 
   &__box {
-    @include span-columns(3 of 12);
+    width: 20%;
+    float: left;
     font-family: $base-font-family;
     text-align: center;
   }
@@ -154,18 +155,26 @@
   &__number {
     color: $pale-grey;
     display: block;
-    font-size: rem(90);
-    font-weight: 200;
+    font-size: rem(52);
+    font-weight: 900;
     width: 100%;
   }
 
   &__name {
     color: $white-smoke;
     display: block;
-    font-size: rem(24);
-    font-weight: 400;
+    font-size: rem(18);
+    font-weight: 600;
     text-transform: uppercase;
     width: 100%;
+
+    &:before {
+      color: $pale-grey;
+      content: '|';
+      float: left;
+      margin: 0 auto 20px;
+      width: 100%;
+    }
   }
 
 }

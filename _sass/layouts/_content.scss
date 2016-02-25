@@ -1,5 +1,6 @@
 .wrapper {
   @include outer-container();
+  padding: 2em .8em;
 
   @include media($screen-medium) {
     @include pad(0 $base-spacing);

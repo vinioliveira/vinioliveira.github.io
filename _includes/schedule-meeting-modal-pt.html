@@ -11,38 +11,44 @@
       </p>
     </div>
     <div class="container">
-      <form action="#" method="post" autocomplete="off" class="he-form he-form--no-padding">
+      <form id="form41" name="form41" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://helabs.wufoo.com/forms/r10wcbi61papu6q/#public" class="he-form he-form--no-padding">
+      <input type="hidden" id="budget" name="Field50"/>
+      <input name="Field46" type="hidden" value="/proposta-enviada"/>
         <div class="he-form__group">
-          <input id="name" name="name" type="text" class="he-form__input" required>
+          <input id="name" name="Field43" type="text" class="he-form__input" required>
           <label for="name" class="he-form__label he-form__label--floating he-form__label--required">Seu nome</label>
         </div>
         <div class="he-form__group">
-          <input id="company" name="company" type="text" class="he-form__input" required>
-          <label for="company" class="he-form__label he-form__label--floating he-form__label--required">Nome da sua empresa / Projeto</label>
+          <input id="lastname" name="Field44" type="text" class="he-form__input" required>
+          <label for="lastname" class="he-form__label he-form__label--floating he-form__label--required">Seu sobrenome</label>
         </div>
         <div class="he-form__group">
-          <input id="email" name="email" type="email" class="he-form__input" required>
-          <label for="email" class="he-form__label he-form__label--floating he-form__label--required">Seu Email</label>
+          <input id="email" name="Field3" type="email" class="he-form__input" required>
+          <label for="email" class="he-form__label he-form__label--floating he-form__label--required">Seu email</label>
         </div>
         <div class="he-form__group">
-          <input id="phone" name="phone" type="text" class="he-form__input" required>
+          <input id="phone" name="Field16" type="text" class="he-form__input" required>
           <label for="phone" class="he-form__label he-form__label--floating he-form__label--required">Seu telefone</label>
         </div>
         <div class="he-form__group">
-          <input id="skype" name="skype" type="text" class="he-form__input">
+          <input id="company" name="Field41" type="text" class="he-form__input" required>
+          <label for="company" class="he-form__label he-form__label--floating he-form__label--required">Nome da sua empresa / Projeto</label>
+        </div>
+        <div class="he-form__group">
+          <input id="skype" name="Field48" type="text" class="he-form__input">
           <label for="skype" class="he-form__label he-form__label--floating">Seu usuário de skype ou hangouts (opcional)</label>
           <span class="he-form__small-text">Se você não possuí nenhum dos dois, nós ligaremos no seu telefone.</span>
         </div>
         <div class="he-form__group">
           <div class="dropdown">
             <div class="dropdown__container">
-              <label for="skype" class="he-form__label he-form__label--required he-form__label--fixed">Seu Orçamento</label>
-              <p class="dropdown__button">Selecione um</p>
+              <label for="Field50" class="he-form__label he-form__label--required he-form__label--fixed">Seu Orçamento</label>
+              <p class="dropdown__button" >Selecione um</p>
               <ul class="dropdown__menu">
-                <li class="dropdown__menu-item">Entre R$ 20.000 e R$ 50.000 por mês</li>
-                <li class="dropdown__menu-item">Entre R$ 50.000 e R$ 100.000 por mês</li>
-                <li class="dropdown__menu-item">Entre R$ 100.000 e R$ 250.000 por mês</li>
-                <li class="dropdown__menu-item">Maior que R$ 250.000 por mês</li>
+                <li class="dropdown__menu-item" data-value="20.000 a 50.000">Entre R$ 20.000 e R$ 50.000 por mês</li>
+                <li class="dropdown__menu-item" data-value="50.000 a 100.000">Entre R$ 50.000 e R$ 100.000 por mês</li>
+                <li class="dropdown__menu-item" data-value="100.000 a 250.000">Entre R$ 100.000 e R$ 250.000 por mês</li>
+                <li class="dropdown__menu-item" data-value="Mais que 250.000">Maior que R$ 250.000 por mês</li>
               </ul>
             </div>
           </div>
@@ -50,16 +56,21 @@
         </div>
         <div class="he-form__group">
           <label for="neccessity" class="he-form__label he-form__label--required he-form__label--fixed">Seu projeto ou necessidade</label>
-          <textarea id="neccessity" name="neccessity" required class="he-form__textarea" placeholder="Tente descrever em detalhes, assim poderemos ter uma conversa mais específica."></textarea>
+          <textarea id="neccessity" name="Field52" required class="he-form__textarea" placeholder="Tente descrever em detalhes, assim poderemos ter uma conversa mais específica."></textarea>
         </div>
         <div class="he-form__group">
-          <input id="heard-about" name="heard-about" type="text" class="he-form__input">
+          <input id="heard-about" name="Field54" type="text" class="he-form__input">
           <label for="heard-about" class="he-form__label he-form__label--floating">De onde ouviu falar sobre nós? (opcional)</label>
         </div>
         <div class="he-form__group he-form__group--center-text">
-          <button class="btn btn--red">
-            CONFIRMAR REUNIÃO
+          <button class="btn btn--red" id="saveForm" name="saveForm">
+            CONFIRMAR
           </button>
+        </div>
+        <div style="display:none;">
+          <label for="comment">Do Not Fill This Out</label>
+          <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+          <input type="hidden" id="idstamp" name="idstamp" value="lGw2sRgmYl/a8MgPwL7cwTWyjCpSHsvvVFJHB+MdoNU=" />
         </div>
       </form>
     </div>

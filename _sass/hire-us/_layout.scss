@@ -11,7 +11,7 @@
 }
 
 .hire-us {
-  min-height: rem(770);
+  min-height: rem(280);
   overflow: hidden;
   position: relative;
 
@@ -28,8 +28,8 @@
 
   &__bg {
     @include span-columns(12);
-    margin-bottom: rem(115);
-    min-height: rem(770);
+    margin-bottom: rem(60);
+    min-height: rem(280);
   }
 
   &__heading {
@@ -37,6 +37,10 @@
     clear: both;
     margin: rem(110) auto 0;
     text-align: center;
+
+    h2::after {
+      top: calc(120%);
+    }
 
     &:not(:first-child) {
       padding-top: 40px;
@@ -111,13 +115,14 @@
 
       &__group {
         margin-top: rem(20);
+
       }
 
       &__group:nth-child(2),
-      &__group:nth-child(3),
       &__group:nth-child(4),
-      &__group:nth-child(5) {
+      &__group:nth-child(6) {
         margin-right: 0;
+        float: right;
         width: 48%;
 
         @include media($screen-tiny) {
@@ -125,9 +130,11 @@
         }
       }
 
+      &__group:nth-child(1),
       &__group:nth-child(3),
       &__group:nth-child(5) {
-        float: right;
+        float: left;
+        width: 48%;
       }
 
       &__small-text {

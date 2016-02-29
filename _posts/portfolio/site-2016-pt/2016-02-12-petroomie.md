@@ -18,6 +18,13 @@ type: web
 time: 4 semanas
 members: 3 pessoas
 
+screenshots:
+  - url: /images/cases/petroomie/slider-pet-roomie-01.jpg
+  - url: /images/cases/petroomie/slider-pet-roomie-02.jpg
+  - url: /images/cases/petroomie/slider-pet-roomie-03.jpg
+  - url: /images/cases/petroomie/slider-pet-roomie-04.jpg
+  - url: /images/cases/petroomie/slider-pet-roomie-05.jpg
+
 title_text: Desenvolvimento do sistema web
 subtitle_text: Design & Desenvolvimento
 

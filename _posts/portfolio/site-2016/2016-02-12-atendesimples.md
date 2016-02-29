@@ -16,6 +16,15 @@ type: web
 time: 2 weeks
 members: 4 members
 
+screenshots:
+  - url: /images/cases/atendesimples/slider-atende-simples-01.jpg
+    caption: Tela de cadastro do Atende Simples
+  - url: /images/cases/atendesimples/slider-atende-simples-02.jpg
+    caption: Tela de configuração do primeiro atendente, quem irá receber a chamada
+  - url: /images/cases/atendesimples/slider-atende-simples-03.jpg
+  - url: /images/cases/atendesimples/slider-atende-simples-04.jpg
+  - url: /images/cases/atendesimples/slider-atende-simples-05.jpg
+
 title_text: System development
 subtitle_text: Design & Development
 resume: Atende Simples has a very complex operation, involving lots of technologies, companies and systems

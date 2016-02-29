@@ -17,6 +17,15 @@ type: web
 time: 2 semanas
 members: 4 pessoas
 
+screenshots:
+  - url: /images/cases/atendesimples/slider-atende-simples-01.jpg
+    caption: Tela de cadastro do Atende Simples
+  - url: /images/cases/atendesimples/slider-atende-simples-02.jpg
+    caption: Tela de configuração do primeiro atendente, quem irá receber a chamada
+  - url: /images/cases/atendesimples/slider-atende-simples-03.jpg
+  - url: /images/cases/atendesimples/slider-atende-simples-04.jpg
+  - url: /images/cases/atendesimples/slider-atende-simples-05.jpg
+
 title_text: Desenvolvimento do aplicativo móvel
 subtitle_text: Design & Desenvolvimento
 

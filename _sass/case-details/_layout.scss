@@ -266,6 +266,7 @@
       display: inline-block;
       list-style: none;
       margin: 20px;
+      text-align: center;
 
       @include media($screen-medium) {
         float: left;

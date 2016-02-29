@@ -56,7 +56,7 @@
   text-align: left;
 
   &__description {
-    @include span-columns(5 of 12);
+    @include span-columns(6 of 12);
 
     @include media($screen-medium) {
       @include span-columns(12);
@@ -64,7 +64,7 @@
     }
 
     p {
-      @include pad(rem(25) 0 0);
+      @include pad(rem(25) rem(15) 0);
       line-height: rem(38);
     }
   }

@@ -1,7 +1,7 @@
 ---
 layout: site-2016
-title: Novo Site 2016
-description: HE:labs
+title: Know more about us
+description: learn more about the most fun company in Brazil
 body_id: "about-us"
 pt: /sobre-nos
 ---
@@ -11,7 +11,7 @@ pt: /sobre-nos
     <div class="wrapper">
       <div class="about-us__heading">
         <h2 class="about-us__title">
-          <span class="about-us__title--red">OUR MISSION</span>
+          <span class="about-us__title--red">Our Mission</span>
         </h2>
 
         <p>
@@ -21,7 +21,7 @@ pt: /sobre-nos
       </div>
       <div class="about-us__heading">
         <h2 class="about-us__title">
-          <span class="about-us__title--red">OUR VISION</span>
+          <span class="about-us__title--red">Our Vision</span>
         </h2>
 
         <p>
@@ -39,10 +39,7 @@ pt: /sobre-nos
       <h2 class="mission__title title-line title-line--center">
         We love what we do!
       </h2>
-      <p class="mission__subtitle">
-        Our mission is to <strong>transform</strong> the way in which software development is seen by <strong>producing perfectly</strong> good
-        working systems that make <span class="mission__subtitle--highlight">people happy</span>.
-      </p>
+      <p class="mission__subtitle"></p>
     </div>
     <div class="mission-grid__block">
       <figure class="mission-grid__image">
@@ -100,28 +97,15 @@ pt: /sobre-nos
     </div>
   </div>
 </section>
-<section class="highlight-grid">
-<!--   <div class="highlight-grid__block">
-    <h2 class="highlight-grid__title">
-      Are you ready to shine?
-    </h2>
-    <p class="highlight-grid__subtitle">
-      We’re looking for awesome people
-    </p>
-    <button class="he-form__button he-form__button--large he-form__button--light">
-      Open positions
-    </button>
-  </div> -->
 
 <section id="team" class="section-team">
-
   <div class="wrapper">
     <div class="section-team__heading">
       <h2 class="section-team__title title-line title-line--center">
-        OUR TEAM
+        Our team
       </h2>
       <p class="section-team__subtitle">
-        THE BEST DEVELOPERS, DESIGNERS AND HACKERS GATHERED IN HIGHLY PRODUCTIVE TEAMS.
+        The best developers, designers and hackers gathered in highly productive teams.
       </p>
     </div>
   </div>
@@ -136,7 +120,6 @@ pt: /sobre-nos
     </a>
   {% endfor %}
   </div>
-
 </section>
 
   <div class="highlight-grid__block highlight-grid__block--light">
@@ -148,31 +131,3 @@ pt: /sobre-nos
     </p>
     <a href="/en/hire-us" class="btn btn--white ">HIRE US</a>
   </div>
-</section>
-
-<script type="text/javascript">
-  (function(){
-    'use strict';
-    $(function(){
-      var stepsMenu = $("#steps-menu");
-      stepsMenu.on('click', 'a', function(event) {
-          // Replaces main content
-          event.preventDefault();
-          var $this = $(this);
-          var step = $this.attr("href");
-          $this.parent()
-            .addClass("is-active")
-            .siblings().removeClass("is-active");
-          $(".step-content").not(step).css("display", "none");
-          $(step)
-            .fadeOut()
-            .fadeIn();
-
-          // Rotates the wheel
-          stepsMenu
-            .removeClass()
-            .addClass("step-" + step.charAt(6));
-      });
-    });
-  })();
-</script>

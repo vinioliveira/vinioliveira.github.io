@@ -1,7 +1,7 @@
 ---
 layout: site-2016-pt
-title: Novo Site 2016
-description: HE:labs
+title: Conheça mais sobre nós
+description: Conheça mais sobre como é a HE:labs e como é seu trabalho, missão, visão, metodologia e cultura.
 body_id: "about-us"
 en: /en/about-us
 ---
@@ -38,7 +38,7 @@ en: /en/about-us
   <div class="wrapper">
     <div class="mission mission-grid__block mission-grid__block--wide">
       <h2 class="mission__title title-line title-line--center">
-        Nossos Valores
+        Nossos valores
       </h2>
       <p class="mission__subtitle"></p>
     </div>
@@ -103,7 +103,7 @@ en: /en/about-us
   <div class="wrapper">
     <div class="section-team__heading">
       <h2 class="section-team__title title-line title-line--center">
-        Nosso Time
+        Nosso time
       </h2>
       <p class="section-team__subtitle">
         Os melhores desenvolvedores e designers reunidos em times altamente produtivos!
@@ -135,30 +135,3 @@ en: /en/about-us
     <a href="/contrate" class="btn btn--white ">Contrate</a>
   </div>
 </section>
-
-<script type="text/javascript">
-  (function(){
-    'use strict';
-    $(function(){
-      var stepsMenu = $("#steps-menu");
-      stepsMenu.on('click', 'a', function(event) {
-          // Replaces main content
-          event.preventDefault();
-          var $this = $(this);
-          var step = $this.attr("href");
-          $this.parent()
-            .addClass("is-active")
-            .siblings().removeClass("is-active");
-          $(".step-content").not(step).css("display", "none");
-          $(step)
-            .fadeOut()
-            .fadeIn();
-
-          // Rotates the wheel
-          stepsMenu
-            .removeClass()
-            .addClass("step-" + step.charAt(6));
-      });
-    });
-  })();
-</script>

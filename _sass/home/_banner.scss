@@ -6,8 +6,8 @@
 
 .main-banner {
   @include span-columns(12);
-  background: url('/images/background-video1.gif') no-repeat center center;
-  background-attachment: fixed;
+  // background: url('/images/background-video1.gif') no-repeat center center;
+  // background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   min-height: rem(630);

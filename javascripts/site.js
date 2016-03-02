@@ -185,6 +185,10 @@
     })
   }
 
+  function player(){
+    $(".player").YTPlayer();
+  }
+
   // Functions
   //---------------------------------------------------------------
   function init() {
@@ -197,6 +201,7 @@
     sliderTestimonial();
     slideCase();
     valideForm();
+    player();
   }
 
   init();

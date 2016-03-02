@@ -162,6 +162,29 @@
       };
       t.init();
   }
+
+  function valideForm(){
+    $('form').each(function(){
+      if(language == 'PT'){
+        $(this).validate({
+          errorClass: 'he-form--error',
+          messages: {
+            Field43: "Esse campo é obrigatório.",
+            Field44: "Esse campo é obrigatório.",
+            Field3: "Informe um e-mail válido.",
+            Field16: "Esse campo é obrigatório.",
+            Field41: "Esse campo é obrigatório.",
+            Field52: "Esse campo é obrigatório.",
+          },
+        });
+      }else{
+        $(this).validate({
+          errorClass: 'he-form--error'
+        });
+      }
+    })
+  }
+
   // Functions
   //---------------------------------------------------------------
   function init() {
@@ -173,6 +196,7 @@
     currentPage();
     sliderTestimonial();
     slideCase();
+    valideForm();
   }
 
   init();

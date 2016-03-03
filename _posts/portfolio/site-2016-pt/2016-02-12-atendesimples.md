@@ -5,6 +5,10 @@ body_id: case-details
 en: /en/case/atendesimples
 permalink: '/portfolio/atendesimples/'
 
+redirect_from:
+ - /pt/trabalhos/atende-simples/
+ - /pt/cases/atende-simples/
+
 name: Atende Simples
 
 background: /images/cases/atendesimples/topo-atendesimples.jpg

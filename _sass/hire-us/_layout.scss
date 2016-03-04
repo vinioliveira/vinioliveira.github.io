@@ -112,6 +112,7 @@
     }
 
     .he-form {
+      z-index: 99;
 
       &__group {
         margin-top: rem(20);
@@ -135,6 +136,10 @@
       &__group:nth-child(5) {
         float: left;
         width: 48%;
+
+        @include media($screen-tiny) {
+          width: 100%;
+        }
       }
 
       &__small-text {

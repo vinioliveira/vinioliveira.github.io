@@ -14,13 +14,9 @@
   overflow: hidden;
   position: relative;
 
-  @include media($screen-small){
-    @include background(url('/images/bg-contact-1.png') no-repeat center center fixed);
-    background-size: cover;
-
-    .mbYTP_wrapper {
-      display: none;
-    }
+  @include media($screen-tiny) {
+    height: 100vh;
+    min-height: 100vh;
   }
 
   &__bg {
@@ -34,8 +30,10 @@
   &,
   &__bg {
     @include media($screen-tiny) {
-      height: rem(640);
-      min-height: rem(640);
+      background: url('/images/bg-contact-1.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      min-height: 100vh;
     }
   }
 
@@ -46,6 +44,10 @@
 
     & > * {
       @include transition(all .2s ease-in-out);
+    }
+
+    @include media($screen-tiny) {
+      margin-top: 100px;
     }
   }
 

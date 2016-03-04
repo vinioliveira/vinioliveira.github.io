@@ -16,7 +16,7 @@
 
   @include media($screen-tiny) {
     height: 100vh;
-    min-height: 100vh;
+    min-height: auto;
   }
 
   &__bg {
@@ -30,10 +30,9 @@
   &,
   &__bg {
     @include media($screen-tiny) {
-      background: url('/images/bg-contact-1.png') no-repeat center center fixed;
-      background-size: cover;
+      background: url('/images/bg-contact-1.png') no-repeat top center fixed;
       height: 100vh;
-      min-height: 100vh;
+      min-height: auto;
     }
   }
 

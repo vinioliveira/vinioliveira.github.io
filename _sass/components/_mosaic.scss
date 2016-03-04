@@ -24,6 +24,10 @@
     max-height: 715px;
     width: 100%;
 
+    @include media($screen-tiny){
+      max-height: 100%;
+    }
+
     &--one {
       float: left;
       width: 50%;

@@ -37,12 +37,12 @@ resume: Atende Simples está sendo usado por empresas de diferentes portes e de 
 
 about_img1: /images/cases/atendesimples/mockup-desktop_atendesimples@2x.png
 about_text1:
-- <strong>Atende Simples</strong> está sendo usado por empresas de diferentes portes e de todas as áreas de atuação. Possui recursos sofisticados como gravação de chamadas, controle de horário de funcionamento do atendimento, bloqueio de chamadas, relatórios... tudo com muita simplicidade!
+- <strong>Atende Simples</strong> está sendo usado por empresas de diferentes portes e de todas as áreas de atuação. Possui recursos sofisticados, como gravação de chamadas, controle de horário de funcionamento do atendimento, bloqueio de chamadas, relatórios... Tudo com muita simplicidade!
 - <br>
 - O projeto possui uma operação muito complexa, que envolve diversas tecnologias, empresas e sistemas. A plataforma de voz ficou sob a responsabilidade da VoxAge, em São Paulo.
 
 customer_testimony:
-- Atende Simples foi lançado oficialmente e todas as metas vem sendo cumpridas. Novas oportunidades foram identificadas para ajudar os clientes melhorar ainda mais seus negócios e, junto de ajustes e outras melhorias são semanalmente lançadas.
+- Atende simples foi lançado oficialmente e todas as metas vêm sendo cumpridas. Novas oportunidades foram identificadas para ajudar os clientes a melhorar ainda mais seus negócios e, além disso, ajustes e melhorias são semanalmente lançados.
 
 customer_name: Andre
 customer_role: Diretor de Produto, Atende Simples

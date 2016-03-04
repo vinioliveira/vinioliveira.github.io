@@ -8,7 +8,7 @@ permalink: '/portfolio/petroomie/'
 redirect_from:
  - /pt/trabalhos/pet-roomie/
 
-name: Pet Roomie
+name: PetRoomie
 
 background: /images/cases/petroomie/topo_petroomie.jpg
 logo: /images/cases/petroomie/logo_petroomie.png
@@ -31,11 +31,11 @@ screenshots:
 title_text: Desenvolvimento do sistema web
 subtitle_text: Design & Desenvolvimento
 
-resume: PetRoomie é uma comunidade que oferece serviços pro seu pet. Os serviços variam desde hotéis, babás
+resume: PetRoomie é uma comunidade que oferece serviços para seu pet. Os serviços variam desde hotéis, babás, adestramento, passeio, banho e tosa.
 
 about_img1: /images/cases/petroomie/mockup-desktop_pet-roomie.png
 about_text1:
-- <strong>PetRoomie</strong> é uma comunidade que oferece serviços pro seu pet. Os serviços variam desde hotéis, babás, adestramento, passeio, banho e tosa.
+- <strong>PetRoomie</strong> é uma comunidade que oferece serviços para o seu pet. Os serviços variam desde hotéis, babás e adestramento até passeio, banho e tosa.
 - <br>
 - O projeto já está finalizado, <i>online</i>, e já tem um grande número de usuários.
 - <br>

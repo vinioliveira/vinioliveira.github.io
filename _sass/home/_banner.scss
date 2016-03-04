@@ -17,6 +17,10 @@
   @include media($screen-tiny) {
     height: 100vh;
     min-height: auto;
+
+    .mbYTP_wrapper {
+      display: none;
+    }
   }
 
   &__bg {

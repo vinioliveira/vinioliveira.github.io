@@ -13,7 +13,7 @@
     <div class="container">
       <form id="form41" name="form41" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://helabs.wufoo.com/forms/r10wcbi61papu6q/#public" class="he-form he-form--no-padding" onsubmit="ga('send', 'event', 'Forms', 'Hire us Submitted EN');">
         <input type="hidden" id="budget" name="Field50"/>
-        <input name="Field46" type="hidden" value="/proposta-enviada"/>
+        <input name="Field46" type="hidden" value="/en/quote-sent"/>
         <div class="he-form__group">
           <input id="name" name="Field43" type="text" class="he-form__input" required>
           <label for="name" class="he-form__label he-form__label--floating he-form__label--required">First name</label>
@@ -56,7 +56,7 @@
         </div>
         <div class="he-form__group">
           <label for="neccessity" class="he-form__label he-form__label--required he-form__label--fixed">Your project or neccessity</label>
-          <textarea id="neccessity" required class="he-form__textarea" placeholder="Try to be very descriptive, because the more detail we have, the better will be our conversation"></textarea>
+          <textarea id="neccessity" name="Field52" required class="he-form__textarea" placeholder="Try to be very descriptive, because the more detail we have, the better will be our conversation"></textarea>
         </div>
         <div class="he-form__group">
           <input id="heard-about" name="heard-about" type="text" class="he-form__input">
@@ -66,6 +66,11 @@
           <button class="btn btn--red" onclick="ga('send','event','confirm-hire-us-EN','Click','confirm',1,{'nonInteraction': true});">
             Confirm meeting
           </button>
+        </div>
+        <div style="display:none;">
+          <label for="comment">Do Not Fill This Out</label>
+          <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+          <input type="hidden" id="idstamp" name="idstamp" value="lGw2sRgmYl/a8MgPwL7cwTWyjCpSHsvvVFJHB+MdoNU=" />
         </div>
       </form>
     </div>

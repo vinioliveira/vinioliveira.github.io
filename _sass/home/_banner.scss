@@ -14,13 +14,9 @@
   overflow: hidden;
   position: relative;
 
-  @include media($screen-tiny) {
-    height: 100vh;
-    min-height: auto;
-
-    .mbYTP_wrapper {
-      display: none;
-    }
+  @include media($screen-small) {
+    height: 104vh;
+    min-height: 104vh;
   }
 
   &__bg {
@@ -33,11 +29,14 @@
 
   &,
   &__bg {
-    @include media($screen-tiny) {
-      background: url('/images/bg-contact-1.png') no-repeat top center fixed;
-      height: 100vh;
-      min-height: auto;
+    @include media($screen-small) {
+      height: 104vh;
+      min-height: 104vh;
     }
+  }
+
+  &__bg--mobile {
+    background: url('/images/bg-contact-1.png') no-repeat top center fixed;
   }
 
   &__content {
@@ -47,6 +46,10 @@
 
     & > * {
       @include transition(all .2s ease-in-out);
+    }
+
+    @include media($screen-small) {
+      margin-top: 100px;
     }
 
     @include media($screen-tiny) {
@@ -66,6 +69,10 @@
       font-size: rem(85);
     }
 
+    @include media($screen-small) {
+      font-size: 5vw;
+    }
+
     @include media($screen-tiny) {
       font-size: rem(44);
     }
@@ -80,6 +87,10 @@
 
     @include media($screen-medium) {
       font-size: rem(30);
+    }
+
+    @include media($screen-small) {
+      font-size: rem(18);
     }
 
     @include media($screen-tiny) {

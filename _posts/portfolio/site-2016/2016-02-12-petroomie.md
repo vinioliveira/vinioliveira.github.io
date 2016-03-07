@@ -5,6 +5,9 @@ body_id: case-details
 pt: /portfolio/petroomie/
 permalink: '/en/case/petroomie/'
 
+redirect_from:
+ - /en/work/pet-roomie/
+
 name: Pet Roomie
 
 background: /images/cases/petroomie/topo_petroomie.jpg

@@ -24,7 +24,7 @@
         <a href="https://medium.com/helabs-journal" target="_blank" title="Blog">Blog</a>
       </li>
       <li class="navbar-nav__item navbar-nav__item--btn">
-        <a href="/en/hire-us" title="Hire Us" onClick="_gaq.push(['_trackEvent', 'hire-usEN', 'click',, 1, true]);">Hire Us</a>
+        <a href="/en/hire-us" title="Hire Us" onclick="ga('send','event','hire-us-EN','Click','',1,{'nonInteraction': true});">Hire Us</a>
       </li>
       <li><a class="translate-btn" href="{% if page.pt %}{{ page.pt }}{% else %}/{% endif %}">PT</a></li>
     </ul>

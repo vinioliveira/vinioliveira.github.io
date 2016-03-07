@@ -21,7 +21,7 @@ redirect_from:
           Se você está buscando um orçamento ou deseja nos contratar, solicite nossa proposta.
         </p>
         <div class="modal">
-          <label for="modal-1" class="btn btn--red" onClick="_gaq.push(['_trackEvent', 'getaquotePT', 'click', 'btnquote', 1, true]);">
+          <label for="modal-1" class="btn btn--red" onclick="ga('send','event','getaquotePT','Click','btnquote',1,{'nonInteraction': true});">
             Solicitar proposta
           </label>
           {% include schedule-meeting-modal-pt.html %}

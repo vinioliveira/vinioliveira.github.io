@@ -11,7 +11,7 @@
       </p>
     </div>
     <div class="container">
-      <form id="form41" name="form41" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://helabs.wufoo.com/forms/r10wcbi61papu6q/#public" class="he-form he-form--no-padding">
+      <form id="form41" name="form41" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://helabs.wufoo.com/forms/r10wcbi61papu6q/#public" class="he-form he-form--no-padding" onsubmit="ga('send', 'event', 'Forms', 'Hire us Submitted EN');">
         <input type="hidden" id="budget" name="Field50"/>
         <input name="Field46" type="hidden" value="/proposta-enviada"/>
         <div class="he-form__group">
@@ -63,7 +63,7 @@
           <label for="heard-about" class="he-form__label he-form__label--floating">Where did you hear about us? (optional)</label>
         </div>
         <div class="he-form__group he-form__group--center-text">
-          <button class="btn btn--red">
+          <button class="btn btn--red" onclick="ga('send','event','confirm-hire-us-EN','Click','confirm',1,{'nonInteraction': true});">
             Confirm meeting
           </button>
         </div>

@@ -19,7 +19,9 @@
 
 # Build settings
 markdown: kramdown
-
+baseurl: ""
+permalink: /:title/
+permalink: /:page-title/
 gems:
   - jekyll-redirect-from
 

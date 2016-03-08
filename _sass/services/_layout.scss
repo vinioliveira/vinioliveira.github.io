@@ -146,6 +146,10 @@
     float: left;
     font-family: $base-font-family;
     text-align: center;
+
+    .plus:after {
+      content: '+';
+    }
   }
 
   &__number {
@@ -154,12 +158,6 @@
     font-size: rem(52);
     font-weight: 900;
     width: 100%;
-
-    &:after {
-      content: ' +';
-
-
-    }
   }
 
   &__name {

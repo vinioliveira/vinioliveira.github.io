@@ -150,10 +150,16 @@
 
   &__number {
     color: $pale-grey;
-    display: block;
+    //display: block;
     font-size: rem(52);
     font-weight: 900;
     width: 100%;
+
+    &:after {
+      content: ' +';
+
+
+    }
   }
 
   &__name {

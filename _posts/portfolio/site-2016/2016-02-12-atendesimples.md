@@ -4,6 +4,7 @@ category: caseen
 body_id: case-details
 pt: /portfolio/atendesimples
 permalink: '/en/case/atendesimples/'
+title: Atende Simples case - HE:labs
 
 redirect_from:
  - /en/cases/atende-simples/

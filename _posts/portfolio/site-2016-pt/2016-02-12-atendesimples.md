@@ -4,6 +4,8 @@ category: case
 body_id: case-details
 en: /en/case/atendesimples
 permalink: '/portfolio/atendesimples/'
+title: Atende Simples - Case do sistema Atende Simples - HE:labs
+description: Descrição do case Atende Simples que foi desenvolvido pela HE:labs.
 
 redirect_from:
  - /pt/trabalhos/atende-simples/

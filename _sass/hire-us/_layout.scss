@@ -86,6 +86,10 @@
       width: 100%;
     }
 
+    @include media($screen-tiny){
+      width: 90%;
+    }
+
     &__fade-screen {
       padding-top: 1em;
     }

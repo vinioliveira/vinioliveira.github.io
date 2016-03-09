@@ -237,6 +237,10 @@
     margin: 0 auto;
     max-width: rem(350);
     text-align: center;
+
+    a {
+      color: $darkish-red;
+    }
   }
 
   &__block {

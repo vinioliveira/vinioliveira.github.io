@@ -126,17 +126,27 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
       responsive: true
     });
 
-    $(".fancybox").fancybox({
-      'width'           : 650,
-      'height'          : 488,
-      'scrolling'       : 'no',
-      'autoScale'       : false,
-      'transitionIn'    : 'none',
-      'transitionOut'   : 'none',
-      'type'            : 'iframe',
-      'overlayColor'    : "#000000",
-      'overlayOpacity'  : 0.6
+    $(".video").click(function() {
+      $.fancybox({
+        'padding'   : 0,
+        'autoScale'   : false,
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none',
+        'title'     : this.title,
+        'width'     : 640,
+        'height'    : 385,
+        'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+        'type'      : 'swf',
+        'swf'     : {
+        'wmode'       : 'transparent',
+        'overlayColor'    : "#000000",
+        'allowfullscreen' : 'true'
+        }
+      });
+
+      return false;
     });
+
   }
 
 

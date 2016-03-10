@@ -1,1 +1,1 @@
-jekyll: bundle exec jekyll serve --watch
+jekyll: bundle exec jekyll serve --watch --host=ricardok.local

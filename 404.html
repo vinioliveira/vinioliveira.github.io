@@ -25,9 +25,18 @@
     .not-found {
       background: url("/images/bg-404@2x.jpg") no-repeat center center;
       background-size: cover;
-      height: 82vh;
+      height: 95%;
       overflow: hidden;
-      padding-top: 140px;
+      padding-top: 120px;
+      position: fixed;
+      width: 100%;
+    }
+
+
+
+    .main-footer {
+      position: absolute;
+      bottom: 0;
     }
 
     .not-found .not-found__icon{
@@ -40,8 +49,8 @@
     }
 
     .not-found__description {
-      float: left;
-      width: 60%;
+      float: right;
+      width: 55%;
     }
 
     .not-found__description h2 {
@@ -61,11 +70,37 @@
       margin: 15px 0;
     }
 
+    @media screen and (min-width: 1191px){
+      .not-found .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 1190px){
+      .not-found {
+        padding-bottom: 30px;
+        position: relative;
+        height: auto;
+      }
+
+      .main-footer {
+        position: relative;
+
+      }
+
+      .not-found__description h2 {
+        font-size: 30px;
+      }
+    }
+
     @media screen and (max-width: 768px){
 
       .not-found {
         height: auto !important;
-        padding-top: 90px;
       }
       .not-found__icon {
           float: none;
@@ -85,7 +120,7 @@
       }
 
       .not-found__description h2 {
-        font-size: 35px;
+        font-size: 30px;
       }
     }
 

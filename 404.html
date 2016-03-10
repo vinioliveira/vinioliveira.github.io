@@ -17,7 +17,79 @@
   <meta name="viewport" content="initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <style type="text/css" rel="stylesheet">
+    .main-header {
+      background: rgba(55,50,50,1);
+    }
 
+    .not-found {
+      background: url("/images/bg-404@2x.jpg") no-repeat center center;
+      background-size: cover;
+      height: 82vh;
+      overflow: hidden;
+      padding-top: 140px;
+    }
+
+    .not-found .not-found__icon{
+
+    }
+
+    .not-found__icon {
+      float: left;
+      width: 40%;
+    }
+
+    .not-found__description {
+      float: left;
+      width: 60%;
+    }
+
+    .not-found__description h2 {
+      color: #383232;
+      font-family: 'serifa_bqroman', sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 31px;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+
+    .not-found__description p {
+      color: #383232;
+      font-family: 'SourceSansPro-Regular';
+      font-size: 18px;
+      margin: 15px 0;
+    }
+
+    @media screen and (max-width: 768px){
+
+      .not-found {
+        height: auto !important;
+        padding-top: 90px;
+      }
+      .not-found__icon {
+          float: none;
+          margin: 0 auto;
+          width: 40%;
+      }
+
+      .not-found__description {
+          float: none;
+          margin: 0 auto 20px;
+          text-align: center;
+          width: 100%;
+      }
+
+      .not-found__description img {
+        width: 70%;
+      }
+
+      .not-found__description h2 {
+        font-size: 35px;
+      }
+    }
+
+  </style>
 </head>
 
 <body id="error-page">

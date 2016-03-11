@@ -13,12 +13,10 @@
     @include span-columns(12);
     min-height: rem(470);
     overflow: hidden;
-    padding-top: rem(100);
+    padding-top: rem(80);
     position: relative;
-    background: url('/images/bg-team-member.jpg') no-repeat $black top center;
+    background: url('/images/bg-contact.jpg') no-repeat $black top center;
     background-size: cover;
-
-
   }
 
   &__title {
@@ -123,7 +121,7 @@
   color: $black;
   font-family: $base-font-family;
   font-size: rem(30);
-  line-height: 2.0;
+  line-height: rem(40);
   position: relative;
   padding: 0 rem(60);
   text-align: center;

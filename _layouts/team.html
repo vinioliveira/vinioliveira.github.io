@@ -1,80 +1,75 @@
-<!DOCTYPE html>
-<html lang='pt'>
-  {% include head-2016-pt.html %}
-  <body id="{{ page.body_id }}" class="page-{{ page.body_id }} page-team-member main-content">
-    {% include header-2016-pt.html %}
+---
+layout: site-2016-pt
+---
 
-    <section class="team-member__hero">
+<section class="team-member__hero">
 
-        <div class="wrapper">
+    <div class="wrapper">
 
-          <div class="team-member__heading">
-            <figure class="team-member__picture">
-              <img src="{{ page.image }}" srcset="{{ page.image2x }} 2x" alt="{{ page.full_name }}">
-            </figure>
-            <h1 class="team-member__title">{{ page.full_name }}</h1>
+      <div class="team-member__heading">
+        <figure class="team-member__picture">
+          <img src="{{ page.image }}" srcset="{{ page.image2x }} 2x" alt="{{ page.full_name }}">
+        </figure>
+        <h1 class="team-member__title">{{ page.full_name }}</h1>
 
-            <h2 class="team-member__jobtitle">
-              {% if page.job_cool %}
-                {{ page.job_cool }}
-              {% else %}
-                {{ page.job_title }}
-              {% endif %}
-            </h2>
-          </div>
-
-        </div>
-
-    </section>
-
-    <section class="team-member__content">
-
-      <div class="wrapper">
-
-        <article class="team-member__bio">
-          {% for line in page.bio %}
-            <p>{{ line }}</p>
-          {% endfor %}
-        </article>
-
-        {% if page.skills %}
-
-          <h3 class="team-member__subtitle">Habilidades</h4>
-
-          <div class="skill-list">
-            {% for skill in page.skills %}
-              <span class="skill-tag">
-                {{ skill }}
-              </span>
-            {% endfor %}
-          </div>
-        {% endif %}
-
-        {% if page.twitter || page.dribbble || page.github || page.facebook %}
-
-          <h3 class="team-member__subtitle">Social</h4>
-
-          <ul class="social-links">
-            {% if page.twitter %}<li><a href="https://twitter.com/{{ page.twitter }}" class="profile-twitter">@{{ page.twitter }}</a></li>{% endif %}
-            {% if page.dribbble %}<li><a href="http://dribbble.com/{{ page.dribbble }}" class="profile-dribbble">{{ page.dribbble }}</a></li>{% endif %}
-            {% if page.github %}<li><a href="https://github.com/{{ page.github }}" class="profile-github">{{ page.github }}</a></li>{% endif %}
-            {% if page.facebook %}<li><a href="https://www.facebook.com/{{ page.facebook }}" class="profile-facebook">{{ page.full_name }}</a></li>{% endif %}
-          </ul>
-        {% endif %}
-
-        {% if page.quote %}
-          <section class="team-member__quote">
-
-            <p>"{{ page.quote.content }}"</p>
-            <p class="team-member__signature">&mdash; {{ page.quote.author }}</p>
-
-          </section> <!-- /quote -->
-        {% endif %}
-
+        <h2 class="team-member__jobtitle">
+          {% if page.job_cool %}
+            {{ page.job_cool }}
+          {% else %}
+            {{ page.job_title }}
+          {% endif %}
+        </h2>
       </div>
 
-    </section>
+    </div>
 
-    {% include footer-2016-pt.html %}
-  </body>
-</html>
+</section>
+
+<section class="team-member__content">
+
+  <div class="wrapper">
+
+    <article class="team-member__bio">
+      {% for line in page.bio %}
+        <p>{{ line }}</p>
+      {% endfor %}
+    </article>
+
+    {% if page.skills %}
+
+      <h3 class="team-member__subtitle">Habilidades</h4>
+
+      <div class="skill-list">
+        {% for skill in page.skills %}
+          <span class="skill-tag">
+            {{ skill }}
+          </span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.twitter || page.dribbble || page.github || page.facebook %}
+
+      <h3 class="team-member__subtitle">Social</h4>
+
+      <ul class="social-links">
+        {% if page.twitter %}<li><a href="https://twitter.com/{{ page.twitter }}" class="profile-twitter">@{{ page.twitter }}</a></li>{% endif %}
+        {% if page.dribbble %}<li><a href="http://dribbble.com/{{ page.dribbble }}" class="profile-dribbble">{{ page.dribbble }}</a></li>{% endif %}
+        {% if page.github %}<li><a href="https://github.com/{{ page.github }}" class="profile-github">{{ page.github }}</a></li>{% endif %}
+        {% if page.facebook %}<li><a href="https://www.facebook.com/{{ page.facebook }}" class="profile-facebook">{{ page.full_name }}</a></li>{% endif %}
+      </ul>
+    {% endif %}
+
+    {% if page.quote %}
+      <section class="team-member__quote">
+
+        <p>"{{ page.quote.content }}"</p>
+        <p class="team-member__signature">&mdash; {{ page.quote.author }}</p>
+
+      </section> <!-- /quote -->
+    {% endif %}
+
+  </div>
+
+</section>
+

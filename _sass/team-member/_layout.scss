@@ -39,16 +39,11 @@
   }
 
   &__heading {
-    @include size(100% rem(250);
+    @include size(100% rem(250));
     background: url('/images/bg-avatar-team-membr.png') no-repeat transparent top center;
     margin: 0 auto;
     max-width: 450px;
     padding-top: 18px;
-
-    @include media($screen-medium) {
-
-    }
-
   }
 
   &__picture {

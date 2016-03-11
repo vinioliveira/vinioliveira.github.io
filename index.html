@@ -219,14 +219,6 @@ redirect_from:
     </div>
   </div>
 
-  <div class="section-team__grid">
-  {% for person in site.categories.time reversed %}
-    <div class="section-team__item">
-      <img src="{{ person.image }}" srcset="{{ person.image2x }} 2x" alt="{{ person.full_name }}" />
-      <div class="section-team__name">
-        <span >{{ person.full_name }}<br /> <small>{{ person.job_title }}</small></span>
-      </div>
-    </div>
-  {% endfor %}
-  </div>
+{% include team-members.html %}
+
 </section>

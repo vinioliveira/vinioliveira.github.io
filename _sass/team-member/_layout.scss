@@ -96,6 +96,27 @@
     font-style: italic;
   }
 
+  &__social {
+    @include fill-parent;
+    color: #000;
+    font-size: rem(20);
+
+    li {
+      display: inline-block;
+      margin-right: rem(20);
+    }
+
+    svg {
+      float: left;
+      margin-right: 5px;
+    }
+
+    svg > path{
+      fill: #000;
+    }
+
+  }
+
 }
 
 .skill-list {

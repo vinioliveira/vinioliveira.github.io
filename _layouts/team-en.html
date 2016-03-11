@@ -24,7 +24,6 @@ layout: site-2016
     </div>
 
 </section>
-<!-- /introduction -->
 
 <section class="team-member__content">
 
@@ -35,7 +34,6 @@ layout: site-2016
         <p>{{ line }}</p>
       {% endfor %}
     </article>
-    <!-- /bio -->
 
     {% if page.skills %}
 
@@ -49,20 +47,38 @@ layout: site-2016
         {% endfor %}
       </div>
     {% endif %}
-    <!-- /skills -->
 
     {% if page.twitter || page.dribbble || page.github || page.facebook %}
 
       <h3 class="team-member__subtitle">Social</h4>
 
-      <ul class="social-links">
-        {% if page.twitter %}<li><a href="https://twitter.com/{{ page.twitter }}" class="profile-twitter">@{{ page.twitter }}</a></li>{% endif %}
-        {% if page.dribbble %}<li><a href="http://dribbble.com/{{ page.dribbble }}" class="profile-dribbble">{{ page.dribbble }}</a></li>{% endif %}
-        {% if page.github %}<li><a href="https://github.com/{{ page.github }}" class="profile-github">{{ page.github }}</a></li>{% endif %}
-        {% if page.facebook %}<li><a href="https://www.facebook.com/{{ page.facebook }}" class="profile-facebook">{{ page.full_name }}</a></li>{% endif %}
+      <ul class="team-member__social">
+        {% if page.twitter %}
+        <li>
+          {% include /svg/twitter.svg %}
+          <a href="https://twitter.com/{{ page.twitter }}">@{{ page.twitter }}</a>
+        </li>
+        {% endif %}
+        {% if page.dribbble %}
+        <li>
+
+          <a href="http://dribbble.com/{{ page.dribbble }}">{{ page.dribbble }}</a>
+        </li>
+        {% endif %}
+        {% if page.github %}
+        <li>
+          {% include /svg/github.svg %}
+          <a href="https://github.com/{{ page.github }}">{{ page.github }}</a>
+        </li>
+        {% endif %}
+        {% if page.facebook %}
+        <li>
+          {% include /svg/facebook.svg %}
+          <a href="https://www.facebook.com/{{ page.facebook }}">{{ page.full_name }}</a>
+        </li>
+        {% endif %}
       </ul>
     {% endif %}
-    <!-- /social -->
 
     {% if page.quote %}
       <section class="team-member__quote">
@@ -70,9 +86,8 @@ layout: site-2016
         <p>"{{ page.quote.content }}"</p>
         <p class="team-member__signature">&mdash; {{ page.quote.author }}</p>
 
-      </section>
+      </section> <!-- /quote -->
     {% endif %}
-    <!-- /quote -->
 
   </div>
 

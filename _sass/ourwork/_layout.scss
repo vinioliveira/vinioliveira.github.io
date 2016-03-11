@@ -77,6 +77,65 @@
 
 }
 
+.clients-grid {
+  @include span-columns(12);
+  background: $pale-grey;
+  padding: rem(60) 0;
+
+  &__heading {
+    margin: 0 auto;
+    max-width: rem(870);
+    text-align: center;
+  }
+
+  &__title {
+    color: $light-red;
+    display: block;
+    font-size: rem(48);
+
+    @include media($screen-tiny) {
+      font-size: rem(26);
+    }
+  }
+
+  &__subtitle {
+    color: $black;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin: rem(30) 0 0;
+  }
+
+  &__wrap {
+    @include span-columns(12);
+    margin-top: rem(70);
+  }
+
+  &__item {
+    @include omega(4n);
+    @include span-columns(3 of 12);
+    background: $light;
+    min-height: rem(90);
+    max-height: rem(120);
+    margin-bottom: rem(20);
+    text-align: center;
+    overflow: hidden;
+
+    @include media($screen-small) {
+      @include omega-reset(4n);
+      @include omega(2n);
+      @include span-columns(6 of 12);
+    }
+
+    img {
+      max-width: rem(280);
+      width: 100%;
+    }
+  }
+
+}
+
 
 
 

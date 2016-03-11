@@ -8,19 +8,20 @@
 
         <div class="wrapper">
 
-          <figure class="team-member__picture">
-            <img src="{{ page.image }}" srcset="{{ page.image2x }} 2x" alt="{{ page.full_name }}">
-          </figure>
+          <div class="team-member__heading">
+            <figure class="team-member__picture">
+              <img src="{{ page.image }}" srcset="{{ page.image2x }} 2x" alt="{{ page.full_name }}">
+            </figure>
+            <h1 class="team-member__title">{{ page.full_name }}</h1>
 
-          <h1 class="team-member__title">{{ page.full_name }}</h1>
-
-          <h2 class="team-member__jobtitle">
-            {% if page.job_cool %}
-              {{ page.job_cool }}
-            {% else %}
-              {{ page.job_title }}
-            {% endif %}
-          </h2>
+            <h2 class="team-member__jobtitle">
+              {% if page.job_cool %}
+                {{ page.job_cool }}
+              {% else %}
+                {{ page.job_title }}
+              {% endif %}
+            </h2>
+          </div>
 
         </div>
 
@@ -30,12 +31,16 @@
 
       <div class="wrapper">
 
-        {% for line in page.bio %}
-          <p>{{ line }}</p>
-        {% endfor %}
+        <article class="team-member__bio">
+          {% for line in page.bio %}
+            <p>{{ line }}</p>
+          {% endfor %}
+        </article>
 
         {% if page.skills %}
-          <h4>Skills</h4>
+
+          <h3 class="team-member__subtitle">Habilidades</h4>
+
           <div class="skill-list">
             {% for skill in page.skills %}
               <span class="skill-tag">
@@ -46,7 +51,9 @@
         {% endif %}
 
         {% if page.twitter || page.dribbble || page.github || page.facebook %}
-          <h4>Social</h4>
+
+          <h3 class="team-member__subtitle">Social</h4>
+
           <ul class="social-links">
             {% if page.twitter %}<li><a href="https://twitter.com/{{ page.twitter }}" class="profile-twitter">@{{ page.twitter }}</a></li>{% endif %}
             {% if page.dribbble %}<li><a href="http://dribbble.com/{{ page.dribbble }}" class="profile-dribbble">{{ page.dribbble }}</a></li>{% endif %}
@@ -56,22 +63,17 @@
         {% endif %}
 
         {% if page.quote %}
-          <section class="quote">
-            <div class="containner">
-              <div class="cote">
-                <p>"{{ page.quote.content }}"</p>
-                <p class="signature">&mdash; {{ page.quote.author }}</p>
-              </div>
-            </div>
+          <section class="team-member__quote">
+
+            <p>"{{ page.quote.content }}"</p>
+            <p class="team-member__signature">&mdash; {{ page.quote.author }}</p>
+
           </section> <!-- /quote -->
         {% endif %}
 
       </div>
 
     </section>
-
-
-
 
     {% include footer-2016-pt.html %}
   </body>

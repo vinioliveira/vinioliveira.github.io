@@ -12,36 +12,43 @@
   &__hero {
     @include span-columns(12);
     min-height: rem(470);
-    padding-top: rem(140);
     overflow: hidden;
+    padding-top: rem(100);
     position: relative;
-    background: url('/images/bg-contact-1.png') no-repeat $black top center;
+    background: url('/images/bg-team-member.jpg') no-repeat $black top center;
     background-size: cover;
 
-    @include media($screen-medium) {
-      min-height: rem(350);
-    }
-
-    @include media($screen-small) {
-      min-height: rem(250);
-    }
 
   }
 
   &__title {
     color: $light-primary;
-    font-size: rem(26);
     font-family: $heading-font-family;
-    text-align: center;
+    font-size: rem(26);
     margin-bottom: rem(10);
+    margin-top: 30px;
+    text-align: center;
   }
 
   &__jobtitle {
-    text-align: center;
-    font-family: $base-font-family;
-    text-transform: uppercase;
     color: $light-red;
+    font-family: $base-font-family;
     font-size: rem(14);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__heading {
+    @include size(100% rem(250);
+    background: url('/images/bg-avatar-team-membr.png') no-repeat transparent top center;
+    margin: 0 auto;
+    max-width: 450px;
+    padding-top: 18px;
+
+    @include media($screen-medium) {
+
+    }
+
   }
 
   &__picture {
@@ -49,9 +56,102 @@
     margin:0 auto;
 
     img {
-      border-radius: 50%;
       @include size(190px);
+      border-radius: 50%;
     }
+
+  }
+
+  &__content {
+    background: #f2f2f2;
+    @include span-columns(12);
+    @include media($screen-medium) {
+      padding: $base-spacing;
+    }
+
+    .wrapper {
+      max-width: rem(860);
+      margin: 50px auto;
+      @include media($screen-small) {
+        margin: 0 auto;
+      }
+    }
+
+  }
+
+  &__bio {
+    color: #000;
+    font-family: $base-font-family;
+    font-size: rem(22);
+    margin-bottom: rem(25);
+    line-height: rem(40);
+  }
+
+  &__subtitle {
+    font-family: $base-font-family;
+    font-size: rem(18);
+    color: $warm-grey;
+    font-weight: bold;
+    margin: 0 0 rem(15) 0;
+  }
+
+
+  &__signature {
+    font-family: $base-font-family;
+    font-size: rem(25);
+    color: rgba($black, .75);
+    font-style: italic;
   }
 
 }
+
+.skill-list {
+  @include fill-parent;
+  margin-bottom: 30px;
+}
+
+.skill-tag {
+  @include padding(6px 18px);
+  background: $light-red;
+  border-radius: 100px;
+  color: $light-primary;
+  font-family: $base-font-family;
+  font-size: rem(18);
+  line-height: rem(38);
+  margin-right: 10px;
+  margin-right: 10px;
+}
+
+.team-member__quote {
+  @include fill-parent;
+  margin: rem(80) 0;
+  color: $black;
+  font-family: $base-font-family;
+  font-size: rem(30);
+  line-height: 2.0;
+  position: relative;
+  padding: 0 rem(60);
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 199px;
+    width: 47px;
+    background: url("/images/slider-testimonials-background.png") no-repeat top left;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 199px;
+    width: 47px;
+    background: url("/images/slider-testimonials-background.png") no-repeat top right;
+    content: '';
+  }
+
+}
+

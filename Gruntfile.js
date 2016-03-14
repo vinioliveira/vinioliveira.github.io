@@ -63,7 +63,7 @@ module.exports = function( grunt ) {
 						'<%= dirs.js %>/src/scroll.js',
 						'<%= dirs.js %>/src/parallax.js',
 						'<%= dirs.js %>/src/count.js',
-						'<%= dirs.js %>/src/grid-mosaic.js',
+						//'<%= dirs.js %>/src/grid-mosaic.js',
 						'<%= dirs.js %>/src/carousel.js'
 					]
 				}
@@ -89,33 +89,34 @@ module.exports = function( grunt ) {
 		},
 
 		watch: {
-              sass: {
-                    files: [
-                          '<%= dirs.sass %>/**'
-                    ],
-                    tasks: ['sass']
-              },
-              js: {
-                    files: [
-                          '<%= dirs.js %>/src/**'
-                    ],
-                    tasks: ['uglify']
-              },
-              // <script src="http://localhost:35729/livereload.js?snipver=1"></script>
-              livereload: {
-                    options: {
-                          livereload: true
-                    },
-                    files: [
-                       '_site/*.html'
-                    ]
-              },
-              options: {
-                    spawn: false
-              }
-        }
+      sass: {
+        files: [
+              '<%= dirs.sass %>/**'
+        ],
+        tasks: ['sass']
+      },
+      js: {
+        files: [
+              '<%= dirs.js %>/src/**'
+        ],
+        tasks: ['uglify']
+      },
+      // <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+      livereload: {
+        options: {
+              livereload: true
+        },
+        files: [
+           '_site/*.html'
+        ]
+      },
+      options: {
+        spawn: false
+      }
+    }
 
 	};
+
 
 	// Initialize Grunt Config
 	// --------------------------

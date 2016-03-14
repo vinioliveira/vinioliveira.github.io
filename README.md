@@ -50,6 +50,18 @@ $ rake staging
 
 Staging version of the website is available at [http://staging.helabs.com.br](http://staging.helabs.com.br).
 
+## Adding images
+
+Save in images/src directory, then run:
+
+```sh
+grunt images
+```
+
+## Scss
+
+Use the stylesheets/sass directory to save the .scss files
+
 ## Made with love by HE:labs
 
 ![HE:labs](http://helabs.com.br/images/logo.png)

@@ -1,0 +1,163 @@
+// *************************************
+//
+//   HE-form
+//
+// *************************************
+.he-form {
+  @include span-columns(12);
+  @include media($screen-medium) {
+    padding: 0 $base-spacing;
+  }
+  padding: 0 rem(350);
+  $input-height: 40px;
+
+  &--no-padding {
+    padding: 0;
+    @include media($screen-medium) {
+      padding: 0;
+    }
+  }
+
+  %red-label {
+    color: $light-red;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  &__group {
+    @include span-columns(12);
+    position: relative;
+    width: inherit;
+    margin-top: rem(30);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &--half-width {
+      @include span-columns(6);
+      @include omega(2n);
+
+      @include media($screen-tiny) {
+        width: 100%;
+      }
+    }
+
+    &--center-text {
+      text-align: center;
+    }
+  }
+
+  &__label {
+    color: $light-red;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+
+    &--floating {
+      @include transition(all .13s ease-out);
+      color: $greyish-brown;
+      position: absolute;
+      top: 0;
+      left: rem(10);
+      line-height: $input-height;
+      pointer-events: none;
+    }
+
+    &--floated {
+      @extend %red-label;
+      left: 0;
+      top: -$input-height * .75;
+    }
+
+    &--required:after {
+      content:" *";
+      color: $light-red;
+      font-weight: bold;
+    }
+
+    &--fixed {
+      @extend %red-label;
+    }
+  }
+
+  &__small-text {
+    color: $light;
+    display: block;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  &__input {
+    height: $input-height;
+
+    &:hover {
+      border-color: shade($light-red, 20%);
+    }
+
+    &:focus {
+      border-color: $light-red;
+      box-shadow: shade($light-red, 20%);
+      outline: none;
+    }
+  }
+
+  &__textarea {
+    @extend .he-form__input;
+    min-height: rem(120);
+  }
+
+  &__button {
+    background: none;
+    border: 2px solid $light-red;
+    border-radius: 10px;
+    min-width: 200px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+    color: $light-red;
+    padding: 0;
+    line-height: 55px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      background: none;
+    }
+
+    &--large {
+      width: 246px;
+      font-weight: bold;
+      @include media($screen-small) {
+        font-size: rem(15);
+      }
+    }
+
+    &--light {
+      color: $light;
+      border-color: $light;
+    }
+  }
+}
+
+textarea + label.he-form--error{
+  margin-top: 15px;
+}
+
+label.he-form--error {
+  @extend .he-form__label--floating;
+  left: auto;
+  font-size: rem(10);
+  right: 6px;
+  color: $light-red;
+
+  &::after {
+    content: "";
+    display: block;
+    background: url("/images/alert.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin: 9px 0 0 5px;
+  }
+}

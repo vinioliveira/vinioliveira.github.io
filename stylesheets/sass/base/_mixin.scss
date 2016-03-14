@@ -1,0 +1,50 @@
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin background-detail($name) {
+    background: url('/images/cases/top-$name.jpg') no-repeat center center;
+}
+
+
+@mixin btn-link($border-color, $border-length, $border-radius, $text-color, $icon) {
+    border: $border-length solid $border-color;
+    border-radius: $border-radius;
+    color: $text-color;
+
+    &::after{
+      border-left: $border-length solid $border-color;
+      content: url( asset-path( $icon ));
+    }
+}
+
+@mixin center($width: null, $height: null) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  @if not $width and not $height {
+    transform: translate(-50%, -50%);
+  } @else if $width and $height {
+    width: $width;
+    height: $height;
+    margin: -($width / 2) #{0 0} -($height / 2)
+  } @else if not $height {
+    margin-left: -($width / 2);
+    transform: translateY(-50%);
+    width: $width;
+  } @else {
+    margin-top: -($height / 2);
+    transform: translateX(-50%);
+    height: $height;
+  }
+}
+
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}

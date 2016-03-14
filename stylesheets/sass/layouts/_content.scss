@@ -1,0 +1,21 @@
+.wrapper {
+  @include outer-container();
+  padding: 2em 2em;
+
+  @include media($screen-medium) {
+    @include pad(0 $base-spacing);
+  }
+
+  @include media($screen-tiny) {
+    padding: 2em 0 !important;
+  }
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+

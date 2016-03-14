@@ -25,11 +25,7 @@ permalink: /:title/
 gems:
   - jekyll-redirect-from
 
-sass:
-  sass_dir: _sass
-  style: compressed
-
 whitelist:
   - jekyll-redirect-from
 
-exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor']
+exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor', 'node_modules', 'stylesheets/sass']

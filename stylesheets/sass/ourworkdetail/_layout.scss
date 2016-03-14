@@ -1,0 +1,285 @@
+// *************************************
+//
+// ourworkdetails
+//
+// *************************************
+.ourworkdetails {
+
+  &__wrapper {
+    @include outer-container();
+    padding: 0 rem(80);
+
+    @include media($screen-small) {
+      padding: 0 $base-spacing;
+    }
+
+  }
+
+  &__h2 {
+    color: $light-red;
+    font-family: $heading-font-family;
+    font-size: rem(30);
+    text-align: left;
+
+    @include media($screen-small) {
+      font-size: rem(18);
+      @include fill-parent;
+      text-align: center;
+    }
+
+  }
+
+  &__box {
+    @include span-columns(6 of 12);
+    @include media($screen-small) {
+      @include span-columns(12);
+    }
+
+    &--right {
+      float: right;
+      padding-top: rem(200);
+      @include media($screen-small) {
+        float: right !important;
+        padding-top: 0;
+      }
+    }
+
+    &--movie {
+      padding-top: rem(100);
+      @include media($screen-small) {
+        padding-top: 0;
+      }
+    }
+
+    &--image {
+      @include media($screen-small) {
+        display: none;
+      }
+    }
+
+  }
+
+  &__description,
+  &__description > * {
+    color: $pale-grey;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    max-width: rem(500);
+    text-align: left;
+
+    @include media($screen-small) {
+      font-size: rem(13);
+      line-height: rem(18);
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+
+.ourworkdetails-main {
+  @include span-columns(12);
+  background: url('/images/espn/bg-1.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: rem(1024);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  @include media($screen-small) {
+    min-height: rem(300);
+  }
+
+  &__title {
+    color: $light-red;
+    display: inline-block;
+    font-family: $heading-font-family;
+    font-size: rem(48);
+    line-height: rem(32);
+    margin: rem(250) 0 0;
+    width: 100%;
+
+    @include media($screen-small) {
+      font-size: rem(30);
+      margin-top: rem(150);
+    }
+  }
+
+  &__subtitle {
+    color: $light-primary;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(36);
+    line-height: rem(40);
+    margin: 0 0 rem(90);
+    text-align: center;
+    width: 100%;
+
+    @include media($screen-small) {
+      font-size: rem(16);
+      margin-bottom: rem(10);
+    }
+
+  }
+
+  img {
+    max-width: rem(1140);
+    width: 100%;
+    @include media($screen-small) {
+      max-width: 100%;
+    }
+  }
+
+}
+
+// Section: About
+.ourworkdetails-about {
+  @include span-columns(12);
+  background: url('/images/espn/bg-2.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: rem(832);
+  overflow: hidden;
+  padding-top: rem(250);
+  position: relative;
+  text-align: center;
+
+  @include media($screen-small) {
+    min-height: rem(300);
+    padding: rem(20) 0;
+  }
+
+}
+
+
+
+// Section: Mobile
+.ourworkdetails-mobile {
+  @include span-columns(12);
+  background: url('/images/espn/bg-3.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: rem(832);
+  overflow: hidden;
+  padding-top: rem(100);
+  position: relative;
+  text-align: center;
+
+  @include media($screen-small) {
+    min-height: rem(300);
+    padding: rem(20) 0;
+  }
+
+  .ourworkdetails__box {
+    @include media($screen-small) {
+      @include span-columns(6 of 12);
+    }
+  }
+
+}
+
+// Section: Movie
+.ourworkdetails-movie {
+  @include span-columns(12);
+  background: url('/images/espn/bg-4.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: rem(832);
+  overflow: hidden;
+  padding-top: rem(150);
+  position: relative;
+  text-align: center;
+
+  @include media($screen-small) {
+    min-height: rem(320);
+    padding: rem(20) 0;
+  }
+
+  &__description {
+    line-height: rem(28);
+    margin-top: rem(190);
+    text-align: left;
+    width: rem(480);
+  }
+
+  &__image {
+    margin-top: rem(80);
+  }
+
+  &__our {
+    @include media($screen-small) {
+      display: none;
+    }
+  }
+}
+
+// Section: Other Projects
+.ourworkdetails-otherprojects {
+  @include span-columns(12);
+  border-top: 1px solid rgba($light, .2);
+  clear: both;
+  display: inline-block;
+  margin-top: 70px;
+  padding: rem(20) 0 rem(50);
+  width: 100%;
+
+  &__title {
+    color: $light-red;
+    float: left;
+    font-family: $heading-font-family;
+    font-size: rem(36);
+    margin-top: 110px;
+
+    @include media($screen-medium) {
+      @include fill-parent;
+      text-align: center;
+    }
+
+    @include media($screen-small) {
+      @include fill-parent;
+      font-size: rem(18);
+      margin-top: 20px;
+      text-align: center;
+    }
+
+  }
+
+  &__projects {
+    float: right;
+
+    @include media($screen-medium) {
+      @include fill-parent;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 20px;
+
+      @include media($screen-medium) {
+        float: left;
+        margin: 0;
+        text-align: center;
+        width: 33%;
+      }
+
+      img {
+        @include media($screen-medium) {
+          width: 80%;
+        }
+      }
+
+      a {
+        color: $light-primary;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top: 15px;
+
+        @include media($screen-medium) {
+          font-size: 11px;
+          margin-top: 10px;
+        }
+
+      }
+    }
+  }
+}
+

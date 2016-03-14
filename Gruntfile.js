@@ -104,14 +104,31 @@ module.exports = function( grunt ) {
       // <script src="http://localhost:35729/livereload.js?snipver=1"></script>
       livereload: {
         options: {
-              livereload: true
+          livereload: true
         },
         files: [
-           '_site/*.html'
+          '_site/*.html'
         ]
       },
       options: {
         spawn: false
+      }
+    },
+
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 7,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          filter: 'isFile',
+          cwd: 'images/src/',
+          src: '**/*.{png,jpg,svg}',
+          //src: '**/*.svg',
+          dest: 'images/'
+        }]
       }
     }
 
@@ -133,5 +150,7 @@ module.exports = function( grunt ) {
 	] );
 
 	grunt.registerTask( 'w', ['watch'] );
+
+  grunt.registerTask( 'images', ['imagemin'] );
 
 };

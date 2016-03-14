@@ -28,4 +28,4 @@ gems:
 whitelist:
   - jekyll-redirect-from
 
-exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor', 'node_modules', 'stylesheets/sass']
+exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor', 'node_modules', 'stylesheets/sass', 'images/src']

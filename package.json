@@ -8,7 +8,8 @@
     "grunt-contrib-sass": "~1.0.0",
     "grunt-contrib-uglify": "~1.0.0",
     "time-grunt": "^1.2.1",
-    "node-bourbon": "~4.2.3"
+    "node-bourbon": "~4.2.3",
+    "grunt-contrib-imagemin": "~1.0.0"
   },
   "engines": {
     "node": ">=0.10.1",

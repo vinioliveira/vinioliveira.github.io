@@ -27,7 +27,9 @@ gems:
 
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 whitelist:
   - jekyll-redirect-from
+
+exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor']

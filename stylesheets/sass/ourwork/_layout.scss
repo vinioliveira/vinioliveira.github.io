@@ -166,23 +166,30 @@
     @include size(100% 100%);
     @include transform(translateY(0%));
     @include transition(transform .4s, opacity .1s .3s);
-    background: rgba(black, .95);
+    background: rgba($dark, .95);
     color: $light-primary;
     opacity: 0;
     padding: rem(20);
     text-align: center;
 
     &-links {
-      top: 50%;
-      margin-left: rem(-20);
-      transform: translateY(-50%);
-      position: absolute;
       width: 100%;
+      height: 100%;
+
+      svg {
+        top: 50%;
+        margin-left: rem(-30);
+        transform: translateY(-50%);
+        position: absolute;
+      }
     }
   }
 
   &__link-image {
     margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   &__more {
@@ -224,13 +231,14 @@
   }
 
   &__infos {
-    padding: 10px;
+    padding: rem(17);
   }
 
   &__project {
     color: $light-red;
     display: inline-block;
     font-size: rem(14);
+    text-transform: uppercase;
     width: 100%;
   }
 
@@ -238,12 +246,12 @@
     color: $black;
     display: inline-block;
     font-family: $heading-font-family;
-    font-size: rem(18);
-    line-height: 28px;
+    font-size: rem(24);
     font-weight: 500;
+    line-height: 28px;
     margin-bottom: 10px;
-    text-transform: uppercase;
     text-align: left;
+    text-transform: uppercase;
     width: 100%;
   }
 
@@ -272,9 +280,9 @@
     p {
       color: $black;
       display: inline-block;
-      font-size: 14px;
       font-family: $base-font-family;
-      padding: 5px 10px;
+      font-size: 14px;
+      padding: rem(5) rem(17);
     }
 
     span {

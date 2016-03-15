@@ -118,16 +118,16 @@ module.exports = function( grunt ) {
     imagemin: {
       dist: {
         options: {
-          optimizationLevel: 4,
+          optimizationLevel: 5,
           progressive: true
         },
         files: [{
           expand: true,
           filter: 'isFile',
-          cwd: 'images/src/time',
-          src: '*.{png,jpg}',
+          cwd: 'images/src/',
+          src: '**/*.{png,jpg}',
           //src: '**/*.svg',
-          dest: 'images/time'
+          dest: 'images/'
         }]
       }
     }

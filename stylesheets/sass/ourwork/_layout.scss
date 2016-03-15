@@ -165,7 +165,7 @@
     @include position(absolute, 0 null auto null);
     @include size(100% 100%);
     @include transform(translateY(0%));
-    @include transition(transform .4s, opacity .1s .3s);
+    @include transition(transform .4s, opacity .1s);
     background: rgba($dark, .95);
     color: $light-primary;
     opacity: 0;

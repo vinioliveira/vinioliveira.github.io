@@ -75,7 +75,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     });
 
     function newTyped(){ /* A new typed object */ }
-    //function foo(){ console.log("Callback"); }
+    function foo(){  }
   }
 
   // Sliders

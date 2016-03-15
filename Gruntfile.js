@@ -49,8 +49,6 @@ module.exports = function( grunt ) {
 						'<%= dirs.js %>/src/refills-dropdown.js',
 						'<%= dirs.js %>/src/refills-modal.js',
 						'<%= dirs.js %>/src/jquery.fancybox-1.3.4.js',
-						'<%= dirs.js %>/vendor/isotope.pkgd.min.js',
-						'<%= dirs.js %>/vendor/packery-mode.js',
 						'<%= dirs.js %>/vendor/jquery.waypoints.js',
 						'<%= dirs.js %>/vendor/typed.js',
 						'<%= dirs.js %>/vendor/jquery.bxslider.js',
@@ -63,7 +61,6 @@ module.exports = function( grunt ) {
 						'<%= dirs.js %>/src/scroll.js',
 						'<%= dirs.js %>/src/parallax.js',
 						'<%= dirs.js %>/src/count.js',
-						//'<%= dirs.js %>/src/grid-mosaic.js',
 						'<%= dirs.js %>/src/carousel.js'
 					]
 				}

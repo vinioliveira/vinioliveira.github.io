@@ -3,48 +3,34 @@ layout: site-2016-pt
 description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web, aplicativos web, SaaS e Cloud Computing.
 ---
 
-<section class="case-detail">
-  <div class="case-detail__bg" style="background-image: url({{ page.background }})">
-    <div class="wrapper">
-      <div class="case-detail__heading">
-        <h2 class="case-detail__title">
-          <img class="case-detail__brand" title="{{ page.name }}" alt="{{ page.name }}" src="{{ page.logo }}" {% if page.logo2x %} srcset="{{ page.logo2x }} 2x" {% endif %}/>
-        </h2>
-
-        <p>
-          {{ page.title_text }}
-
-        </p>
-
-        <p class="case-detail__type">
-        {% if page.subtitle_text %}
-         {{ page.subtitle_text }}
-        {% endif %}
-        </p>
-
-      </div>
-    </div>
-  </div>
+<section class="case-detail__banner">
+  <figure>
+    <img src="{{ page.about_img1 }}" alt="{{ page.title_text }}">
+  </figure>
 </section>
 
-<section class="case-detail-about">
+<section class="case-detail__about">
+
   <div class="wrapper">
 
-    <div class="case-detail__box case-detail__box--image">
-      <figure>
-        <img src="{{ page.about_img1 }}" alt="{{ page.title_text }}">
-      </figure>
-    </div>
+    <h1 class="case-detail__title">
+      {{ page.name }}
+    </h1>
 
-    <div class="case-detail__box">
-      <div class="case-detail__description">
-        {% for line in page.about_text1 %}
-            <p>{{ line }}</p>
-          {% endfor %}
-      </div>
+    <h2 class="case-detail__category">
+      {% if page.subtitle_text %}
+       {{ page.subtitle_text }}
+      {% endif %}
+    </h2>
+
+    <div class="case-detail__description">
+      {% for line in page.about_text1 %}
+        {{ line }} <br> <br>
+      {% endfor %}
     </div>
 
   </div>
+
 </section>
 
 {% if page.customer_testimony %}
@@ -60,63 +46,6 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
     </div>
   </div>
 </section>
-{% endif %}
-
-{% if page.about_text2 || page.about_img2 %}
-<section class="case-detail-about">
-  <div class="wrapper">
-
-    {% if page.about_img2 %}
-    <div class="case-detail__box case-detail__box--image case-detail__box--right">
-      <figure>
-        <img src="{{ page.about_img2 }}" alt="{{ page.name }}">
-      </figure>
-    </div>
-    {% endif %}
-
-    {% if page.about_text2 %}
-    <div class="case-detail__box">
-
-      <div class="case-detail__description">
-        {% for line in page.about_text2 %}
-            <p>{{ line }}</p>
-          {% endfor %}
-      </div>
-
-    </div>
-    {% endif %}
-
-  </div>
-
-  {% if page.extra_text || page.extra_img %}
-  <div class="case-detail-helabs">
-
-    <div class="case-detail-helabs__text">
-      {{ page.extra_text }}
-    </div>
-
-    <figure>
-      <img src="{{ page.extra_img }}" alt="{{ page.name }}">
-    </figure>
-
-  </div>
-  {% endif %}
-
-
-</section>
-{% endif %}
-
-{% if page.screenshots %}
-  <section id="carousel-slider">
-    <div class="slideshow">
-      {% for screenshot in page.screenshots %}
-        <img src="{{ screenshot.url }}" alt="{{ screenshot.caption }}">
-      {% endfor %}
-    </div>
-
-    <a href="#" id="carousel-slider-prev" class="carousel-slider-nav"></a>
-    <a href="#" id="carousel-slider-next" class="carousel-slider-nav"></a>
-  </section>
 {% endif %}
 
 <section class="case-detail-projects">

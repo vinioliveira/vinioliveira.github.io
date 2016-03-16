@@ -37,7 +37,6 @@ resume: Atende Simples has a very complex operation, involving lots of technolog
 about_img1: /images/cases/atendesimples/mockup-desktop_atendesimples@2x.png
 about_text1:
 - The most important thing for <strong>Atende Simples</strong> is the user experience. Then the price. The value has to be fair and feasible for the targeted customer.
-- <br>
 - <strong>Atende Simples</strong> has a very complex operation, involving lots of technologies, companies and systems. The voice platform was the responsibility of VoxAge, in São Paulo.
 
 customer_testimony:
@@ -66,10 +65,6 @@ other_projetcs:
   name: Canvas
   image: /images/cases/canvas_thumb.jpg
   url: /en/case/pmcanvas
-- slug: petroomie
-  name: Pet Roomie
-  image: /images/cases/petroomie_thumb.jpg
-  url: /en/case/petroomie
 - slug: locaweb
   name: Locaweb
   image: /images/cases/locaweb_thumb.jpg

@@ -5,7 +5,6 @@
 // *************************************
 
 .page-case-details {
-  background: $pale-grey;
 
   .main-header {
     background: rgba(55, 50, 50, 0.9);
@@ -31,9 +30,9 @@
     text-align: center;
 
     @include media($screen-small) {
-      padding: 0 $base-spacing;
       margin-top: rem(120);
       min-height: rem(200);
+      padding: 0 $base-spacing;
     }
 
     img {
@@ -44,8 +43,8 @@
 
   &__about {
     @include span-columns(12);
-    text-align: center;
     margin-top: rem(10);
+    text-align: center;
   }
 
   &__title {
@@ -56,8 +55,8 @@
 
   &__category {
     color: $greyish-brown;
-    font-size: rem(24);
     font-family: $base-font-family;
+    font-size: rem(24);
     margin-bottom: rem(60);
 
     @include media($screen-small) {
@@ -66,12 +65,12 @@
   }
 
   &__description {
-    max-width: rem(990);
-    margin: 0 auto;
-    font-size: rem(24);
-    font-family: $base-font-family;
-    line-height: 1.5;
     color: $greyish-brown;
+    font-family: $base-font-family;
+    font-size: rem(24);
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: rem(990);
 
     @include media($screen-small) {
       @include pad(0 $base-spacing);
@@ -90,8 +89,8 @@
   float: left;
   padding: 0;
   position: relative;
-  width: 100%;
   text-align: center;
+  width: 100%;
 
   .wrapper {
     padding: rem(90) rem(110) rem(30) !important;
@@ -136,16 +135,12 @@
 
 
 
-
 .case-detail-projects {
-  clear: both;
-  display: block;
-  height: auto;
-  margin-top: 70px;
-  width: 100%;
+  @include span-columns(12);
+  margin-top: rem(70);
 
   @include media($screen-medium) {
-    padding-bottom: rem(40);
+    padding: rem(40) 0;
   }
 
   .wrapper {
@@ -153,50 +148,29 @@
   }
 
   &__title {
+    @include span-columns(4 of 12);
     color: $light-red;
-    float: left;
     font-family: $heading-font-family;
     font-size: rem(36);
     margin-top: 85px;
-    width:30%;
 
     @include media($screen-medium) {
       @include fill-parent;
+      font-size: rem(24);
       text-align: center;
     }
-
-    @include media($screen-small) {
-      @include fill-parent;
-      font-size: rem(18);
-      margin-top: 20px;
-      text-align: center;
-    }
-
   }
 
   &__others {
-    float: right;
+    @include span-columns(8 of 12);
 
     @include media($screen-medium) {
       @include fill-parent;
     }
 
     li {
-      display: inline-block;
-      list-style: none;
-      margin: 20px;
+      @include span-columns(4 of 12);
       text-align: center;
-
-      @include media($screen-medium) {
-        width: 25%;
-      }
-
-      @include media($screen-medium) {
-        float: left;
-        margin: 0;
-        text-align: center;
-        width: 50%;
-      }
 
       &:hover a > figure > img {
         @include filter(grayscale(0));
@@ -204,10 +178,16 @@
 
       img {
         @include filter(grayscale(100%));
-        @include size(145px 145px);
+        @include size(185px 185px);
         border-radius: 50%;
         opacity: .9;
         transition: .2s;
+
+        @include media($screen-small) {
+          font-size: 11px;
+          @include size(145px 145px);
+        }
+
       }
 
       a {
@@ -223,5 +203,8 @@
         }
       }
     }
+
   }
+
 }
+

@@ -40,6 +40,14 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
+  &.page-home {
+    background: $dark;
+  }
+
+  &.page-case-details {
+    background: $pale-grey !important;
+  }
 }
 
 #{$headings} {

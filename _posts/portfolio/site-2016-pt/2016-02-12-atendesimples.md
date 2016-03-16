@@ -47,30 +47,12 @@ customer_testimony:
 customer_name: Andre
 customer_role: Diretor de Produto, Atende Simples
 
-about_img2: /images/cases/atendesimples/mockup-desktop_atendesimples2@2x.png
-about_text2 :
-- O sistema desde seu inicio foi feito com iterações de 1 semana. Isso é a HE:labs funcionando.
-- <br>
-- São pessoas apaixonadas, revolucionando a maneira de fazer software. É a entrega contínua, trazendo vantagem competitiva e inovação de ponta.
-- <br>
-- Logo na primeira semana já foi possível efetuar o cadastro de atendentes. Toda quinta-feira existia algo novo para ser testado e validado. O projeto está online!
-
-extra_text:
-- "O Atende Simples é a ferramenta que sempre procuramos para nosso atendimento. Com ele, conseguimos passar uma imagem mais profissional para o mercado, sem perder flexibilidade na nossa gestão e por um custo excelente!"
-- <br> <br>
-- <strong>Leandro Borges</strong> <br>
-- Luz Consultoria
-extra_img: /images/cases/atendesimples/atendesimples-and-helabs.png
 
 other_projetcs:
 - slug: canvas
   name: Canvas
   image: /images/cases/canvas_thumb.jpg
   url: /portfolio/pmcanvas
-- slug: petroomie
-  name: Pet Roomie
-  image: /images/cases/petroomie_thumb.jpg
-  url: /portfolio/petroomie
 - slug: locaweb
   name: Locaweb
   image: /images/cases/locaweb_thumb.jpg

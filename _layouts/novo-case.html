@@ -60,14 +60,14 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
     <div class="case-detail-projects__others">
       <ul>
 
-        {% for item in page.other_projetcs %}
+        {% for case in site.categories.case reversed limit:3 %}
           <li>
-            <a href="{{item.url}}">
+            <a href="{{case.permalink}}">
               <figure>
-                <img src="{{item.image}}" alt="{{item.name}}">
+                <img src="{{case.thumb}}" alt="{{case.thumb}}">
               </figure>
             </a>
-            <a href="{{item.url}}">{{item.name}}</a>
+            <a href="{{case.permalink}}">{{case.name}}</a>
           </li>
         {% endfor %}
 

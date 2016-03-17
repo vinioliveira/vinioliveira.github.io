@@ -4,7 +4,8 @@ category: caseen
 body_id: case-details
 pt: /portfolio/atendesimples
 permalink: '/en/case/atendesimples/'
-title: Atende Simples case - HE:labs
+title: Atende Simples - HE:labs
+description: Atende Simples project description developed by HE:labs.
 
 redirect_from:
  - /en/cases/atende-simples/
@@ -12,8 +13,6 @@ redirect_from:
 
 name: Atende Simples
 
-background: /images/cases/atendesimples/topo-atendesimples.jpg
-logo: /images/cases/atendesimples/logo-atendesimples.png
 thumb: /images/cases/atendesimples_thumb.jpg
 
 type: web
@@ -45,33 +44,4 @@ customer_testimony:
 customer_name: Andre
 customer_role: Product Director, Atende Simples
 
-about_img2: /images/cases/atendesimples/mockup-desktop_atendesimples2@2x.png
-about_text2 :
-- The system, from the beginning, has been created with 1 week iterations. This is the HE:labs way.
-- <br>
-- Passionate people, revolutionizing the way of doing software. It is continuous delivery, bringing competitive advantage and innovation.
-- <br>
-- Already in the first week it was possible to complete the registration of attendants. Every Thursday there was something new to be tested and validated.
-
-extra_text:
-- "Atende Simples is the tool we always have been looking for. With it, we can pass a more professional image to the market without losing flexibility in our management incoming customers and for a excellent price!"
-- <br> <br>
-- <strong>Leandro Borges</strong> <br>
-- Luz Consultoria
-extra_img: /images/cases/atendesimples/atendesimples-and-helabs.png
-
-other_projetcs:
-- slug: canvas
-  name: Canvas
-  image: /images/cases/canvas_thumb.jpg
-  url: /en/case/pmcanvas
-- slug: locaweb
-  name: Locaweb
-  image: /images/cases/locaweb_thumb.jpg
-  url: /en/case/locaweb
-- slug: espn
-  name: ESPN
-  image: /images/cases/espn_thumb.jpg
-  url: /en/case/espn
 ---
-

@@ -121,10 +121,10 @@ module.exports = function( grunt ) {
         files: [{
           expand: true,
           filter: 'isFile',
-          cwd: 'images/src/cases/',
+          cwd: 'images/src/',
           src: '**/*.{png,jpg}',
           //src: '**/*.svg',
-          dest: 'images/cases/'
+          dest: 'images/'
         }]
       }
     }

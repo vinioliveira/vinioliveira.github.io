@@ -4,7 +4,7 @@ category: case
 body_id: case-details
 en: /en/case/atendesimples
 permalink: '/portfolio/atendesimples/'
-title: Atende Simples - Case do sistema Atende Simples - HE:labs
+title: Atende Simples - HE:labs
 description: Descrição do case Atende Simples que foi desenvolvido pela HE:labs.
 
 redirect_from:
@@ -13,8 +13,6 @@ redirect_from:
 
 name: Atende Simples
 
-background: /images/cases/atendesimples/topo-atendesimples.jpg
-logo: /images/cases/atendesimples/logo-atendesimples.png
 thumb: /images/cases/atendesimples_thumb.jpg
 
 home: true
@@ -47,19 +45,5 @@ customer_testimony:
 customer_name: Andre
 customer_role: Diretor de Produto, Atende Simples
 
-
-other_projetcs:
-- slug: canvas
-  name: Canvas
-  image: /images/cases/canvas_thumb.jpg
-  url: /portfolio/pmcanvas
-- slug: locaweb
-  name: Locaweb
-  image: /images/cases/locaweb_thumb.jpg
-  url: /portfolio/locaweb
-- slug: espn
-  name: ESPN
-  image: /images/cases/espn_thumb.jpg
-  url: /portfolio/espn
 ---
 

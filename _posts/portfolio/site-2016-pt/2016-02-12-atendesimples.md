@@ -18,8 +18,8 @@ thumb: /images/cases/thumb_atendesimples.jpg
 home: true
 type: web
 
-time: 2 semanas
-members: 4 pessoas
+time: 7 meses
+members: 3 pessoas
 
 screenshots:
   - url: /images/cases/atendesimples/slider-atende-simples-01.jpg

@@ -17,8 +17,8 @@ thumb: /images/cases/thumb_atendesimples.jpg
 
 type: web
 
-time: 2 weeks
-members: 4 members
+time: 7 months
+members: 3 members
 
 screenshots:
   - url: /images/cases/atendesimples/slider-atende-simples-01.jpg

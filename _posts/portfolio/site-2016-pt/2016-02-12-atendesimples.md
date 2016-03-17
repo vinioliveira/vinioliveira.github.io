@@ -13,7 +13,7 @@ redirect_from:
 
 name: Atende Simples
 
-thumb: /images/cases/atendesimples_thumb.jpg
+thumb: /images/cases/thumb_atendesimples.jpg
 
 home: true
 type: web

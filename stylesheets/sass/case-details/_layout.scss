@@ -177,14 +177,19 @@
 
       img {
         @include filter(grayscale(100%));
-        @include size(185px 185px);
+        @include size(185px 175px);
         border-radius: 50%;
         opacity: .9;
         transition: .2s;
 
         @include media($screen-small) {
           font-size: 11px;
-          @include size(145px 145px);
+          @include size(145px 135px);
+        }
+
+        @include media($screen-tiny) {
+          font-size: 11px;
+          @include size(100px 90px);
         }
 
       }

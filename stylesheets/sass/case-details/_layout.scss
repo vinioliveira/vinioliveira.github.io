@@ -13,7 +13,7 @@
   .wrapper {
     @include outer-container();
     padding-bottom: rem(75);
-    padding-top: rem(75);
+    padding-top: rem(40);
 
     @include media($screen-small) {
       padding: 0 $base-spacing;
@@ -25,7 +25,7 @@
 
   &__banner {
     @include span-columns(12);
-    margin-top: rem(150);
+    margin-top: rem(90);
     min-height: rem(545);
     text-align: center;
 
@@ -43,7 +43,6 @@
 
   &__about {
     @include span-columns(12);
-    margin-top: rem(10);
     text-align: center;
   }
 
@@ -57,7 +56,7 @@
     color: $greyish-brown;
     font-family: $base-font-family;
     font-size: rem(24);
-    margin-bottom: rem(60);
+    margin-bottom: rem(40);
 
     @include media($screen-small) {
       margin-bottom: rem(10);

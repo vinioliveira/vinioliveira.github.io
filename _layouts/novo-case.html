@@ -3,11 +3,15 @@ layout: site-2016-pt
 description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web, aplicativos web, SaaS e Cloud Computing.
 ---
 
-<section class="case-detail__banner">
-  <figure>
-    <img src="{{ page.about_img1 }}" alt="{{ page.title_text }}">
-  </figure>
-</section>
+{% if page.about_img1 %}
+  <section class="case-detail__banner">
+    <figure>
+      <img src="{{ page.about_img1 }}" alt="{{ page.title_text }}">
+    </figure>
+  </section>
+{% else %}
+  <section class="case-detail__no-banner"></section>
+{% endif %}
 
 <section class="case-detail__about">
 

@@ -35,7 +35,7 @@ subtitle_text: Design & Desenvolvimento
 
 resume: Atende Simples está sendo usado por empresas de diferentes portes e de todas as áreas de atuação
 
-about_img1: /images/cases/atendesimples/mockup-desktop_atendesimples@2x.png
+about_img1:
 about_text1:
 - Atende Simples está sendo usado por empresas de diferentes portes e de todas as áreas de atuação. Possui recursos sofisticados como gravação de chamadas, controle de horário de funcionamento do atendimento, bloqueio de chamadas, relatórios... tudo com muita simplicidade!
 

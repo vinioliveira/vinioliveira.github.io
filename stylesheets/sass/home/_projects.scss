@@ -10,6 +10,10 @@
   background: url('/images/bg-image_portfolio.jpg') no-repeat $greyish-brown top center;
   background-size: cover;
 
+  @include media($screen-medium) {
+    background-size: contain ;
+  }
+
   &__heading {
     display: block;
     margin: 0 auto rem(10);

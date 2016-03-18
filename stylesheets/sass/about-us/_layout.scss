@@ -336,6 +336,9 @@
   background: url('/images/bg-image_portfolio.jpg') no-repeat $greyish-brown top center;
   background-size: cover;
 
+  @include media($screen-medium) {
+    background-size: contain ;
+  }
 
   &__heading {
     display: block;
@@ -401,6 +404,10 @@
       width: 50%;
     }
 
+    @include media($screen-tiny) {
+      width: 33.3%;
+    }
+
     img {
       // @include filter(grayscale(100%));
       @include size(100% 99%);
@@ -435,6 +442,10 @@
     font-size: rem(20);
     text-align: center;
     z-index: -1;
+
+    @include media($screen-tiny) {
+      font-size: rem(16);
+    }
 
     span {
       @include center(100%);

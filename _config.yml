@@ -24,8 +24,10 @@ permalink: /:title/
 
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 whitelist:
   - jekyll-redirect-from
+  - jekyll-sitemap
 
 exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor', 'node_modules', 'stylesheets/sass', 'images/src']

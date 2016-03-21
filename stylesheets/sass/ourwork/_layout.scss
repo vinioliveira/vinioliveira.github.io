@@ -43,10 +43,10 @@
   &__title {
     color: $pale-grey;
     display: block;
-    font-size: rem(48);
+    font-size: $base-heading-font-size;
 
     @include media($screen-tiny) {
-      font-size: rem(26);
+      font-size: $small-heading-font-size;
     }
   }
 
@@ -91,10 +91,10 @@
   &__title {
     color: $light-red;
     display: block;
-    font-size: rem(48);
+    font-size: $base-heading-font-size;
 
     @include media($screen-tiny) {
-      font-size: rem(26);
+      font-size: $small-heading-font-size;
     }
   }
 
@@ -126,6 +126,10 @@
       @include omega-reset(4n);
       @include omega(2n);
       @include span-columns(6 of 12);
+    }
+
+    @include media($screen-tiny) {
+      min-height: rem(70);
     }
 
     img {
@@ -317,9 +321,14 @@
   &__title {
     color: $light-red;
     font-family: $heading-font-family;
-    font-size: rem(46);
+    font-size: $base-heading-font-size;
     font-weight: 900;
     margin-top: rem(20);
+
+    @include media($screen-tiny) {
+      font-size: $small-heading-font-size;
+    }
+
   }
 
   &__subtitle {

@@ -70,10 +70,10 @@
     @include fill-parent;
     color: $light-red;
     display: inline-block;
-    font-size: rem(48);
+    font-size: $base-heading-font-size;
 
     @include media($screen-medium) {
-      font-size: rem(30);
+      font-size: $small-heading-font-size;
     }
   }
 

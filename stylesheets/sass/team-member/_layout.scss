@@ -4,7 +4,7 @@
 //
 // *************************************
 .page-team-member {
-  background: #f2f2f2;
+  background: $white-smoke;
 }
 
 .team-member {
@@ -78,6 +78,11 @@
     font-size: rem(22);
     margin-bottom: rem(25);
     line-height: rem(40);
+
+    @include media($screen-small) {
+      font-size: rem(16);
+      line-height: rem(30);
+    }
   }
 
   &__subtitle {
@@ -94,6 +99,11 @@
     font-size: rem(25);
     color: rgba($black, .75);
     font-style: italic;
+
+    @include media($screen-small) {
+      font-size: rem(16);
+    }
+
   }
 
   &__social {
@@ -146,6 +156,11 @@
   position: relative;
   padding: 0 rem(60);
   text-align: center;
+
+  @include media($screen-small) {
+    font-size: rem(16);
+    line-height: rem(30);
+  }
 
   &::before {
     position: absolute;

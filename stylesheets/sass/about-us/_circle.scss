@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
-
 @mixin transitions($what: all, $length: 0.3s, $easing: ease-in-out) {
   -moz-transition: $what $length $easing;
   -ms-transition: $what $length $easing;

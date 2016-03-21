@@ -24,7 +24,7 @@
     max-height: 715px;
     width: 100%;
 
-    @include media($screen-tiny){
+    @include media($screen-medium){
       max-height: 100%;
     }
 

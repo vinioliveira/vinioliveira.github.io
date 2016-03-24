@@ -16,7 +16,7 @@ To run this project you need to have:
 1. Install the depedencies above
 1. Clone the project
 
-        $ git clone git@github.com:Helabs/helabs.github.io.git
+        $ git clone git@github.com:Helabs/site-novo.git
 
 1. Go into the project folder
 

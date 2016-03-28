@@ -57,21 +57,22 @@ description: HE:labs is a software development company in Brazil focused on web 
 
     <div class="case-detail-projects__title">
       <h3>
-          Other Projects
+          Outros Projetos
       </h3>
     </div>
+
 
     <div class="case-detail-projects__others">
       <ul>
 
-        {% for case in site.categories.caseen limit:3 %}
+        {% for item in page.other_projects %}
           <li>
-            <a href="{{case.permalink}}">
+            <a href="{{item.url}}">
               <figure>
-                <img src="{{case.thumb}}" alt="{{case.thumb}}">
+                <img src="{{item.image}}" alt="{{item.name}}">
               </figure>
             </a>
-            <a href="{{case.permalink}}">{{case.name}}</a>
+            <a href="{{item.url}}">{{item.name}}</a>
           </li>
         {% endfor %}
 

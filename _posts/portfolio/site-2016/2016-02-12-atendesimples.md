@@ -45,4 +45,17 @@ customer_testimony:
 customer_name: Andre
 customer_role: Product Director, Atende Simples
 
+other_projects:
+- slug: bonuz
+  name: Bonuz
+  image: /images/cases/thumb_bonuz.jpg
+  url: /en/case/bonuz
+- slug: eduk
+  name: EduK
+  image: /images/cases/thumb_eduk.jpg
+  url: /en/case/eduk
+- slug: hrblock
+  name: H&R Block
+  image: /images/cases/thumb_hrblock.jpg
+  url: /en/case/hrblock
 ---

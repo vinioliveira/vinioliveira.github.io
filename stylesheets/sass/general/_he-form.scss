@@ -103,7 +103,7 @@
 
   &__textarea {
     @extend .he-form__input;
-    min-height: rem(120);
+    min-height: rem(147);
   }
 
   &__button {
@@ -140,10 +140,6 @@
   }
 }
 
-textarea + label.he-form--error{
-  margin-top: 15px;
-}
-
 label.he-form--error {
   @extend .he-form__label--floating;
   left: auto;
@@ -160,4 +156,9 @@ label.he-form--error {
     float: right;
     margin: 9px 0 0 5px;
   }
+}
+
+textarea+label.he-form--error {
+  bottom: 0;
+  top: auto;
 }

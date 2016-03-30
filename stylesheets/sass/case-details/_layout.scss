@@ -97,7 +97,7 @@
   width: 100%;
 
   .wrapper {
-    padding: rem(90) rem(110) rem(30) !important;
+    padding: rem(90) rem(110)!important;
 
     @include media($screen-medium) {
      padding: rem(90) $base-spacing !important;
@@ -109,6 +109,7 @@
     font-size: rem(20);
     font-weight: 300;
     line-height: rem(50);
+    @include position(relative);
 
     @include media($screen-small) {
       font-size: rem(15);
@@ -116,14 +117,13 @@
     }
 
     &:after {
-      color: $light-primary;
-      content: open-quote;
-      font-size: rem(122);
-      left: 50%;
+      background: url('/images/ic-quotes.svg');
+      @include size(52px 40px);
+      content: '';
+      left: 0;
       opacity: .45;
       position: absolute;
-      text-align: center;
-      top: 70px;
+      top: 0;
     }
   }
 

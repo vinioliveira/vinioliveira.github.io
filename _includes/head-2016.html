@@ -20,9 +20,8 @@
   {% endif %}
   <meta content="{% if page.description %} {{ page.description }} {% else if site.description %} {{ site.description }} {% else %} HE:labs é uma empresa pioneira em desenvolvimento de sistemas web, aplicativos web, SaaS e Cloud Computing {% endif %}" name="description">
 
-  <!-- Verificar isso aqui  -->
 
-  <link rel="icon" type="image/png" sizes="192x192" href="http://helabs.com.br/images/icons/ios/he192px.png">
+  {% include favicon.html %}
 
   {% if page.en %}
   <meta http-equiv="content-language" content="pt-br">
@@ -48,11 +47,6 @@
 
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.min.css">
 
-  <!-- iOS icon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="http://helabs.com.br/images/icons/ios/he57px.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="http://helabs.com.br/images/icons/ios/he72px.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="http://helabs.com.br/images/icons/ios/he114px.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="http://helabs.com.br/images/icons/ios/he144px.png">
 
   <!-- iOS/Android WebApp Optmizations -->
   <meta name="apple-mobile-web-app-title" content="HE:labs">

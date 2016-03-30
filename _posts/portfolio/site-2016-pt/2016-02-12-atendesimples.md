@@ -2,7 +2,7 @@
 layout: novo-case
 category: case
 body_id: case-details
-en: /en/case/atendesimples
+en: /en/case/atendesimples/
 permalink: '/portfolio/atendesimples/'
 title: Atende Simples - HE:labs
 description: Descrição do case Atende Simples que foi desenvolvido pela HE:labs.
@@ -49,14 +49,14 @@ other_projects:
 - slug: bonuz
   name: Bonuz
   image: /images/cases/thumb_bonuz.jpg
-  url: /portfolio/bonuz
+  url: /portfolio/bonuz/
 - slug: eduk
   name: EduK
   image: /images/cases/thumb_eduk.jpg
-  url: /portfolio/eduk
+  url: /portfolio/eduk/
 - slug: hrblock
   name: H&R Block
   image: /images/cases/thumb_hrblock.jpg
-  url: /portfolio/hrblock
+  url: /portfolio/hrblock/
 ---
 

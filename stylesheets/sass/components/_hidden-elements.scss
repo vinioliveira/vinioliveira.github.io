@@ -9,7 +9,15 @@
 .main-banner__title,
 .main-banner__subtitle,
 .section-offer__heading,
-.section-offer__box {
+.section-offer__box,
+.ourwork__title,
+.our-services__title,
+.hire-us__title,
+.about-us__title,
+.ourwork__subtitle,
+.our-services__subtitle,
+.hire-us__subtitle,
+.about-us__subtitle {
   visibility: hidden;
 
   &.animated {

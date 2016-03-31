@@ -135,7 +135,7 @@
 }
 
 .skill-tag {
-  @include padding(6px 18px);
+  @include padding(6px 13px);
   background: $light-red;
   border-radius: 100px;
   color: $light-primary;
@@ -144,22 +144,33 @@
   line-height: rem(38);
   margin-right: 10px;
   margin-right: 10px;
+
+  @include media($screen-small) {
+    font-size: rem(16);
+    @include padding(3px 6px);
+  }
 }
 
 .team-member__quote {
   @include fill-parent;
-  margin: rem(80) 0;
+  margin: rem(80) 0 0;
   color: $black;
   font-family: $base-font-family;
-  font-size: rem(30);
-  line-height: rem(40);
+  font-size: rem(25);
+  line-height: rem(200);
   position: relative;
   padding: 0 rem(60);
   text-align: center;
+  min-height: rem(200);
+
+  .text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
 
   @include media($screen-small) {
     font-size: rem(16);
-    line-height: rem(30);
   }
 
   &::before {

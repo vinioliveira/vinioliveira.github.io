@@ -83,8 +83,11 @@ layout: site-2016
     {% if page.quote %}
       <section class="team-member__quote">
 
-        <p>"{{ page.quote.content }}"</p>
-        <p class="team-member__signature">&mdash; {{ page.quote.author }}</p>
+
+        <div class="text">
+          <p>"{{ page.quote.content }}"</p>
+          <p class="team-member__signature">&mdash; {{ page.quote.author }}</p>
+        </div>
 
       </section> <!-- /quote -->
     {% endif %}

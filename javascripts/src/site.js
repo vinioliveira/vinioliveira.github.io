@@ -29,6 +29,18 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
     }, {
       offset: '75%'
     });
+
+    //internas
+    $('.ourwork__title, .our-services__title, .hire-us__title, .about-us__title').waypoint(function() {
+      $('.ourwork__title, .our-services__title, .hire-us__title, .about-us__title').addClass('animated fadeInUp');
+    }, {
+      offset: '75%'
+    });
+    $('.ourwork__subtitle, .our-services__subtitle, .hire-us__subtitle, .about-us__subtitle').waypoint(function() {
+      $('.ourwork__subtitle, .our-services__subtitle, .hire-us__subtitle, .about-us__subtitle').addClass('animated fadeInUp');
+    }, {
+      offset: '100%'
+    });
   }
 
   // Video - hover animation

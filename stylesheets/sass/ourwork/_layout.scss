@@ -370,13 +370,20 @@
     font-size: rem(18);
     font-style: italic;
     font-weight: 300;
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: rem(570);
     min-height: rem(220);
+    line-height: rem(220);
 
     @include media($screen-small) {
       @include pad(0 $base-spacing*3);
       font-size: rem(15);
+    }
+
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
     }
   }
 

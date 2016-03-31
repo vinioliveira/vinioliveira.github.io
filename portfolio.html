@@ -104,9 +104,9 @@ redirect_from:
       {% for testimonial in site.data.testimonials %}
 
         <li>
-          <p class="slider-testimonial__quote">
-            {{ testimonial.quote }}
-          </p>
+          <div class="slider-testimonial__quote">
+            <div class="text">{{ testimonial.quote }}</div>
+          </div>
 
           <div class="slider-testimonial__picture">
             <img src="/images/avatars/{{ testimonial.picture }}.png" alt="{{ testimonial.author }}">

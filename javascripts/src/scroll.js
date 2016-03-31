@@ -60,17 +60,26 @@ jQuery(document).ready(function($){
     smoothScroll($('#services'));
   })
 
+  // Hash links
+  //---------------------------------------------------------------
+  $('a.scroll').click(function (event) {
+   // event.preventDefault();
+    //console.log("clicou");
+  });
+
 });
 
 // Change header bg on scroll
 //----------------------------------------------------------------
 $(window).scroll(function () {
-    if ($(window).scrollTop() > 100) {
-        $('.main-header').addClass('main-header--fixed');
-    }
-    else{
-        $('.main-header').removeClass('main-header--fixed');
-    }
+  if ($(window).scrollTop() > 100) {
+    $('.main-header').addClass('main-header--fixed');
+  }
+  else{
+    $('.main-header').removeClass('main-header--fixed');
+  }
 });
 
-//
+
+
+

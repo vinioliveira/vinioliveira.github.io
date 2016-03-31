@@ -149,6 +149,7 @@
 .from-social {
 
   .wrapper {
+    border-top: 1px solid rgba($light-primary, .2);
     padding: rem(20) 0;
 
     p {
@@ -231,3 +232,77 @@
   }
 }
 
+.main-footer-links {
+
+
+  &__title {
+    color: $light-primary;
+    font-size: rem(16);
+    font-weight: 700;
+    margin-bottom: rem(22);
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &__description {
+    font-size: rem(22);
+    line-height: 1.8;
+    @include media($screen-tiny) {
+      font-size: 1.125rem;
+    }
+
+  }
+
+  &__col1 {
+    @include span-columns(5 of 12);
+    @include media($screen-medium) {
+      @include span-columns(12);
+      padding: $base-spacing*3 0;
+    }
+    @include media($screen-tiny) {
+      @include span-columns(4);
+      padding: $base-spacing;
+    }
+
+  }
+
+  &__col2 {
+    @include span-columns(6 of 12);
+    float: right;
+    @include media($screen-medium) {
+      padding: $base-spacing*3 0;
+      @include span-columns(12);
+      float: none;
+    }
+
+    a {
+      color: $light-primary;
+    }
+
+  }
+
+  &__col3 {
+    @include span-columns(2.4 of 12);
+    @include media($screen-medium) {
+      margin-bottom: 40px;
+    }
+    @include media($screen-tiny) {
+      display: none;
+    }
+
+  }
+
+}
+
+.main-footer-nav {
+  color: $light-primary;
+
+  &__item {
+    font-size: rem(14);
+    line-height: 2.1;
+
+    a {
+      color: $light-primary;
+    }
+  }
+}

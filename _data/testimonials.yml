@@ -1,34 +1,39 @@
 - author: Julio Shnaider Gejer
   project: Locaweb
   quote: "Foi preciso implementar o app utilizando as nossas APIs, e a HE:mobile realizou isto praticamente sem perguntar nada para nós, de forma super tranquila. Através da HE:mobile nós conseguimos acelerar o nosso backlog, e a experiência deles com dispositivos móveis foi fundamental para atingirmos os resultados que esperávamos."
-  picture: avatar-placeholder
+  picture: julio
 
 - author: José Finocchio Jr.
   project: App PM Canvas Mobile
   quote: "Queria dizer que eu fui surpreendido. Durante as duas semanas de Startup Dev Mobile o time deu uma aula de gestão de projetos. Achamos que talvez o escopo estivesse grande demais, mas no fim deu tudo certo. E, além disso, entregaram uma coisa que para nós é muito importante: o fator 'Uau!' Hoje olho para o app e digo: 'Uau!'"
-  picture: avatar-placeholder
+  picture: finocchio
 
 - author: Bruno Thomé
   project: Projeto App Fly
   quote: "Trabalhar com a HE:mobile superou minhas expectativas. É muito importante trabalhar com quem o ajuda a desenvolver e estruturar suas ideias, e com a HE:mobile foi assim. Muito mais do que uma equipe capaz de cumprir metas e tarefas, me deparei com pessoas inteligentes e criativas, que elevaram o nível do meu trabalho em todas as esferas."
-  picture: avatar-placeholder
+  picture: bruno
 
 - author: Milton Menezes
   project: Vita Corporativa
   quote: "O que mais me chamou a atenção foi a forma focada e objetiva que a equipe trabalhou desde a primeira Etapa da reunião sobre o Projeto. Os tempos definidos foram cumpridos rigorosamente, quase cronometrados. As sugestões apresentadas, quando cada um apresentou suas telas, ajudaram a enriquecer o sistema, mesmo não sendo aplicadas, pois acabam mantendo o pensamento 'aquecido' sobre o melhor funcionamento do Sistema."
-  picture: avatar-placeholder
+  picture: milton
 
 - author: Eduardo F. dos Santos
   project: App Single Line
   quote: "Agradeço à equipe da HE:mobile que trabalhou no meu projeto. Parabéns à equipe! Em apenas duas semanas eles entenderam a minha idéia, de forma técnica e criativa ajudaram a transformá-la em algo real e criaram meu aplicativo."
-  picture: avatar-placeholder
+  picture: eduardo-flor
 
 - author: Matt Montenegro
   project: Beved
   quote: "Trabalhar com HE:labs foi surpreendente. Sempre que falamos de contratar um terceiro, a imagem de serviço mais ou menos vem a cabeça. Mas é justamente o contrário. Esses caras são extremamente atenciosos, disciplinados, bons de serviço de ponta a ponta. Recomendo com gosto."
-  picture: avatar-placeholder
+  picture: matt
 
 - author: Leandro Guimarães
   project: Brasil Pré-Pagos
   quote: "O que mais me chamou a atenção na HE:labs foi a sua agilidade nas respostas às minhas demandas."
-  picture: avatar-placeholder
+  picture: leandro
+
+- author: Cristiano Cadime
+  project: PMP Martim Fisher Soluções Inovadoras
+  quote: "Trabalhar com a equipe da HE:labs foi gratificante, ao saber que as entregas seriam feitas conforme planejado. Uma equipe pró-ativa que, sempre que possível, antecipava problemas e propunha alternativas."
+  picture: cadime

@@ -100,7 +100,11 @@ redirect_from:
           </div>
 
           <div class="slider-testimonial__picture">
-            <img src="/images/avatars/{{ testimonial.picture }}.png" alt="{{ testimonial.author }}">
+            {% if testimonial.picture %}
+              <img src="/images/avatars/{{ testimonial.picture }}.jpg" alt="{{ testimonial.author }}">
+            {% else %}
+              <img src="/images/avatars/avatar-placeholder.png" alt="{{ testimonial.author }}">
+            {% endif %}
           </div>
 
           <div class="slider-testimonial__author">{{ testimonial.author }}</div>

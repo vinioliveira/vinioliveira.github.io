@@ -3,7 +3,7 @@ layout: case-en
 category: caseen
 body_id: case-details
 pt: /portfolio/atendesimples/
-permalink: '/en/case/atendesimples/'
+permalink: '/en/our-work/atendesimples/'
 title: Atende Simples - HE:labs
 description: Atende Simples project description developed by HE:labs.
 
@@ -49,13 +49,13 @@ other_projects:
 - slug: bonuz
   name: Bonuz
   image: /images/cases/thumb_bonuz.jpg
-  url: /en/case/bonuz/
+  url: /en/our-work/bonuz/
 - slug: eduk
   name: EduK
   image: /images/cases/thumb_eduk.jpg
-  url: /en/case/eduk/
+  url: /en/our-work/eduk/
 - slug: hrblock
   name: H&R Block
   image: /images/cases/thumb_hrblock.jpg
-  url: /en/case/hrblock/
+  url: /en/our-work/hrblock/
 ---

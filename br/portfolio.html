@@ -1,25 +1,33 @@
 ---
-layout: site-2016
-title: Our Work
+layout: site-2016-pt
+title: Portfólio HE:labs | todos nossos trabalhos
 description: HE:labs
 body_id: "our-work"
-pt: /portfolio/
+en: /us/our-work
 redirect_from:
- - /en/love/
- - /en/work/
- - /en/work/flirt/
- - /en/work/brasil-mesada/
- - /en/work/medical-log/
- - /en/work/talk2myo/
- - /en/work/fantatzy/
- - /en/work/beija-eu/
- - /en/work/nutrical/
- - /en/work/beacon-hunt/
- - /en/work/ie-capoeira/
- - /en/work/early-shares/
- - /en/work/accredify/
- - /en/work/worthix/
- - /en/work/negocios-brasil/
+ - /pt/trabalho/
+ - /pt/love/
+ - /pt/trabalhos/flirt
+ - /pt/trabalhos/brasil-mesada
+ - /pt/trabalhos/medical-log
+ - /pt/trabalhos/talk2myo
+ - /pt/trabalhos/fanttazy
+ - /pt/trabalhos/beija-eu
+ - /pt/trabalhos/nutrical
+ - /pt/trabalhos/beacon-hunt
+ - /pt/trabalhos/ie-capoeira
+ - /pt/trabalhos/espn-tempo-real
+ - /pt/trabalhos/espn-br
+ - /pt/trabalhos/accredify
+ - /pt/trabalhos/early-shares
+ - /pt/trabalhos/worthix
+ - /pt/trabalhos/negocios-brasil
+ - /pt/trabalhos/manager-book
+ - /pt/trabalhos/movingscripts
+ - /pt/trabalhos/tattoo
+ - /pt/trabalhos/websimulado
+ - /pt/trabalhos/sala-de-ideias
+ - /pt/trabalhos/project-builder
 ---
 
 <section class="ourwork">
@@ -28,10 +36,10 @@ redirect_from:
     <div class="ourwork__heading">
 
       <h2 class="ourwork__title title-line title-line--center">
-        Our work
+        Portfólio
       </h2>
       <p class="ourwork__subtitle">
-        some of our work
+        Um pouco do nosso trabalho
       </p>
 
     </div>
@@ -43,7 +51,7 @@ redirect_from:
   <div class="wrapper">
     <div class="projects__list">
 
-        {% for case in site.categories.caseen reversed %}
+        {% for case in site.categories.case reversed %}
           {% if case.thumb %}
             <div class="projects__box">
               <figure>
@@ -60,8 +68,9 @@ redirect_from:
                 <span class="projects__project">{{case.type}}</span>
                 <span class="projects__name">{{case.name}}</span>
                 <p class="projects__subtitle">{{case.resume}}</p>
-                <a class="projects__link" href="{{case.permalink}}">Full Case</a>
+                <a class="projects__link" href="{{case.permalink}}">Veja mais</a>
               </div>
+
               <div class="projects__more-details">
                 <p>
                   <span>{% include /svg/icon-time-development.svg %} {{case.time}}</span>
@@ -74,25 +83,25 @@ redirect_from:
 
     </div>
 
-    <!-- <a href="javascript:return false;" class="btn btn--red">LOAD MORE</a> -->
+    <!-- <a href="javascript:return false;" class="btn btn--red">CARREGAR MAIS</a> -->
   </div>
 
 
 </section>
 
-<section class="testimonials">
+<section class="testimonials" id="testimonials">
   <div class="testimonials__content">
 
-    <h2 class="testimonials__title title-line title-line--center">Testimonials</h2>
+    <h2 class="testimonials__title title-line title-line--center">Depoimentos</h2>
 
     <p class="testimonials__subtitle">
-      What our customers say
+      O que nossos clientes dizem
     </p>
 
     <div class="slider-testimonial">
 
       <ul class="bxslider">
-      {% for testimonial in site.data.testimonials-en %}
+      {% for testimonial in site.data.testimonials %}
 
         <li>
           <div class="slider-testimonial__quote">
@@ -162,17 +171,16 @@ redirect_from:
 
 </section>
 
-
 <section class="clients-grid">
   <div class="wrapper">
 
     <div class="clients-grid__heading">
 
       <h2 class="clients-grid__title title-line title-line--center">
-        Some of our clients
+        Alguns dos nossos clientes
       </h2>
       <p class="clients-grid__subtitle">
-        We help startups and big companies around the world
+        Ajudamos startups e grandes empresas em todo o mundo
       </p>
 
     </div>
@@ -275,18 +283,16 @@ redirect_from:
   </div>
 </section>
 
-
-
 <section class="section-waiting">
   <div class="wrapper">
     <div class="section-waiting__heading">
       <h2 class="section-waiting__title">
-        What are you waiting for?
+        O que você está esperando?
       </h2>
       <p class="section-waiting__subtitle">
-        Let's make something awesome together!
+        Vamos produzir algo espetacular juntos!
       </p>
-      <a href="/en/hire-us/" class="btn btn--white">HIRE US</a>
+      <a href="/contrate/" class="btn btn--white">Contrate</a>
     </div>
   </div>
 </section>

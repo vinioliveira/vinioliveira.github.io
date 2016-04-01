@@ -20,11 +20,21 @@
   {% endif %}
   <meta content="{% if page.description %} {{ page.description }} {% else if site.description %} {{ site.description }} {% else %} HE:labs é uma empresa pioneira em desenvolvimento de sistemas web, aplicativos web, SaaS e Cloud Computing {% endif %}" name="description">
 
+
   {% include favicon.html %}
 
+  {% if page.en %}
   <meta http-equiv="content-language" content="pt-br">
-  <link rel="alternate" href="http://www.helabs.com/br/" hreflang="pt-br" />
+  <link rel="alternate" href="http://helabs.com{{ page.en }}" hreflang="en-us" />
   <link rel="alternate" href="http://helabs.com{{ page.url }}" hreflang="pt-br" />
+  {% else %}
+  <meta http-equiv="content-language" content="en">
+  <link rel="alternate" href="http://helabs.com{{ page.url }}" hreflang="en-us" />
+  <link rel="alternate" href="http://helabs.com{{ page.pt }}" hreflang="pt-br" />
+  {% endif %}
+
+  <link rel="alternate" href="http://www.helabs.com/br/" hreflang="pt-br" />
+  <link rel="alternate" href="http://www.helabs.com/us/" hreflang="en-us" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page.title }} - HE:labs">

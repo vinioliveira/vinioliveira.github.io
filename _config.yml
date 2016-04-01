@@ -19,8 +19,9 @@
 
 # Build settings
 markdown: kramdown
-baseurl: ""
+baseurl:
 permalink: /:title/
+safe: false
 
 gems:
   - jekyll-redirect-from
@@ -30,4 +31,4 @@ whitelist:
   - jekyll-redirect-from
   - jekyll-sitemap
 
-exclude: ['Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor', 'node_modules', 'stylesheets/sass', 'images/src']
+exclude: ['Gruntfile.js', 'package.json', 'Procfile', 'Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor', 'node_modules', 'stylesheets/sass', 'images/src']

@@ -2,8 +2,8 @@
 layout: novo-case
 category: case
 body_id: case-details
-en: /us/our-work/atendesimples/
-permalink: '/br/portfolio/atendesimples/'
+en: /us/our-work/atende-simples/
+permalink: '/br/portfolio/atende-simples/'
 title: Atende Simples - HE:labs
 description: Descrição do case Atende Simples que foi desenvolvido pela HE:labs.
 

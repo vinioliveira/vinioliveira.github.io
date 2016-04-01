@@ -2,14 +2,15 @@
 layout: case-en
 category: caseen
 body_id: case-details
-pt: /br/portfolio/atendesimples/
-permalink: '/us/our-work/atendesimples/'
+pt: /br/portfolio/atende-simples/
+permalink: '/us/our-work/atende-simples/'
 title: Atende Simples - HE:labs
 description: Atende Simples project description developed by HE:labs.
 
 redirect_from:
  - /en/cases/atende-simples/
  - /en/work/atende-simples/
+ - /us/our-work/atende-simples/
 
 name: Atende Simples
 

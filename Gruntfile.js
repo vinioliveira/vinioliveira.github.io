@@ -52,7 +52,6 @@ module.exports = function( grunt ) {
 						'<%= dirs.js %>/vendor/jquery.waypoints.js',
 						'<%= dirs.js %>/vendor/typed.js',
 						'<%= dirs.js %>/vendor/jquery.bxslider.js',
-						'<%= dirs.js %>/vendor/jquery.counterup.min.js',
 						'<%= dirs.js %>/vendor/jquery.cycle2.js',
 						'<%= dirs.js %>/vendor/jquery.cycle2.carousel.js',
 						'<%= dirs.js %>/src/jcarousellite_1.0.1.js',

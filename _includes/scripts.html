@@ -25,7 +25,25 @@
 </script>
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src="/javascripts/app.min.js"></script>
 <script src="/javascripts/vendor/instantclick.min.js" data-no-instant></script>
 <script data-no-instant>InstantClick.init();</script>
-<script src="/javascripts/app.min.js" ></script>
 
+{% if page.body_id == 'home' %}
+  <script>
+    (function ($) {
+
+      function player(){
+        if(!isMobile){
+          $(".player").YTPlayer();
+          $(".player").removeClass('main-banner__bg--mobile');
+        }else{
+          $(".player").addClass('main-banner__bg--mobile');
+        }
+      }
+
+      player();
+
+    })(jQuery);
+  </script>
+{% endif %}

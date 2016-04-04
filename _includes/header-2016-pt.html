@@ -3,7 +3,7 @@
 
   <nav class="navbar">
 
-    <a class="navbar-brand" href="/br" title="HE:labs">
+    <a class="navbar-brand" href="/br" title="HE:labs" data-no-instant>
       {% include /svg/brand-helabs.svg %}
     </a>
 
@@ -24,9 +24,9 @@
         <a href="http://journal.helabs.com/" target="_blank" title="Blog">Blog</a>
       </li>
       <li class="navbar-nav__item navbar-nav__item--btn">
-        <a href="/br/contrate/" title="Hire Us" onclick="ga('send','event','hire-us-PT','Click','',1,{'nonInteraction': true});">Contrate</a>
+        <a href="/br/contrate/" title="Hire Us" data-no-instant onclick="ga('send','event','hire-us-PT','Click','',1,{'nonInteraction': true});">Contrate</a>
       </li>
-      <li><a class="translate-btn" href="{% if page.en %}{{ page.en }}{% else %}/us{% endif %}">EN</a></li>
+      <li><a class="translate-btn" href="{% if page.en %}{{ page.en }}{% else %}/us{% endif %}" data-no-instant>EN</a></li>
     </ul>
 
     <a class="js-toggle-menu btn-toggle"></a>

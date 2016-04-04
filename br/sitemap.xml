@@ -1,0 +1,30 @@
+---
+sitemap: false
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='/stylesheets/xml-sitemap.xsl'?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for page in site.pages reversed %}
+  {% if page.layout == 'site-2016-pt' %}
+    <url>
+      <loc>{{ page.url }}{{ post.url }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+  {% endif %}
+  {% endfor %}
+  {% for post in site.categories.time reversed %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endfor %}
+  {% for case in site.categories.case reversed %}
+  <url>
+    <loc>{{ case.url }}{{ post.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </url>
+  {% endfor %}
+</urlset>
+

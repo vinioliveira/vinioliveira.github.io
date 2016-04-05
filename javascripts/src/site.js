@@ -209,9 +209,19 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
           errorClass: 'he-form--error'
         });
       }
-    })
+    });
+  }
 
-
+  //Executed on page load with URL containing an anchor tag.
+  if($(location.href.split("#")[1])) {
+    var target = $("#"+location.href.split("#")[1]);
+    if (target.length) {
+      $("html,body").animate({
+        scrollTop: target.offset().top - 69 //offset height of header here too.
+      }, 500);
+      return false;
+    }
+  }
 
   // Functions
   //---------------------------------------------------------------
@@ -231,7 +241,4 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
   init();
 
 
-
 })(jQuery);
-
-

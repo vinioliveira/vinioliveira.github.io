@@ -17,9 +17,9 @@ $(document).ready(function() {
 
 
     // Read more links
-    $( "#read-more a" ).click(function() {
+    $("#read-more a").click(function() {
       event.preventDefault();
       var readMore = $(this).attr("href");
-      $( readMore ).click();
+      $(readMore).click();
     });
 });

@@ -343,7 +343,7 @@
 }
 
 .section-team {
-  @include pad(10 0);
+ // @include pad(10px 0);
   @include span-columns(12);
   background: url('/images/bg-image_portfolio.jpg') no-repeat $greyish-brown top center;
   background-size: cover;
@@ -368,6 +368,8 @@
     @include media($screen-tiny) {
       font-size: $small-heading-font-size;
     }
+
+
   }
 
   &__subtitle {

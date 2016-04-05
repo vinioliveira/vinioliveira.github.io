@@ -1,3 +1,4 @@
+
 <script type="text/javascript">
   WebFontConfig = {
     google: { families: [ 'Source+Sans+Pro:400,200,300,600,700,900:latin' ] }
@@ -12,7 +13,7 @@
   })(); </script>
 
 <!-- Hotjar Tracking Code for http://staging.helabs.com.br -->
-<script>
+<script data-no-instant>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:163504,hjsv:5};
@@ -25,29 +26,24 @@
 
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
 <script src="/javascripts/app.min.js"></script>
+<script src="/javascripts/vendor/instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
 
-{% comment %}
-<script src="/javascripts/plugins/jquery.validate.min.js"></script>
-<script src="/javascripts/floating-labels.js"></script>
-<script src="/javascripts/refills-dropdown.js"></script>
-<script src="/javascripts/refills-modal.js"></script>
-<script src="/javascripts/jquery.fancybox-1.3.4.js"></script>
-<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-<script src="/javascripts/plugins/isotope.pkgd.min.js"></script>
-<script src="/javascripts/plugins/packery-mode.js"></script>
-<script src="/javascripts/plugins/jquery.waypoints.js"></script>
-<script src="/javascripts/plugins/typed.js"></script>
-<script src="/javascripts/plugins/jquery.bxslider.js"></script>
-<script src="/javascripts/plugins/jquery.counterup.min.js"></script>
-<script src="/javascripts/plugins/jquery.cycle2.js"></script>
-<script src="/javascripts/plugins/jquery.cycle2.carousel.js"></script>
-<script src="/javascripts/jcarousellite_1.0.1.js"></script>
-<script src="/javascripts/ytplayer.min.js"></script>
-<script src="/javascripts/site.js"></script>
-<script src="/javascripts/scroll.js"></script>
-<script src="/javascripts/parallax.js"></script>
-<script src="/javascripts/count.js"></script>
-<script src="/javascripts/grid-mosaic.js"></script>
-<script src="/javascripts/carousel.js"></script>
-{% endcomment %}
+{% if page.body_id == 'home' %}
+  <script>
+    (function ($) {
 
+      function player(){
+        if(!isMobile){
+          $(".player").YTPlayer();
+          $(".player").removeClass('main-banner__bg--mobile');
+        }else{
+          $(".player").addClass('main-banner__bg--mobile');
+        }
+      }
+
+      player();
+
+    })(jQuery);
+  </script>
+{% endif %}

@@ -3,7 +3,7 @@
   padding: 2em 2em;
 
   @include media($screen-medium) {
-    @include pad(0 $base-spacing);
+    @include pad($base-spacing);
   }
 
   @include media($screen-tiny) {

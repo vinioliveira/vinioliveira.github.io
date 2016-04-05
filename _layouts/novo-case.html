@@ -93,29 +93,3 @@ description: HE:labs é uma empresa pioneira em desenvolvimento de sistemas web,
   </div>
 </section>
 
-<script type="text/javascript">
-  (function(){
-    'use strict';
-    $(function(){
-      var stepsMenu = $("#steps-menu");
-      stepsMenu.on('click', 'a', function(event) {
-          // Replaces main content
-          event.preventDefault();
-          var $this = $(this);
-          var step = $this.attr("href");
-          $this.parent()
-            .addClass("is-active")
-            .siblings().removeClass("is-active");
-          $(".step-content").not(step).css("display", "none");
-          $(step)
-            .fadeOut()
-            .fadeIn();
-
-          // Rotates the wheel
-          stepsMenu
-            .removeClass()
-            .addClass("step-" + step.charAt(6));
-      });
-    });
-  })();
-</script>

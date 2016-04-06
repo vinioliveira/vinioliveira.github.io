@@ -16,31 +16,34 @@
 
   <meta name="viewport" content="initial-scale=1">
 
+
+  <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ 'Source+Sans+Pro:400,200,300,600,700,900:latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
   <link rel="stylesheet" type="text/css" href="/stylesheets/style.min.css">
   <style type="text/css" rel="stylesheet">
-    .main-header {
-      background: rgba(55,50,50,1);
+
+    .page404 {
+      background: url("/images/bg-404@2x.jpg") no-repeat center center;
+      background-size: cover;
     }
 
     .not-found {
-      background: url("/images/bg-404@2x.jpg") no-repeat center center;
-      background-size: cover;
-      height: 95%;
-      overflow: hidden;
-      padding-top: 120px;
-      position: fixed;
       width: 100%;
-    }
-
-
-
-    .main-footer {
-      position: absolute;
-      bottom: 0;
-    }
-
-    .not-found .not-found__icon{
-
+      height: 90vh;
+      display: block;
+      padding-top: 120px;
     }
 
     .not-found__icon {
@@ -51,6 +54,7 @@
     .not-found__description {
       float: right;
       width: 55%;
+      padding-bottom: 40px;
     }
 
     .not-found__description h2 {
@@ -70,28 +74,9 @@
       margin: 15px 0;
     }
 
-    @media screen and (min-width: 1191px){
-      .not-found .wrapper {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-      }
-    }
+    /* media queries */
 
     @media screen and (max-width: 1190px){
-      .not-found {
-        padding-bottom: 30px;
-        position: relative;
-        height: auto;
-      }
-
-      .main-footer {
-        position: relative;
-
-      }
-
       .not-found__description h2 {
         font-size: 30px;
       }
@@ -102,6 +87,7 @@
       .not-found {
         height: auto !important;
       }
+
       .not-found__icon {
           float: none;
           margin: 0 auto;
@@ -113,6 +99,7 @@
           margin: 0 auto 20px;
           text-align: center;
           width: 100%;
+          padding: 0 20px;
       }
 
       .not-found__description img {
@@ -122,13 +109,14 @@
       .not-found__description h2 {
         font-size: 30px;
       }
+
     }
 
   </style>
 </head>
 
-<body id="error-page">
-  <header class="main-header">
+<body id="error-page" class="page404">
+  <header class="main-header main-header--fixed">
 
     <nav class="navbar">
 
@@ -238,6 +226,9 @@
   </section>
 
 </footer>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+<script src="/javascripts/app.min.js"></script>
 </body>
 </html>
 

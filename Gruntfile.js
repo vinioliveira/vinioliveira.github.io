@@ -45,7 +45,6 @@ module.exports = function( grunt ) {
 				files: {
 					'<%= dirs.js %>/app.min.js': [
 						'<%= dirs.js %>/vendor/jquery.validate.min.js',
-            '<%= dirs.js %>/vendor/jquery.counterup.min.js',
 						'<%= dirs.js %>/src/floating-labels.js',
 						'<%= dirs.js %>/src/refills-dropdown.js',
 						'<%= dirs.js %>/src/refills-modal.js',
@@ -58,6 +57,7 @@ module.exports = function( grunt ) {
 						'<%= dirs.js %>/src/site.js',
 						'<%= dirs.js %>/src/scroll.js',
 						'<%= dirs.js %>/src/parallax.js',
+            '<%= dirs.js %>/vendor/jquery.counterup.min.js',
 						'<%= dirs.js %>/src/count.js',
 						'<%= dirs.js %>/src/carousel.js'
 					]

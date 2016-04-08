@@ -5,11 +5,11 @@
 
   <title>
   {% if page.full_name %}
-      {% if page.en %}
-        HE:labs - Nosso time - {{ page.full_name }}
-        {% else %}
-        HE:labs - Our team - {{ page.full_name }}
-      {% endif %}
+    {% if page.en %}
+      HE:labs - Nosso time - {{ page.full_name }}
+    {% else %}
+      HE:labs - Our team - {{ page.full_name }}
+    {% endif %}
   {% else %}
     {% if page.title %} {{ page.title }} {% endif %}
     {% if site.title %} {{ site.title }} {% endif %}

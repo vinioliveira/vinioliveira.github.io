@@ -31,6 +31,7 @@ gems:
 whitelist:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-assets
 
 assets:
   compress:

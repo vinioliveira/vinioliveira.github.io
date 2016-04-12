@@ -26,9 +26,33 @@ safe: false
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-assets
 
 whitelist:
   - jekyll-redirect-from
   - jekyll-sitemap
+
+assets:
+  compress:
+    css: true
+    js: true
+  cache: false
+  # cdn: https://cdn.example.com
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  assets:
+    - "*.png"
+    - "bundle.css"
+  digest: true
+  sources:
+    - images
+    - javascripts
+    - stylesheets
+    - fonts
+  features:
+    liquid: true
+    automatic_img_size: true
+    automatic_img_alt : true
 
 exclude: ['Gruntfile.js', 'package.json', 'Procfile', 'Rakefile', 'README', 'Gemfile', 'Gemfile.lock', 'config.rb', 'vendor', 'node_modules', 'stylesheets/sass', 'images/src']

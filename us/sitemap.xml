@@ -9,7 +9,7 @@ sitemap: false
   {% for page in site.pages reversed %}
   {% if page.layout == 'site-2016' %}
     <url>
-      <loc>{{ page.url }}{{ post.url }}</loc>
+      <loc>http://helabs.com{{ page.url }}{{ post.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     </url>
   {% endif %}
@@ -17,14 +17,14 @@ sitemap: false
   {% for post in site.categories.team reversed %}
     {% if post.permalink %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
+      <loc>http://helabs.com{{ site.url }}{{ post.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     </url>
     {% endif %}
   {% endfor %}
   {% for case in site.categories.caseen reversed %}
   <url>
-    <loc>{{ case.url }}{{ post.url }}</loc>
+    <loc>http://helabs.com{{ case.url }}{{ post.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>
   {% endfor %}

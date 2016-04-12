@@ -9,7 +9,7 @@ sitemap: false
   {% for page in site.pages reversed %}
   {% if page.layout == 'site-2016' %}
     <url>
-      <loc>http://helabs.com{{ site.prod }}{{ page.url }}{{ post.url }}</loc>
+      <loc>http://helabs.com{{ page.url }}{{ post.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     </url>
   {% endif %}

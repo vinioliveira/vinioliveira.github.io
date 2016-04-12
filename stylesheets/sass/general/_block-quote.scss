@@ -1,0 +1,51 @@
+.block-quote {
+  @include fill-parent;
+  color: $black;
+  font-family: $base-font-family;
+  font-size: rem(25);
+  line-height: rem(200);
+  margin: rem(80) 0 0;
+  min-height: rem(200);
+  padding: 0 rem(60);
+  position: relative;
+  text-align: center;
+
+  @include media($screen-small) {
+    font-size: rem(16);
+  }
+
+  &::before,
+  &::after {
+    @include position(absolute, 0 null null null);
+    @include size(47px 199px);
+    background: url("/images/slider-testimonials-background.png") no-repeat;
+    content: '';
+  }
+
+  &::before {
+    background-position: top left;
+    left: 0;
+  }
+
+  &::after {
+    background-position: top right;
+    right: 0;
+  }
+
+  &__holder {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+  }
+
+  &__author {
+    color: rgba($black, .75);
+    font-family: $base-font-family;
+    font-size: rem(25);
+    font-style: italic;
+
+    @include media($screen-small) {
+      font-size: rem(16);
+    }
+  }
+}

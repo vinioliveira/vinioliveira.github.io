@@ -1,5 +1,6 @@
 <div class="section-team__grid">
-{% for person in site.categories.time reversed %}
+{% assign sorted_team = site.categories.time | sort:"full_name" %}
+{% for person in sorted_team %}
   <div class="section-team__item">
     {% if person.permalink %}
       <a href="{{ person.permalink }}" title="{{ person.full_name }}">

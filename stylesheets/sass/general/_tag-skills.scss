@@ -1,0 +1,25 @@
+
+.tag-skills {
+
+  &__list {
+    @include fill-parent;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    @include padding(0 13px);
+    background: $light-red;
+    border-radius: 25px;
+    color: $light-primary;
+    display: inline-block;
+    font-family: $base-font-family;
+    font-size: rem(18);
+    line-height: rem(38);
+    margin: 0 10px 10px 0;
+    text-align: center;
+
+    @include media($screen-small) {
+      font-size: rem(16);
+    }
+  }
+}

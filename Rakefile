@@ -38,7 +38,7 @@ task :staging do
   system 'git commit -m "Staging commit"'
 
   puts '=> Add staging remote...'.magenta
-  system 'git remote add staging git@github.com:Helabs/staging.helabs.com.br.git'
+  system 'git remote add staging git@github.com:vinioliveira/vinioliveira.github.io.git'
 
   puts '=> Force push to staging. Get some coffee, it may take some time...'.magenta
   system 'git push -f staging staging:gh-pages'
@@ -98,10 +98,11 @@ namespace :blog do
       system "git add . && git commit -m 'Site updated at #{Time.now.utc}'" # Add and commit all the files.
 
       # Add the origin remote for the parent repo to the tmp folder.
-      system "git remote add staging git@github.com:Helabs/staging.helabs.com.br.git"
+      # system "git remote add staging git@github.com:Helabs/staging.helabs.com.br.git"
+      system 'git remote add staging git@github.com:vinioliveira/vinioliveira.github.io.git'
 
       # Push the files to the gh-pages branch, forcing an overwrite.
-      system "git push staging master:refs/heads/gh-pages --force"
+      system "git push staging master:refs/heads/master --force"
     end
     # Done.
   end

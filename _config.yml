@@ -47,10 +47,10 @@ assets:
     - "bundle.css"
   digest: true
   sources:
-    - images
-    - javascripts
-    - stylesheets
-    - fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
   features:
     liquid: true
     automatic_img_size: true

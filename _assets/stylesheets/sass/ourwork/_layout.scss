@@ -14,7 +14,7 @@
 
 .ourwork {
   @include span-columns(12);
-  background: url('/images/background-portfolio.jpg') no-repeat $black center center;
+  background: image-url('/images/background-portfolio.jpg') no-repeat $black center center;
   background-size: cover;
   min-height: rem(200);
   overflow: hidden;
@@ -65,7 +65,7 @@
   }
 
   &__background {
-    background: url('/images/background-portfolio.jpg') no-repeat $black top center;
+    background: image-url('/images/background-portfolio.jpg') no-repeat $black top center;
     background-size: cover;
     height: 110%;
     left: 0;

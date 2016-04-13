@@ -95,7 +95,7 @@ namespace :blog do
 
       # Prepare all the content in the repo for deployment.
       system "git init" # Init the repo.
-      system "git add . && git commit -m 'Site updated at #{Time.now.utc}'" # Add and commit all the files.
+      system "git add . && git commit  --signoff -m 'Site updated at #{Time.now.utc}'" # Add and commit all the files.
 
       # Add the origin remote for the parent repo to the tmp folder.
       # system "git remote add staging git@github.com:Helabs/staging.helabs.com.br.git"

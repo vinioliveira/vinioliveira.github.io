@@ -114,7 +114,6 @@ GEM
       sawyer (~> 0.6.0, >= 0.5.3)
     public_suffix (1.5.3)
     rack (1.6.4)
-    rainbow (2.0.0)
     rake (10.5.0)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -127,8 +126,8 @@ GEM
     sawyer (0.6.0)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
-    scss_lint (0.43.2)
-      rainbow (~> 2.0)
+    scss_lint (0.47.1)
+      rake (>= 0.9, < 11)
       sass (~> 3.4.15)
     sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
@@ -154,7 +153,7 @@ DEPENDENCIES
   i18n (= 0.7.0)
   jekyll-assets (= 2.1.2)
   rake (= 10.5.0)
-  scss_lint
+  scss_lint (= 0.47.1)
 
 BUNDLED WITH
    1.11.2

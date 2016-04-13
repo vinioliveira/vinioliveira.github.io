@@ -39,9 +39,9 @@ layout: site-2016-pt
 
       <h3 class="team-member__subtitle">Habilidades</h4>
 
-      <div class="skill-list">
+      <div class="tag-skills__list">
         {% for skill in page.skills %}
-          <span class="skill-tag">
+          <span class="tag-skills__item">
             {{ skill }}
           </span>
         {% endfor %}
@@ -85,11 +85,11 @@ layout: site-2016-pt
     {% endif %}
 
     {% if page.quote %}
-      <section class="team-member__quote">
+      <section class="block-quote">
 
-        <div class="text">
-          <p>"{{ page.quote.content }}"</p>
-          <p class="team-member__signature">&mdash; {{ page.quote.author }}</p>
+        <div class="block-quote__holder">
+          <p class="block-quote__text">"{{ page.quote.content }}"</p>
+          <p class="block-quote__author">&mdash; {{ page.quote.author }}</p>
         </div>
 
       </section> <!-- /quote -->

@@ -1,6 +1,7 @@
 test:
   override:
-    - bundle exec scss-lint stylesheets/sass --color
+    - bundle exec scss-lint -v
+
 deployment:
   staging:
     branch: development

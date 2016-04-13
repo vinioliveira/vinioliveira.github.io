@@ -93,6 +93,10 @@ namespace :blog do
       puts '=> Change CNAME...'.magenta
       File.open('CNAME', 'w') { |file| file.write 'staging.helabs.com.br' }
 
+      #Prepare git for CircleCI
+      system "git config --global user.name 'CircleCI'"
+      system "git config --global user.email 'circle@helabs.com'"
+
       # Prepare all the content in the repo for deployment.
       system "git init" # Init the repo.
       system "git add . && git commit  --signoff -m 'Site updated at #{Time.now.utc}'" # Add and commit all the files.

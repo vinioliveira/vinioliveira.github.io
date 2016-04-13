@@ -67,6 +67,7 @@ namespace :blog do
   # bundle exec rake blog:publish
   desc "Publish blog to gh-pages"
   task :publish do
+    ENV['JEKYLL_ENV'] = 'production'
     # Compile the Jekyll site using the config.
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => ".",

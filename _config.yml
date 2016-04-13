@@ -38,7 +38,7 @@ assets:
     css: true
     js: true
   cache: false
-  # cdn: https://cdn.example.com
+  cdn: https://d8yo5ffvrs0w8.cloudfront.net
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
   prefix: "/assets"

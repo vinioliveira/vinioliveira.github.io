@@ -54,60 +54,52 @@ end
 require "jekyll"
 
 # Github pages publishing.
-namespace :blog do
-  #
-  # Because we are using 3rd party plugins for jekyll to manage the asset pipeline
-  # and suchlike we are unable to just branch the code, we have to process the site
-  # localy before pushing it to the branch to publish.
-  #
-  # We built this little rake task to help make that a little bit eaiser.
-  #
+namespace :deploy do
 
-  # Usaage:
-  # bundle exec rake blog:publish
-  desc "Publish blog to gh-pages"
-  task :publish do
-    ENV['JEKYLL_ENV'] = 'production'
-    # Compile the Jekyll site using the config.
+  desc "Publish site to staging"
+  task :staging do
+
     Jekyll::Site.new(Jekyll.configuration({
       "source"      => ".",
       "destination" => "_site",
       "config" => "_config.yml"
     })).process
 
-    # Get the origin to which we are going to push the site.
-    # origin = `git config --get remote.origin.url`
 
-    # Make a temporary directory for the build before production release.
-    # This will be torn down once the task is complete.
     Dir.mktmpdir do |tmp|
-      # Copy accross our compiled _site directory.
+      puts '=> Copy accross our compiled _site directory...'.magenta
       cp_r "_site/.", tmp
 
-      # Switch in to the tmp dir.
+      puts '=> Switch in to the tmp dir...'.magenta
       Dir.chdir tmp
 
       puts '=> Disallow robots...'.magenta
       File.open('robots.txt', 'w') { |file| file.write "User-agent: *\nDisallow: /" }
 
       puts '=> Change CNAME...'.magenta
-      File.open('CNAME', 'w') { |file| file.write 'staging.helabs.com.br' }
+      # File.open('CNAME', 'w') { |file| file.write 'staging.helabs.com.br' }
 
-      #Prepare git for CircleCI
+      puts '=> Moving staging files over production one...'.magenta
+      cp('_includes/schedule-meeting-modal-staging-pt.html', '_includes/schedule-meeting-modal-pt.html')
+      cp('_includes/schedule-meeting-modal-staging-en.html', '_includes/schedule-meeting-modal.html')
+      cp('_includes/tag-manager-staging.html', '_includes/tag-manager.html')
+
+      puts '=> Prepare git for CircleCI...'.magenta
       system "git config --global user.name 'CircleCI'"
       system "git config --global user.email 'circle@helabs.com'"
 
-      # Prepare all the content in the repo for deployment.
+      puts '=> Prepare all the content in the repo for deployment....'.magenta
       system "git init" # Init the repo.
-      system "git add . && git commit  --signoff -m 'Site updated at #{Time.now.utc}'" # Add and commit all the files.
+      system "git add . && git commit -m 'Site updated at #{Time.now.utc} [skip ci]'" # Add and commit all the files.
 
-      # Add the origin remote for the parent repo to the tmp folder.
+      puts '=> Add the origin remote for the parent repo to the tmp folder...'.magenta
       # system "git remote add staging git@github.com:Helabs/staging.helabs.com.br.git"
       system 'git remote add staging git@github.com:vinioliveira/vinioliveira.github.io.git'
 
-      # Push the files to the gh-pages branch, forcing an overwrite.
+      puts '=> Push the files to the gh-pages branch, forcing an overwrite...'
       system "git push staging master:refs/heads/master --force"
+
+      puts '=> Done. It can take up to 10 minutes for your changes to appear staging.helabs.com.br'.green
     end
-    # Done.
   end
 end

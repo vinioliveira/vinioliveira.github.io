@@ -10,4 +10,4 @@ deployment:
   staging:
     branch: development
     commands:
-      - bundle exec rake blog:publish
+      - bundle exec rake deploy:staging

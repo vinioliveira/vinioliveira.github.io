@@ -13,7 +13,7 @@ test:
 
 deployment:
   staging:
-    tag: production
+    tag: /v-.*/
     # branch: development
     commands:
       - bundle exec rake deploy:staging

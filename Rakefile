@@ -56,6 +56,42 @@ require "jekyll"
 # Github pages publishing.
 namespace :deploy do
 
+  desc "Publish site to production"
+  task :production do
+
+    ENV['JEKYLL_ENV'] = 'production'
+    Jekyll::Site.new(Jekyll.configuration({
+      "source"      => ".",
+      "destination" => "_site",
+      "config" => "_config.yml"
+    })).process
+
+
+    Dir.mktmpdir do |tmp|
+      puts '=> Copy accross our compiled _site directory...'.magenta
+      cp_r "_site/.", tmp
+
+      puts '=> Switch in to the tmp dir...'.magenta
+      Dir.chdir tmp
+
+      puts '=> Prepare git for CircleCI...'.magenta
+      system "git config --global user.name 'CircleCI'"
+      system "git config --global user.email 'circle@helabs.com'"
+
+      puts '=> Prepare all the content in the repo for deployment....'.magenta
+      system "git init" # Init the repo.
+      system "git add . && git commit -m 'Site updated at #{Time.now.utc}'" # Add and commit all the files.
+
+      puts '=> Add the origin remote for the parent repo to the tmp folder...'.magenta
+      system "git remote add origin git@github.com:Helabs/staging.helabs.com.br.git"
+
+      puts '=> Push the files to the gh-pages branch, forcing an overwrite...'
+      system "git push origin master:refs/heads/master --force"
+
+      puts '=> Done. It can take up to 10 minutes for your changes to appear staging.helabs.com.br'.green
+    end
+  end
+
   desc "Publish site to staging"
   task :staging do
 

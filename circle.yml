@@ -1,0 +1,13 @@
+dependencies:
+  override:
+    - bundle install
+
+test:
+  override:
+    - bundle exec scss-lint -v
+
+deployment:
+  staging:
+    branch: development
+    commands:
+      - bundle exec rake deploy:staging

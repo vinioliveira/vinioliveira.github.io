@@ -80,9 +80,9 @@ namespace :deploy do
       # File.open('CNAME', 'w') { |file| file.write 'staging.helabs.com.br' }
 
       puts '=> Moving staging files over production one...'.magenta
-      cp('_includes/schedule-meeting-modal-staging-pt.html', '_includes/schedule-meeting-modal-pt.html')
-      cp('_includes/schedule-meeting-modal-staging-en.html', '_includes/schedule-meeting-modal.html')
-      cp('_includes/tag-manager-staging.html', '_includes/tag-manager.html')
+      # cp('_includes/schedule-meeting-modal-staging-pt.html', '_includes/schedule-meeting-modal-pt.html')
+      # cp('_includes/schedule-meeting-modal-staging-en.html', '_includes/schedule-meeting-modal.html')
+      # cp('_includes/tag-manager-staging.html', '_includes/tag-manager.html')
 
       puts '=> Prepare git for CircleCI...'.magenta
       system "git config --global user.name 'CircleCI'"
